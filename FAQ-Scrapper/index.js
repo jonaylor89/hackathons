@@ -8,7 +8,7 @@ const output = 'FAQs.json';
 let faqs = {};
 
 const grabFAQs = function(question) {
-  Puppeteer.launch({headless: false}).then((browser) => {
+  Puppeteer.launch().then((browser) => {
     browser.newPage().then((page) => {
       Promise.all(target.map(i => new Promise((resolve, reject) => {
         page.goto(i).then(() => {
@@ -17,14 +17,12 @@ const grabFAQs = function(question) {
               faq,
               ...faqs
             }
+            resolve();
           });
-          resolve();
         }).catch(console.error);
       }))).then(i => {
         let faqStr = JSON.stringify(faqs);
-        console.log(faqStr);
-        fs.writeFile(output, faqStr, console.error);
-        browser.close();
+        fs.writeFile(output, faqStr, e => e ? console.error(e) + browser.close() : browser.close());
       }).catch(console.error);
     }).catch(console.error);
   }).catch(console.error);
