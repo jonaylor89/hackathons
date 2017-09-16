@@ -2,28 +2,26 @@ const Puppeteer = require('puppeteer');
 const ScrapeFaqs = require('./ScrapeFaq.js');
 const fs = require('fs');
 
-const target = ['https://www.ugrad.vcu.edu/why/faqs/admissions.html'];
+const targets = ['https://appleid.apple.com/faq/#!&page=faq', 'https://www.ugrad.vcu.edu/why/faqs/admissions.html'];
 const output = 'FAQs.json';
 
-let faqs = {};
+let faqs = [];
 
 const grabFAQs = function(question) {
   Puppeteer.launch().then((browser) => {
-    browser.newPage().then((page) => {
-      Promise.all(target.map(i => new Promise((resolve, reject) => {
+    Promise.all(targets.map(i => new Promise((resolve, reject) => {
+      browser.newPage().then((page) => {
         page.goto(i).then(() => {
-          page.evaluate(ScrapeFaqs).then(faq => {
-            faqs = {
-              faq,
-              ...faqs
-            }
-            resolve();
+          page.evaluate(ScrapeFaqs).then(details => {
+            console.log(details);
+            resolve(details);
           });
         }).catch(console.error);
-      }))).then(i => {
-        let faqStr = JSON.stringify(faqs);
-        fs.writeFile(output, faqStr, e => e ? console.error(e) + browser.close() : browser.close());
       }).catch(console.error);
+    }))).then(resolvedFaqs => {
+      resolvedFaqs.forEach(faq => faqs = faqs.concat(faq));
+      let faqStr = JSON.stringify(faqs);
+      fs.writeFile(output, faqStr, e => e ? console.error(e) + browser.close() : browser.close());
     }).catch(console.error);
   }).catch(console.error);
 };
