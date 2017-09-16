@@ -39,10 +39,10 @@ class FaqScapper {
       let elements = this.getLeafTextElements()
         .filter(i => i.getBoundingClientRect().x >= minX
           && i.getBoundingClientRect().x <= maxX
-          && i.getBoundingClientRect().y >= minY
+          && i.getBoundingClientRect().y > minY
           && i.getBoundingClientRect().y <= maxY);
-      if (elements.map(i => i.innerText).join('').length > 1) {
-        questionAnswers[e.innerText] = elements.map(i => i.innerText).join('\n');
+      if (elements.map(i => i.innerText.trim()).join('').length > 1) {
+        questionAnswers[e.innerText.trim()] = elements.map(i => i.innerText.trim()).join('\n');
       }
     });
     return questionAnswers;
