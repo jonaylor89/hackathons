@@ -1,4 +1,5 @@
 const Puppeteer = require('puppeteer');
+const FaqScapper = require('FaqScapper');
 
 const target = 'https://www.ugrad.vcu.edu/why/faqs/admissions.html';
 
