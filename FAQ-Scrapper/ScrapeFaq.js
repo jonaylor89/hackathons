@@ -26,7 +26,7 @@ module.exports = function ScrapeFaq() {
       return this.getLeafTextElements().filter(i => i.innerText.includes('?'));
     };
     getAnswersToQuestion(questions) {
-      let questionAnswers = {};
+      let questionAnswers = [];
       questions.forEach(e => {
         let minY = e.getBoundingClientRect().y;
         let maxY = Infinity;
@@ -43,7 +43,11 @@ module.exports = function ScrapeFaq() {
             && i.getBoundingClientRect().y > minY
             && i.getBoundingClientRect().y <= maxY);
         if (elements.map(i => i.innerText.trim()).join('').length > 1) {
-          questionAnswers[e.innerText.trim()] = elements.map(i => i.innerText.trim()).join('\n');
+          questionAnswers.push({
+            question: e.innerText.trim(),
+            answer: elements.map(i => i.innerText.trim()).join('\n'),
+            source: location.host
+          });
         }
       });
       return questionAnswers;
