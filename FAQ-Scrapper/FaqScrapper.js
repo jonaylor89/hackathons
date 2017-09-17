@@ -42,7 +42,7 @@ class FaqScrapper {
           && i.getBoundingClientRect().y > minY
           && i.getBoundingClientRect().y <= maxY);
       if (elements.map(i => i.innerText.trim()).join('').length > 1) {
-        questionAnswers[e.innerText.trim()] = elements.map(i => i.innerText.trim()).join('\n');
+        questionAnswers[e.innerText.replaceAll('[^\\W\\S\']', ' ').replaceAll('\s+', ' ').toLowerCase().trim()] = elements.map(i => i.innerText.trim()).join('\n');
       }
     });
     return questionAnswers;
