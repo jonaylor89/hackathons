@@ -3,10 +3,8 @@ const ScrapeFaqs = require('./ScrapeFaq.js');
 const fs = require('fs');
 
 const targets = [
-  'https://octo.dc.gov/page/gis-frequently-asked-questions',
   'https://www.google.com/about/datacenters/faq/',
   'https://www.google.com/policies/faq/',
-  'http://www.dell.com/learn/us/en/22/consumer-faq',
   'https://admission.virginia.edu/faq',
   'https://appleid.apple.com/faq/#!&page=faq',
   'https://www.ugrad.vcu.edu/why/faqs/admissions.html',

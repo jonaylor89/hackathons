@@ -1,40 +1,4 @@
 [{
-  "question": "what is a geographic information system  gis",
-  "answer": "GIS is a system of computer software, hardware, data, procedures and personnel combined to help, manipulate, analyze, and present information that is tied to a geographic location. For additional general information about GIS, go to the ESRI Online GIS Dictionary.",
-  "source": "octo.dc.gov"
-}, {
-  "question": "how may i contact you",
-  "answer": "You may contact us at (202) 727-1140 or at dcgis@dc.gov.",
-  "source": "octo.dc.gov"
-}, {
-  "question": "which software does dc gis use",
-  "answer": "The District GIS software standards consist of the Environmental Systems Research Institute Inc. (ESRI) products and Google Inc. geospatial services and software. The ESRI standard includes the ArcGIS line of desktop and server software product lines. The Google standard includes the Google Earth Enterprise line of server side products and Google Maps for mash-up type applications. Other geospatial software packages and vendors can be accommodated if necessary to meet specific business requirements.",
-  "source": "octo.dc.gov"
-}, {
-  "question": "which format is your gis data in",
-  "answer": "DC GIS maintains and provides data in the ESRI and Google formats. This ensures that all District agencies, residents and visitors can use this data. All spatial data are found in the Open Data DC.\nESRI shape file format are available with Federal Geographic Data Committee (FGDC) compliant metadata.",
-  "source": "octo.dc.gov"
-}, {
-  "question": "what is your operating system",
-  "answer": "DC GIS utilizes a .NET framework and Windows operating systems for both desktop PCs and servers.",
-  "source": "octo.dc.gov"
-}, {
-  "question": "how do i download dc gis data",
-  "answer": "Go to the Open Data DC. Users may search by several keywords or browse by categories. In the search results, view the summary or dive into the attributes in the data tab. There are options for downloading as a shapefile, spreadsheet or kml file. Also access the data using APIs.",
-  "source": "octo.dc.gov"
-}, {
-  "question": "what applications are available that i can use online",
-  "answer": "All public access GIS applications are available in our map gallery.",
-  "source": "octo.dc.gov"
-}, {
-  "question": "i m having trouble using the dc atlas  how do i get help",
-  "answer": "Be sure to take a moment to read the DC Atlas All-in-One User Guide, before you start using the DC Atlas.  It explains each feature in the Atlas.  If you need further assistance, please contact DC GIS.",
-  "source": "octo.dc.gov"
-}, {
-  "question": "why are certain areas of the city s maps not available or not as clear",
-  "answer": "The Secret Service has required that an area surrounding the White House, Capitol, and Naval Observatory not be shown in certain planimetric map layers, and be shown at lower resolution in the orthophotographs.\nOffice of the Chief Technology Officer\nResources\nDistrict News\nDistrict Initiatives\nAbout DC\nContact Us\nAccessibility\nPrivacy and Security\nTerms and Conditions\nAbout DC.Gov",
-  "source": "octo.dc.gov"
-}, {
   "question": "what is a data center",
   "answer": "A data center is a facility with many computers that store and process large amounts of information. Our data centers keep all of Google’s products and services up and running around the clock and around the world. Whenever you access Gmail, edit your documents, post an image to Google+ or search for information on Google.com, you're using one of our data centers and have the power of a supercomputer at your fingertips. Learn more about our approach to environmentally responsible data centers.\nLearn more about our approach to environmentally responsible data centers",
   "source": "www.google.com"
@@ -74,10 +38,6 @@
   "question": "are my search queries sent to websites when i click on google search results",
   "answer": "In some cases, yes. When you click on a search result in Google Search, your web browser also may send the Internet address, or URL, of the search results page to the destination webpage as the HTTP Referrer. The URL of the search results page may sometimes contain the search query you entered. If you are using SSL Search (Google’s encrypted search functionality), under most circumstances, your search terms will not be sent as part of the URL in the HTTP Referrer. There are some exceptions to this behavior, such as if you are using some less popular browsers. More information on SSL Search can be found here. Search queries or information contained in the HTTP Referrer may be available via Google Analytics or an application programming interface (API). In addition, advertisers may receive information relating to the exact keywords that triggered an ad click.\nOur legal policies\nPrivacy Policy\nTerms of Service\nGoogle\nAbout Google",
   "source": "www.google.com"
-}, {
-  "question": "where can i use my dell preferred account",
-  "answer": "Terms of Sale",
-  "source": "www.dell.com"
 }, {
   "question": "what percentage of applicants are admitted",
   "answer": "We have pledged to maintain a 2/3 majority of Virginia residents in our student population, but 2/3 of our applicants tend to come from out-of-state. As a result, our offer rate for Virginia residents tends to be much higher than the rate for out-of-state students. Last year, we admitted 39% of the Virginia residents and 22% of the non-Virginians. You can see date from previous years on the Office of Institutional Assessment website.\non the Office of Institutional Assessment website",
