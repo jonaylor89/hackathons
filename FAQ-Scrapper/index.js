@@ -2,7 +2,24 @@ const Puppeteer = require('puppeteer');
 const ScrapeFaqs = require('./ScrapeFaq.js');
 const fs = require('fs');
 
-const targets = ['https://appleid.apple.com/faq/#!&page=faq', 'https://www.ugrad.vcu.edu/why/faqs/admissions.html'];
+const targets = [
+  'https://mlh.io/faq',
+  'https://www.google.com/about/datacenters/faq/',
+  'https://www.google.com/policies/faq/',
+  'http://www.dell.com/learn/us/en/22/consumer-faq',
+  'https://admission.virginia.edu/faq',
+  'https://appleid.apple.com/faq/#!&page=faq',
+  'https://www.ugrad.vcu.edu/why/faqs/admissions.html',
+  'https://www.ugrad.vcu.edu/why/faqs/activities.html',
+  'https://www.ugrad.vcu.edu/why/faqs/dining.html',
+  'https://www.ugrad.vcu.edu/why/faqs/enrollment.html',
+  'https://www.ugrad.vcu.edu/why/faqs/financing.html',
+  'https://www.ugrad.vcu.edu/why/faqs/health.html',
+  'https://www.ugrad.vcu.edu/why/faqs/housing.html',
+  'https://www.ugrad.vcu.edu/why/faqs/libraries.html',
+  'https://www.ugrad.vcu.edu/why/faqs/transfers.html',
+  'https://www.ugrad.vcu.edu/why/faqs/transportation.html'
+];
 const output = 'FAQs.json';
 
 let faqs = [];

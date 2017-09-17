@@ -31,7 +31,7 @@ module.exports = function ScrapeFaq() {
         let minY = e.getBoundingClientRect().y;
         let maxY = Infinity;
         let minX = e.getBoundingClientRect().x - 1;
-        let maxX = minX + 36;
+        let maxX = minX + 50;
         for (let elem of questions) {
           if (elem.getBoundingClientRect().y > minY && elem.getBoundingClientRect().y < maxY) {
             maxY = elem.getBoundingClientRect().y;
@@ -43,6 +43,9 @@ module.exports = function ScrapeFaq() {
             && i.getBoundingClientRect().y > minY
             && i.getBoundingClientRect().y < maxY
             && questions.filter(questionElement => questionElement.contains(i)).length == 0);
+        if (elements.length && (/(\w+\s+|^)to\s+\w+(\s+\w+|\s*$)$/g).test(elements[elements.length - 1].textContent.trim())) {
+          elements.pop();
+        }
         if (elements.map(i => i.innerText.trim()).join('').length > 1) {
           questionAnswers.push({
             question: e.innerText.toLowerCase().replace(/[^\w\']/g, ' ').trim(),
