@@ -13,7 +13,6 @@ const grabFAQs = function(question) {
       browser.newPage().then((page) => {
         page.goto(i).then(() => {
           page.evaluate(ScrapeFaqs).then(details => {
-            console.log(details);
             resolve(details);
           });
         }).catch(console.error);
