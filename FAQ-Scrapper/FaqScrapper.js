@@ -40,7 +40,8 @@ class FaqScrapper {
         .filter(i => i.getBoundingClientRect().x >= minX
           && i.getBoundingClientRect().x <= maxX
           && i.getBoundingClientRect().y > minY
-          && i.getBoundingClientRect().y < maxY);
+          && i.getBoundingClientRect().y < maxY
+          && !questions.includes(i));
       if (elements.map(i => i.innerText.trim()).join('').length > 1) {
         questionAnswers[e.innerText.replaceAll('[^\\W\\S\']', ' ').replaceAll('\s+', ' ').toLowerCase().trim()] = elements.map(i => i.innerText.trim()).join('\n');
       }
