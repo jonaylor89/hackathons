@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonaylor89/FAQ-Bot.git"
+    "url": "git+https://github.com/jonaylor89/FAQ-Scrapper.git"
   },
   "author": "John Naylor, Darren Chan, Vinit Patel, Samuel Spelsberg",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jonaylor89/FAQ-Bot/issues"
+    "url": "https://github.com/jonaylor89/FAQ-Scrapper/issues"
   },
-  "homepage": "https://github.com/jonaylor89/FAQ-Bot#readme",
+  "homepage": "https://github.com/jonaylor89/FAQ-Scrapper#readme",
   "dependencies": {
     "puppeteer": "^0.10.2"
   }
