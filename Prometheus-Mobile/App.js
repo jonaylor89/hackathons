@@ -1,15 +1,28 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
 export default class App extends React.Component {
+
   render() {
     return (
       <View style={styles.container}>
-        <Text>Prometheus</Text>
+
+        <Image
+        style = {{width: 100, height: 100}}
+        source={require('./Octo.png')}
+        />
+
+        <Text style={{width: 78, color: 'white'}}>Prometheus</Text>
+
         <Button
-          onPress={}
+          onPress={ () => {console.warn('Transition to the next screen')}}
           title="Start"
           accessibilityLabel="Continue into Application"
+        />
+
+        <Image
+          style={{width: 250, height: 100}}
+          source={require('./University.png')}
         />
       </View>
     );
@@ -19,8 +32,8 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
-  },
+    alignItems: 'center',
+    backgroundColor: 'black'
+  }
 });
