@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
-export default class App extends React.Component {
+export default class App extends Component {
 
   render() {
     return (
@@ -15,7 +15,7 @@ export default class App extends React.Component {
         <Text style={{width: 78, color: 'white'}}>Prometheus</Text>
 
         <Button
-          onPress={ () => {console.warn('Transition to the next screen')}}
+          onPress={ () => {console.log('Transition to the next screen')}}
           title="Start"
           accessibilityLabel="Continue into Application"
         />
