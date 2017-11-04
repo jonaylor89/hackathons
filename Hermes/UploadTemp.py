@@ -1,6 +1,6 @@
 
 from urllib.request import urlopen
-import urllib.request import Request
+from urllib.request import Request
 import json
 import calendar
 import time
