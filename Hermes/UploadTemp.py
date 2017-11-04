@@ -1,6 +1,6 @@
 
 from urllib.request import urlopen
-import urllib
+import urllib.request import Request
 import json
 import calendar
 import time
@@ -14,7 +14,7 @@ postdata = {
     'temp' : str(read_temperature())
 }
 
-req = urllib.request(url)
+req = Request(url)
 req.add_header('Content-Type', 'application/json')
 data = json.dump(postdata)
 
