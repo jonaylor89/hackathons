@@ -17,7 +17,6 @@ def read_file(filepathstring):
 def read_temperature():
     wholefilestring = read_file(BASE_DIR_STRING + DEVICE_FILE_PATH_STRING)
     if 'YES' in wholefilestring:
-        wholefilestring = read_file()
         temperature_start_index_int = wholefilestring.find('t=')
         if temperature_start_index_int != -1:
             currenttempstring = wholefilestring[temperature_start_index_int + 2:]
