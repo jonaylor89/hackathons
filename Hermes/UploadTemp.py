@@ -1,6 +1,7 @@
 
 import urllib2
 import json
+import calendar
 
 from temp_read import read_temperature
 
