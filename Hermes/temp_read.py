@@ -25,6 +25,6 @@ def read_temperature():
 
 
 if __name__ == "__main__":
-    while True:
+    while True:i
         print(read_temperature())
         sleep(1)
