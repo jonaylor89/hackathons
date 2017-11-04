@@ -25,6 +25,4 @@ def read_temperature():
 
 
 if __name__ == "__main__":
-    while True:i
-        print(read_temperature())
-        sleep(1)
+    print(str(calendar.timegm(time.gmtime())) + ',' + str(read_temp()))
