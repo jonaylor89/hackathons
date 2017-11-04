@@ -16,6 +16,6 @@ postdata = {
 
 req = Request(url)
 req.add_header('Content-Type', 'application/json')
-data = json.dump(postdata)
+data = json.dumps(postdata)
 
 response = urlopen(req, data)
