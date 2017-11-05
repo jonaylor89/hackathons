@@ -19,7 +19,7 @@ data = {'time':time_hhmmss,
         'age': int(Age),
         'sex': 'Male',
         'temperature': read_temperature(),
-        'SpO2': 0.05 * math.sin(random.choice(range(-100, 100)/100)) + 0.97,
+        'SpO2': 0.05 * math.sin(random.choice(list(range(-100, 100))/100)) + 0.97,
         'HR': random.choice([90, 91, 92]),
         'systolic BP': random.choice([90, 100, 95, 91, 150, 110, 96, 93, 98, 100, 89])}
 
