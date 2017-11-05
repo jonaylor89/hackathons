@@ -23,4 +23,4 @@ data = {patient_number:
         'HR': 90,
         'systolic BP': 90}}
 
-result = requests.post(firebase_url + '/temperature.json', data=json.dumps(data))
+result = requests.post(firebase_url + '/Clinic.json', data=json.dumps(data))
