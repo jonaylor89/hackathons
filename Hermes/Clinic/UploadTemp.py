@@ -4,7 +4,7 @@ import time
 import requests
 import json
 
-from Client/temp_read import read_temperature
+from Client.temp_read import read_temperature
 
 patient_number = sys.argv[1]
 
