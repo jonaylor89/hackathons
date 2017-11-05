@@ -9,7 +9,7 @@ import math
 from temp_read import read_temperature
 
 def sin():
-    return math.sin(random.choice([x/100 for x in range(-100, 100)]) 
+    return math.sin(random.choice([x/100 for x in range(-100, 100)])) 
 
 room_number = sys.argv[1]
 Age = sys.argv[2]
