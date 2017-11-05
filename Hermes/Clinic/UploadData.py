@@ -23,6 +23,6 @@ data = {'time':time_hhmmss,
         'temperature': read_temperature(),
         'SpO2': 0.05 * random.randrange(-100, 100) + 0.97,
         'HR': random.randrange(70, 90),
-        'systolic BP': random.randrange(90, 110)}
+        'systolic BP': random.randrange(30, 110)}
 
 result = requests.post(firebase_url + 'Room_' + room_number + '.json', data=json.dumps(data))
