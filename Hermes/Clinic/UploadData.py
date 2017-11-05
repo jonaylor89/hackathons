@@ -24,7 +24,7 @@ data = {'time':time_hhmmss,
         'sex': 'Male',
         'temperature': read_temperature(),
         'SpO2': 0.05 * math.sin(now()) + 0.97,
-        'HR': random.choice([90, 91, 92]),
+        'HR': random.randrange(70, 90),
         'systolic BP': random.choice([90, 100, 95, 91, 150, 110, 96, 93, 98, 100, 89])}
 
 result = requests.post(firebase_url + 'Room_' + room_number + '.json', data=json.dumps(data))
