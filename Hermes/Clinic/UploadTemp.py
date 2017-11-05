@@ -16,6 +16,7 @@ time_hhmmss = time.strftime('%H:%M:%S')
 data = {'time':time_hhmmss,
         'room_number': patient_number,
         'age': int(Age),
+        'sex': 'Male',
         'temperature': read_temperature(),
         'SpO2': 0.95,
         'HR': 90,
