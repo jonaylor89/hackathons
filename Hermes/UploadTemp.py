@@ -1,23 +1,21 @@
 
-from urllib.request import urlopen
-from urllib.request import Request
-import json
 import calendar
 import time
+
+import time
+import requests
+import json
 
 from temp_read import read_temperature
 import config
 
-secret = config.secret()
-url = 'https://healthhacks2017-ec6bf.firebaseio.com/users' + secret
+from firebase import firebase
 
-postdata = {
-    'date' : str(calendar.timegm(time.gmtime())).encode('utf-8'),
-    'temp' : str(read_temperature().encode('utf-8'))
-}
 
-req = Request(url)
-req.add_header('Content-Type', 'application/json')
-data = json.dumps(postdata)
+firebase_url = 'https://healthhacks2017-ec6bf.firebaseio.com/'
 
-response = urlopen(req, data)
+time_hhmmss = time.strftime('%H:%M:%S')
+
+ data = {'time':time_hhmmss,'data': read_temperature()}
+
+ result = requests.post(firebase_url + '/temperature.json', data=json.dumps(data))
