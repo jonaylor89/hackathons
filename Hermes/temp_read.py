@@ -22,7 +22,7 @@ def read_temperature():
         temperature_start_index_int = wholefilestring.find('t=')
         if temperature_start_index_int != -1:
             currenttempstring = wholefilestring[temperature_start_index_int + 2:]
-            return to_fahr(int(currenttempstring.strip()))
+            return to_fahr(int(currenttempstring.strip()) / 1000)
 
 
 if __name__ == "__main__":
