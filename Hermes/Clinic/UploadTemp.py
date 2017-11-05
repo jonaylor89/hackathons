@@ -6,20 +6,19 @@ import json
 
 from temp_read import read_temperature
 
-patient_number = sys.argv[1]
+room_number = sys.argv[1]
 Age = sys.argv[2]
 
-firebase_url = 'https://healthhacks2017-ec6bf.firebaseio.com/'
+firebase_url = 'https://healthhacks2017-ec6bf.firebaseio.com/Clinic/'
 
 time_hhmmss = time.strftime('%H:%M:%S')
 
-data = {patient_number:
-        {'time':time_hhmmss,
+data = {'time':time_hhmmss,
         'age': int(Age),
         'sex': 'Male',
         'temperature': read_temperature(),
         'SpO2': 0.95,
         'HR': 90,
-        'systolic BP': 90}}
+        'systolic BP': 90}
 
-result = requests.post(firebase_url + '/Clinic.json', data=json.dumps(data))
+result = requests.post(firebase_url + room_number + '.json', data=json.dumps(data))
