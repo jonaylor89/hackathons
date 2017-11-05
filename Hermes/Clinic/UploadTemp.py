@@ -21,4 +21,4 @@ data = {'time':time_hhmmss,
         'HR': 90,
         'systolic BP': 90}
 
-result = requests.post(firebase_url + room_number + '.json', data=json.dumps(data))
+result = requests.post(firebase_url + 'Room_' + room_number + '.json', data=json.dumps(data))
