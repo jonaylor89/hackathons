@@ -40,7 +40,7 @@ def read_temp():
 
 ## Please add some authentication or a secret here!
 secret = config.secret()
-url = 'https://healthhacks2017-ec6bf.firebaseio.com/users' + secret
+url = 'https://healthhacks2017-ec6bf.firebaseio.com/reading.json'
 
 
 postdata = {
