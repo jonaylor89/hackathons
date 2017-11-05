@@ -1,14 +1,9 @@
 
-import calendar
-import time
-
 import time
 import requests
 import json
 
 from temp_read import read_temperature
-
-from firebase import firebase
 
 
 firebase_url = 'https://healthhacks2017-ec6bf.firebaseio.com/'
