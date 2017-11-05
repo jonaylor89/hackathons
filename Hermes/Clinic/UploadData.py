@@ -21,7 +21,7 @@ data = {'time':time_hhmmss,
         'age': int(Age),
         'sex': 'Male',
         'temperature': read_temperature(),
-        'SpO2': 0.05 * random.randrange(-100, 100) + 0.97,
+        'SpO2': 0.05 * random.randrange(-100, 100) + 97,
         'HR': random.randrange(70, 90),
         'systolic BP': random.randrange(30, 110)}
 
