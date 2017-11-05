@@ -13,13 +13,14 @@ firebase_url = 'https://healthhacks2017-ec6bf.firebaseio.com/'
 
 time_hhmmss = time.strftime('%H:%M:%S')
 
-data = {'time':time_hhmmss,
-        'room_number': patient_number,
+data = {patient_number:
+        {'time':time_hhmmss,
+        'room_number': ,
         'age': int(Age),
         'sex': 'Male',
         'temperature': read_temperature(),
         'SpO2': 0.95,
         'HR': 90,
-        'systolic BP': 90}
+        'systolic BP': 90}}
 
 result = requests.post(firebase_url + '/temperature.json', data=json.dumps(data))
