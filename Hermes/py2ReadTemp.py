@@ -6,6 +6,8 @@ import time
 import urllib2
 import json
 
+import config
+
 #initialize
 os.system('modprobe w1-gpio')
 os.system('modprobe w1-therm')
@@ -37,8 +39,8 @@ def read_temp():
         return temp_f
 
 ## Please add some authentication or a secret here!
-
-url = 'https://healthhacks2017-ec6bf.firebaseio.com/'
+secret = config.secret()
+url = 'https://healthhacks2017-ec6bf.firebaseio.com/users' + secret
 
 
 postdata = {

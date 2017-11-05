@@ -6,8 +6,10 @@ import calendar
 import time
 
 from temp_read import read_temperature
+import config
 
-url = 'https://healthhacks2017-ec6bf.firebaseio.com/'
+secret = config.secret()
+url = 'https://healthhacks2017-ec6bf.firebaseio.com/users' + secret
 
 postdata = {
     'date' : str(calendar.timegm(time.gmtime())).encode('utf-8'),
