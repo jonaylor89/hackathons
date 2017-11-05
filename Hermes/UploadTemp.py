@@ -7,7 +7,6 @@ import requests
 import json
 
 from temp_read import read_temperature
-import config
 
 from firebase import firebase
 
