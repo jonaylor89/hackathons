@@ -15,7 +15,6 @@ time_hhmmss = time.strftime('%H:%M:%S')
 
 data = {patient_number:
         {'time':time_hhmmss,
-        'room_number': ,
         'age': int(Age),
         'sex': 'Male',
         'temperature': read_temperature(),
