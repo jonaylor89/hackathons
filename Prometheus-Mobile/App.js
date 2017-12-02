@@ -1,12 +1,31 @@
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
-import { InitScreen } from './Screens';
+import { View, Text } from 'react-native';
+import { InitScreen, SpeakingScreen } from './Screens';
 
 export default class App extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      index: 0
+    };
+  }
+
+  nextView() {
+    this.setState({
+      index: this.state.index + 1
+    });
+  }
+
+  getView(index) {
+    switch (index) {
+      case 0: return (<InitScreen onStart={() => this.nextView()} />);
+      case 1: return (<SpeakingScreen />);
+      default: return getView(0);
+    }
+  }
+
   render() {
-    return (
-        <InitScreen/>
-    );
+    return this.getView(this.state.index || 0)
   }
 }

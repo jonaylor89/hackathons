@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button, Image } from 'react-native';
+import { Text, View, Button, Image } from 'react-native';
+import styles from '../Styles';
 
 export default class InitScreen extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.InitStyles}>
 
         <Image
-        style = {{width: 100, height: 100}}
-        source={require('../images/Octo.png')}
+          style = {{width: 100, height: 100}}
+          source={require('../images/Octo.png')}
         />
 
         <Text style={{width: 78, color: 'white'}}>Prometheus</Text>
 
         <Button
-          onPress={ () => {console.log('Transition to the next screen')}}
+          onPress={() => this.props.onStart()}
           title="Start"
           accessibilityLabel="Continue into Application"
         />
@@ -28,12 +29,3 @@ export default class InitScreen extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'black'
-  }
-});
