@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   SpeechStyles: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'black'
+    backgroundColor: 'white'
   }
 });
 

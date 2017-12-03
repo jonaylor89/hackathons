@@ -21,7 +21,7 @@ export default class App extends Component {
     switch (index) {
       case 0: return (<InitScreen onStart={() => this.nextView()} />);
       case 1: return (<SpeakingScreen />);
-      default: return getView(0);
+      default: return this.getView(0);
     }
   }
 
