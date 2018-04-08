@@ -1,5 +1,6 @@
 import serial
 import time
+from FileShitFuck import get_head as val
 
 port = '/dev/serial0'
 baud = 115200
@@ -18,12 +19,12 @@ def roombaNumberFormat(number):
 
 	if(length == 1):
 		lowByte = int(hexlist[0],16)
-	else if(length == 2):
+	elif(length == 2):
 		lowByte = int(hexlist[0]+hexlist[1],16)
-	else if(length == 3):
+	elif(length == 3):
 		highByte = int(hexlist[0],16)
 		lowByte = int(hexlist[1]+hexlist[2],16)
-	else if(length == 4):
+	elif(length == 4):
 		highByte = int(hexlist[0]+hexlist[1],16)
 		lowByte = int(hexlist[2]+hexlist[3],16)
 		
@@ -41,19 +42,21 @@ def move(velocity, radius):
 	sendToRoomba([137,v[0],v[1],r[0],r[1]])
 
 
-def getJointToTrack()
+def getJointToTrack():
+    return val()
     
-def onTargetAcquired()
+def onTargetAcquired():
+    initialize()
     move(0,0)
     j = getJointToTrack()
-    while(abs(j.getX()) > 150)
-        moveToTarget(j.getX(). j.getZ(), j.getXPixel())
+    while(abs(j[0]) > 150):
+        moveToTarget(j[0]. j[1], j[2])
         j = getJointToTrack()
-    fire()
+    #fire()
 
-def moveToTarget(x, z, zPixel)
+def moveToTarget(x, z, zPixel):
     direction = 40
-    if(xPixel > 320)
+    if(xPixel > 320):
         direction *= -1
     move(direction, 1)
     theta = float(math.atan(x, z)*180.0/math.pi)

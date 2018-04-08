@@ -76,11 +76,19 @@ on_track_joints (GObject      *obj,
 	if(list != NULL)
 	{
 		head = skeltrack_joint_list_get_joint(list,SKELTRACK_JOINT_ID_HEAD);
-		if(head != NULL)setHead(head);
+
 		FILE *headdat;
 		headdat = fopen("/home/pi/Bitcamp2018/Kinect2RPi/head.dat", "w+");
-		printf("%i,%i,%i\n",THEhead.x, THEhead.z,THEhead.pixelx);
-		fprintf(headdat, "%i,%i,%i",THEhead.x, THEhead.z,THEhead.pixelx);
+		if(head != NULL)
+		{
+			setHead(head);
+			printf("%i,%i,%i\n",THEhead.x, THEhead.z,THEhead.pixelx);
+			fprintf(headdat, "%i,%i,%i",THEhead.x, THEhead.z,THEhead.pixelx);
+		}
+		else
+		{
+			fprintf(headdat, "%i,%i,%i",0,0,0);
+		}
 		fclose(headdat);
 	}
 	skeltrack_joint_list_free (list);

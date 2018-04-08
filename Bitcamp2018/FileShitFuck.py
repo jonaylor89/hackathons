@@ -1,7 +1,7 @@
 
 def get_head():
     values = [0, 0, 0]
-    with open('head.dat', 'r') as f:
+    with open('Kinect2RPi/head.dat', 'r') as f:
         line = f.readline()
         if line != '':
             values = line.split(',')
