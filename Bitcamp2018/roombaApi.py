@@ -141,6 +141,8 @@ def onTargetAcquired():
     while(abs(j[0]) > 150):
         moveToTarget(j[0]. j[1], j[2])
         j = getJointToTrack()
+    if(j[5] >= j[1]-100 && j[9] >= j[1]-100):
+        return
     playDeathMarch()
     nerf.fire()
 

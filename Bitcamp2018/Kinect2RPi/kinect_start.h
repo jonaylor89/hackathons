@@ -4,6 +4,7 @@
 
 typedef struct joint_{
   int x;
+  int y;
   int z;
   int pixelx;
 } joint;

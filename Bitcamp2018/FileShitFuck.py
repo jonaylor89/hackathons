@@ -1,6 +1,6 @@
 
 def get_head():
-    values = [0, 0, 0]
+    values = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]
     with open('Kinect2RPi/head.dat', 'r') as f:
         line = f.readline()
         if line != '':

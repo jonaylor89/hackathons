@@ -19,7 +19,9 @@ static guint THRESHOLD_BEGIN = 500;
 /* Adjust this value to increase of decrease
    the threshold */
 static guint THRESHOLD_END   = 1500; 
-joint THEhead = {-1,-1,-1};     			
+joint THEhead = {-1,-1,-1,-1};
+joint THEright = {-1,-1,-1,-1};
+joint THEleft = {-1,-1,-1,-1};
 typedef struct
 {
 	guint16 *reduced_buffer;
@@ -32,8 +34,23 @@ typedef struct
 static void setHead (SkeltrackJoint *head)
 {
 	THEhead.x=head->x;
+	THEhead.y=head->y;
 	THEhead.z=head->z;
 	THEhead.pixelx=head->screen_x;
+}
+static void setLeft (SkeltrackJoint *left)
+{
+	THEleft.x=left->x;
+	THEleft.z=left->z;
+	THEleft.y=left->y;
+	THEleft.pixelx=left->screen_x;
+}
+static void setRight (SkeltrackJoint *right)
+{
+	THEright.x=right->x;
+	THEright.y=right->y;
+	THEright.z=right->z;
+	THEright.pixelx=right->screen_x;
 }
 
 	static void
@@ -53,7 +70,7 @@ on_track_joints (GObject      *obj,
 	height = buffer_info->height;
 	reduced_width = buffer_info->reduced_width;
 	reduced_height = buffer_info->reduced_height;
-	SkeltrackJoint *head;
+	SkeltrackJoint *head, *left, *right;
 	list = skeltrack_skeleton_track_joints_finish (skeleton,
 			res,
 			&error);
@@ -76,18 +93,24 @@ on_track_joints (GObject      *obj,
 	if(list != NULL)
 	{
 		head = skeltrack_joint_list_get_joint(list,SKELTRACK_JOINT_ID_HEAD);
-
+		left = skeltrack_joint_list_get_joint(list,SKELTRACK_JOINT_ID_LEFT_HAND);
+		right = skeltrack_joint_list_get_joint(list,SKELTRACK_JOINT_ID_RIGHT_HAND);
 		FILE *headdat;
 		headdat = fopen("/home/pi/Bitcamp2018/Kinect2RPi/head.dat", "w+");
 		if(head != NULL)
 		{
 			setHead(head);
-			printf("%i,%i,%i\n",THEhead.x, THEhead.z,THEhead.pixelx);
-			fprintf(headdat, "%i,%i,%i",THEhead.x, THEhead.z,THEhead.pixelx);
+			setLeft(left);
+			setRight(right);
+			printf("%i,%i,%i\n",THEhead.x,THEhead.z,THEhead.pixelx);
+			fprintf(headdat, "%i,%i,%i,%i,",THEhead.x,THEhead.y,THEhead.z,THEhead.pixelx);
+			fprintf(headdat, "%i,%i,%i,%i,",THEleft.x,THEleft.y,THEleft.z,THEleft.pixelx);
+			fprintf(headdat, "%i,%i,%i,%i",THEright.x,THEright.y,THEright.z,THEright.pixelx);
+
 		}
 		else
 		{
-			fprintf(headdat, "%i,%i,%i",0,0,0);
+			fprintf(headdat, "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1");
 		}
 		fclose(headdat);
 	}
