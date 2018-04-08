@@ -8,9 +8,11 @@ def get_head():
 
     return values
 
+def run():
+    while True:
+        yield get_head()
+
 
 if __name__ == '__main__':
-    from time import sleep
     while True:
         print(get_head())
-        sleep(0.1)
