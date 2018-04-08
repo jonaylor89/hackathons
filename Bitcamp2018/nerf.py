@@ -23,5 +23,7 @@ def fire():
 
 def prepareToFire():
     gpio.output(relay,False)
+def shutdown():
+    gpio.cleanup()
 
 initialize()
