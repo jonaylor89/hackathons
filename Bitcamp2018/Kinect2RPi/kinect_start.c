@@ -73,10 +73,10 @@ on_track_joints (GObject      *obj,
 	g_slice_free1 (reduced_width * reduced_height * sizeof (guint16), reduced);
 
 	g_slice_free (BufferInfo, buffer_info);
-	head = skeltrack_joint_list_get_joint(list,SKELTRACK_JOINT_ID_HEAD);
-	if(head != NULL)
+	if(list != NULL)
 	{
-		setHead(head);
+		head = skeltrack_joint_list_get_joint(list,SKELTRACK_JOINT_ID_HEAD);
+		if(head != NULL)setHead(head);
 		FILE *headdat;
 		headdat = fopen("/home/pi/Bitcamp2018/Kinect2RPi/head.dat", "w+");
 		printf("%i,%i,%i\n",THEhead.x, THEhead.z,THEhead.pixelx);
@@ -334,16 +334,16 @@ on_new_kinect_device (GObject      *obj,
 
 	skeleton = skeltrack_skeleton_new ();
 	g_object_get (skeleton, "smoothing-factor", &SMOOTHING_FACTOR, NULL);
-	
-  	g_signal_connect (kinect,
-                    "depth-frame",
-                    G_CALLBACK (on_depth_frame),
-                    NULL);
 
 	g_signal_connect (kinect,
-                    "video-frame",
-                    G_CALLBACK (on_video_frame),
-                    NULL);
+			"depth-frame",
+			G_CALLBACK (on_depth_frame),
+			NULL);
+
+	g_signal_connect (kinect,
+			"video-frame",
+			G_CALLBACK (on_video_frame),
+			NULL);
 	gfreenect_device_set_tilt_angle (kinect, 0, NULL, NULL, NULL);
 
 	gfreenect_device_start_depth_stream (kinect,
@@ -367,7 +367,7 @@ quit (gint signale)
 main (int argc, char *argv[])
 {
 	if (clutter_init (&argc, &argv) != CLUTTER_INIT_SUCCESS)
-    		return -1;
+		return -1;
 	gfreenect_device_new (0,
 			GFREENECT_SUBDEVICE_CAMERA,
 			NULL,

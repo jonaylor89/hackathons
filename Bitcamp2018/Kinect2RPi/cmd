@@ -1,1 +1,1 @@
-gcc -I/usr/include/json-glib-1.0 -I/usr/include/atk-1.0 -I/usr/include/pango-1.0 -I/usr/include/cogl -I/usr/include/glib-2.0 -I/usr/include/cairo -I/usr/include/clutter-1.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include -I/home/pi/skeltrack/skeltrack/ -I/usr/local/include/gfreenect-0.1 -lm kinect_start.c -o kinect_start.so
+gcc $(pkg-config --cflags glib-2.0 clutter-1.0) -I /home/pi/GFreenect/gfreenect/ -I /home/pi/skeletrak-base/skeltrack/ kinect_start.c $(pkg-config --libs glib-2.0 skeltrack-0.1 gfreenect-0.1 clutter-1.0)
