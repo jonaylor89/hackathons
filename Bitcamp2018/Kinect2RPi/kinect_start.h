@@ -2,6 +2,11 @@
 #ifndef KINECT_START_H
 #define KINECT_START_H
 
-int start (int argc, char *argv[]);
+typedef struct joint_{
+  int x;
+  int z;
+  int pixelx;
+}joint;
 
+joint getHead();
 #endif

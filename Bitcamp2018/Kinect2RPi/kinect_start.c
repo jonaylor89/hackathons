@@ -15,7 +15,8 @@ static gfloat SMOOTHING_FACTOR = .0;
 static guint THRESHOLD_BEGIN = 500;
 /* Adjust this value to increase of decrease
    the threshold */
-static guint THRESHOLD_END   = 1500;
+static guint THRESHOLD_END   = 1500; 
+static joint THEhead;
 
 typedef struct
 {
@@ -25,6 +26,7 @@ typedef struct
   gint reduced_width;
   gint reduced_height;
 } BufferInfo;
+
 
 static void
 on_track_joints (GObject      *obj,
@@ -47,7 +49,7 @@ on_track_joints (GObject      *obj,
   list = skeltrack_skeleton_track_joints_finish (skeleton,
                                                  res,
                                                  &error);
-
+  
   if (error == NULL)
     {
       if (SHOW_SKELETON)
@@ -62,9 +64,23 @@ on_track_joints (GObject      *obj,
 
   g_slice_free1 (reduced_width * reduced_height * sizeof (guint16), reduced);
 
-  g_slice_free (BufferInfo, buffer_info);
-
+  g_slice_free (BufferInfo, buffer_info)
+  SkeltrackJoint head = skeltrack_joint_list_get_joint(list,SKELTRACK_JOINT_ID_HEAD)
+  if(head != NULL)
+  {
+    setHead(head)	
+  }
   skeltrack_joint_list_free (list);
+}
+
+static void setHead (SkeltrackJoint head)
+{
+  THEhead{(int)head -> x,(int) head -> z,(int) head -> screen_x};     			
+}
+
+joint getHead()
+{
+  return THEhead;
 }
 
 static void
