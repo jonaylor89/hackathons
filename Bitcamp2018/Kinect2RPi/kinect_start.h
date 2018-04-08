@@ -6,8 +6,9 @@ typedef struct joint_{
   int x;
   int z;
   int pixelx;
-}joint;
-int get_joint (int joint);
+} joint;
+
+int get_joint (int j);
 
 joint getHead();
 #endif

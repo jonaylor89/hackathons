@@ -4,7 +4,7 @@ from time import sleep
 cdef extern from 'kinect_start.h':
     ctypedef joint_ joint
 
-    joint getHead()
+    cdef joint getHead()
 
     cdef struct joint_:
         int x
