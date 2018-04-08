@@ -1,0 +1,1 @@
+gcc --shared -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include -I/home/pi/skeltrack/skeltrack/ -I/usr/local/include/gfreenect-0.1 -lm kinect_start.c -o kinect_start.so
