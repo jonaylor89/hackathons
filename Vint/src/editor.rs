@@ -1,9 +1,10 @@
 
 use std::time;
-use std::io::{ File, BufReader };
-use std::fs::OpenOptions;
+use std::io::{self, stdout, stdin, File, BufReader};
+use termion::{self, color, style}
+use termion::event::{Key, Event}
 
-enum editor_key {
+enum EditorKey {
     BACKSPACE = 127,
     ARROW_LEFT = 1000,
     ARROW_RIGHT,
@@ -16,7 +17,7 @@ enum editor_key {
     PAGE_DOWN,
 };
 
-struct editor_row {
+struct EditorRow {
 
 }
 
@@ -75,8 +76,46 @@ impl Editor {
                 self.insert_row(line, linelen);
             }
         }
+
+        self.dirty = 0;
     }
 
-    self.dirty = 0;
+    pub fn refresh_screen(self) {
+    
+        self.scroll();
+
+        let buf = String::new();
+
+        buf.push_str("\x1b[?25l");
+        buf.push_str("\x1b[H");
+
+        self.draw_rows();
+        self.draw_status_bar();
+        self.draw_message_bar();
+
+        buf.push_str(format!("\x1b[{};{}H", (self.cy - self.rowoff) + 1,
+                                        (self.rw - self.coloff) + 1));
+        buf.push_str("\x1b[?25h");
+
+        stdout().write(buf.as_bytes());
+    }
+
+    pub fn process_keypress(self) {
+        let stdin = stdin();
+
+        
+    }
+
+    fn scroll(self) {
+    
+    }
+
+    fn draw_rows(self) {
+    
+    }
+
+    fn draw_status_bar(self) {
+    
+    }
 }
 
