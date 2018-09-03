@@ -140,7 +140,63 @@ impl Editor {
     
     }
 
-    fn insert_char(self, c) {
+    fn insert_char(self, c: char) {
+    
+    }
+
+    fn update_syntax(self, row: &mut erow) {
+    
+    }
+
+    fn syntax_to_color(hl: i32) {
+    
+    }
+
+    fn row_cx_to_rx(row: &erow, cx: i32) -> i32{
+    
+    }
+    
+    fn row_rx_to_cx(row: &row, rx: i32) -> i32{
+    
+    }
+
+    fn update_row(self) {
+    
+    }
+
+    fn insert_row(at: i32, s: str) {
+    
+    }
+
+    fn row_insert_char(row: &mut erow, at: i32, c: i32) {
+    
+    }
+
+    fn row_delete_char(row: &mut erow, at: i32m) {
+    
+    }
+
+    fn insert_newline(self) {
+    
+    }
+
+    fn row_append_string(row: &mut erow, s: str) {
+    
+    }
+
+    fn rows_to_string(buflen: i32) {
+    
+    }
+
+    fn find_callback(query: str, kei: i32) {
+    
+    }
+
+    fn draw_message_bar(s: String) {
+    
+    }
+
+    fn prompt(prompt: &str, fn callback(&str, i32)) {
     
     }
 }
