@@ -25,7 +25,7 @@ struct Editor {
 };
 
 impl Editor {
-    pub fn new() -> Editor {
+    pub fn init() -> Editor {
         let mut e = Editor {
             cx = 0,
             cy = 0,
@@ -108,17 +108,17 @@ impl Editor {
                     self.delete_char();
                 },
 
-                Event::Key(Key::Left) => return cursor::Left(),
-                Event::Key(Key::Right) => return cursor::Right(),
-                Event::Key(Key::Up) => return cursor::Up();
-                Event::Key(Key::Down) => return cursor::Down(),
+                Event::Key(Key::Left) => cursor::Left(),
+                Event::Key(Key::Right) => cursor::Right(),
+                Event::Key(Key::Up) => cursor::Up();
+                Event::Key(Key::Down) => cursor::Down(),
 
                 Event::Key(Key::PageUp) |
                 Event::Key(Key::PageDown) => {
                      
                 },
 
-                _  => self.insert_char();
+                _  => self.insert_char(evt);
 
             }
         }
@@ -133,6 +133,14 @@ impl Editor {
     }
 
     fn draw_status_bar(self) {
+    
+    }
+
+    fn delete_char(self) {
+    
+    }
+
+    fn insert_char(self, c) {
     
     }
 }

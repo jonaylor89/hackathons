@@ -1,19 +1,14 @@
 
 extern crate termion;
 
-use std::env;
-use std::io::{ Write, stdout };
-use termion::raw::IntoRawMode;
+mod editor
 
-mod editor;
+use std::env;
 
 fn main() {
 
     let args = env::args().collect();
-    let mut stdout = stdout().into_raw_mode().unwrap();
-    stdout.flush().unwrap();
-
-    let editor = editor::Editor::new();
+    let editor = editor::Editor::init();
 
     if args.length >= 2 {
         editor.open(args);
@@ -27,5 +22,4 @@ fn main() {
         editor.refresh_screen();
         editor.process_keypress();
     }
-
 }
