@@ -1,0 +1,117 @@
+
+#include "config.h"
+
+#define VERSION_NUM "0.0.1"
+
+#define CTRL_KEY(k) ((k) & 0x1f)
+#define ABUF_INIT {NULL, 0}
+
+#define HLDB_ENTRIES (sizeof(HLDB) / sizeof(HLDB[0]))
+
+enum editorKey {
+    BACKSPACE = 127,
+    ARROW_LEFT = 1000,
+    ARROW_RIGHT,
+    ARROW_UP,
+    ARROW_DOWN,
+    DEL_KEY,
+    HOME_KEY,
+    END_KEY,
+    PAGE_UP,
+    PAGE_DOWN
+};
+
+enum editorHighlight {
+    HL_NORMAL = 0,
+    HL_COMMENT,
+    HL_MLCOMMENT,
+    HL_KEYWORD1,
+    HL_KEYWORD2,
+    HL_STRING,
+    HL_NUMBER,
+    HL_MATCH
+};
+
+struct editorSyntax {
+    char *filetype;
+    char **filematch;
+    char **keywords;
+    char *singleline_comment_start;
+    char *multiline_comment_start;
+    char *multiline_comment_end;
+    int flags;
+};
+
+typedef struct erow {
+    int idx;
+    int size;
+    int rsize;
+    char *chars;
+    char *render;
+    unsigned char *hl;
+    int hl_open_comment;
+} erow;
+
+struct editorConfig {
+    int cx, cy;
+    int rx;
+    int rowoff;
+    int coloff;
+    int screenrows;
+    int screencols;
+    int numrows;
+    erow *row; 
+    int dirty;
+    char *filename;
+    char statusmsg[80];
+    time_t statusmsg_time;
+    struct editorSyntax *syntax;
+    struct termios orig_termios;
+};
+
+struct abuf {
+    char *b;
+    int len;
+};
+
+void die(const char *);
+void disableRawMode();
+void enableRawMode();
+int editorReadKay();
+int getCursorPosition(int *, int *);
+int getWindowSize(int *, int *);
+int is_seperator(int);
+void editorUpdateSyntax(erow *);
+int editorSyntaxToColor(int);
+void editorSelectSyntaxHighlight();
+int editorRowCxToRx(erow *, int);
+int editorRowRxToCx(erow *, int);
+void editorUpdateRow(erow *);
+void editorInsertRow(int, char *, size_t);
+void editorFreeRow(erow *);
+void editorDelRow(int);
+void editorRowInsertChar(erow *, int, int);
+void editorInsertChar(int);
+void editorRowDelChar(erow *, int);
+void editorInsertNewLine();
+void editorRowAppendString(erow *, char *, size_t);
+void editorDelChar();
+char *editorRowstoString(int *);
+void editorOpen(char *);
+void editorSave();
+void editorFindCallback(char *, int);
+void editorFind();
+void abAppend(struct abuf *, const char *, int);
+void abFree(struct abuf *);
+void editorScroll();
+void editorDrawRows(struct abuf *);
+void editorDrawStatuesBar(struct abuf *);
+void editorDrawMessageBar(struct abuf *);
+void editorRefreshScreen();
+void editorSetStatusMessage(const char *fmt, ...);
+char *editorPrompt(char *, void (*callback)(char *, int));
+void editorMoveCursor(int);
+void editorProcessKeypress();
+void initEditor();
+
+
