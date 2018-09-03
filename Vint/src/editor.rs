@@ -1,7 +1,7 @@
 
 use std::time;
-use std::io::{self, stdout, stdin, File, BufReader};
-use termion::{self, color, style}
+use std::io::{self, stdout, stdin, File, BufReader}; 
+use termion::{self, color, style, cursor}
 use termion::event::{Key, Event};
 
 struct EditorRow {
@@ -20,7 +20,7 @@ struct Editor {
     row: Option<erow>,
     dirty: i32,
     filename: &str,
-    statusmsg: &str,
+    statusmsg: Option<&str>,
     statusmsg_time: Option<&time::Instant>,
 };
 
@@ -71,25 +71,57 @@ impl Editor {
         self.scroll();
 
         let buf = String::new();
+        let stdout = stdout().into_raw_mode().unwrap();
 
-        buf.push_str("\x1b[?25l");
-        buf.push_str("\x1b[H");
+        buf.push_str(cursor::Hide());
+        buf.push_str(cursor::Goto(1, 1));
 
         self.draw_rows();
         self.draw_status_bar();
         self.draw_message_bar();
 
-        buf.push_str(format!("\x1b[{};{}H", (self.cy - self.rowoff) + 1,
-                                        (self.rw - self.coloff) + 1));
-        buf.push_str("\x1b[?25h");
+        buf.push_str(cursor::Goto((self.cy - self.rowoff) + 1, (self.rw - self.coloff) + 1));
+        buf.push_str(cursor::Show());
 
-        stdout().write(buf.as_bytes());
+        stdout.write(buf.as_bytes());
     }
 
     pub fn process_keypress(self) {
         let stdin = stdin();
 
-        
+        for c in stdin.events() {
+            let evt = c.unwrap();
+            match evt {
+                Event::Key(Key::Ctrl('s')) => self.save(),
+                Event::Key(Key::Ctrl('f')) => self.find(),
+
+                Event::Key(Key::Ctrl('l')) => break, 
+                Event::Key(Key::Esc) => break,
+
+                Event::Key(Key::Ctrl('h')) |
+                Event::Key(Key::Backspace) |
+                Event::Key(Key::Delete) => {
+                    if evt == Event::Key(Key::Delete) {
+                        cursor::Right();
+                    }
+
+                    self.delete_char();
+                },
+
+                Event::Key(Key::Left) => return cursor::Left(),
+                Event::Key(Key::Right) => return cursor::Right(),
+                Event::Key(Key::Up) => return cursor::Up();
+                Event::Key(Key::Down) => return cursor::Down(),
+
+                Event::Key(Key::PageUp) |
+                Event::Key(Key::PageDown) => {
+                     
+                },
+
+                _  => self.insert_char();
+
+            }
+        }
     }
 
     fn scroll(self) {
