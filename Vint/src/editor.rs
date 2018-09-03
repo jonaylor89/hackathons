@@ -2,20 +2,7 @@
 use std::time;
 use std::io::{self, stdout, stdin, File, BufReader};
 use termion::{self, color, style}
-use termion::event::{Key, Event}
-
-enum EditorKey {
-    BACKSPACE = 127,
-    ARROW_LEFT = 1000,
-    ARROW_RIGHT,
-    ARROW_UP,
-    ARROW_DOWN,
-    DEL_KEY,
-    HOME_KEY,
-    END_KEY,
-    PAGE_UP,
-    PAGE_DOWN,
-};
+use termion::event::{Key, Event};
 
 struct EditorRow {
 
@@ -30,12 +17,11 @@ struct Editor {
     screenrows: i32,
     screencols: i32,
     numrows: i32,
-    row: &erow,
+    row: Option<erow>,
     dirty: i32,
     filename: &str,
     statusmsg: &str,
-    statusmsg_time: &time::Instant,
-
+    statusmsg_time: Option<&time::Instant>,
 };
 
 impl Editor {
@@ -49,7 +35,7 @@ impl Editor {
             numrows = 0,
             row = None,
             dirty = 0,
-            filename = None,
+            filename = String::new(),
             statusmsg = String::new(),
             statusmsg_time = time::Instant::now(),
         };

@@ -11,6 +11,7 @@ fn main() {
 
     let args = env::args().collect();
     let mut stdout = stdout().into_raw_mode().unwrap();
+    stdout.flush().unwrap();
 
     let editor = editor::Editor::new();
 
