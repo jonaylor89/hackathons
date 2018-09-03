@@ -4,8 +4,12 @@ use std::io::{self, stdout, stdin, File, BufReader};
 use termion::{self, color, style, cursor}
 use termion::event::{Key, Event};
 
-struct EditorRow {
-
+struct Row {
+    idx: i32,
+    size: i32,
+    rsize: i32,
+    chars: Option<&Vec<char>>,
+    render: Option<&Vec<char>>,
 }
 
 struct Editor {
@@ -23,6 +27,50 @@ struct Editor {
     statusmsg: Option<&str>,
     statusmsg_time: Option<&time::Instant>,
 };
+
+impl Row {
+
+    fn update(self) {
+    
+    }
+
+    fn insert_char(self, at: i32, c: char) {
+    
+    }
+
+    fn delete_char(self, s: str) {
+    
+    }
+
+    fn append_str(self, at)
+
+    fn cx_to_rx(self, cx: i32) -> i32{
+    
+        let rx = 0;
+
+        for x in 0..cx {
+            if self.chars[x] == '\t' {
+                rx += (TAB_STOP - 1) - (rx % TAB_STOP)
+            } 
+            rx += 1;
+        }
+
+        return rx;
+    }
+    
+    fn rx_to_cx(self, rx: i32) {
+        
+        let cur_rx = 0;
+
+        for cx in 0..self.size {
+            if self.chars[cx] == '\t' {
+                cur_rx += (TAB_STOP - 1) - (cur_rx % TAB_STOP);
+            } 
+        }
+
+        return cx;
+    }
+}
 
 impl Editor {
     pub fn init() -> Editor {
@@ -124,8 +172,16 @@ impl Editor {
         }
     }
 
+    fn save(self) {
+    
+    }
+
     fn scroll(self) {
     
+    }
+
+    fn move_cursor(self, key: i32) {
+         
     }
 
     fn draw_rows(self) {
@@ -152,27 +208,11 @@ impl Editor {
     
     }
 
-    fn row_cx_to_rx(row: &erow, cx: i32) -> i32{
-    
-    }
-    
-    fn row_rx_to_cx(row: &row, rx: i32) -> i32{
-    
-    }
-
     fn update_row(self) {
     
     }
 
     fn insert_row(at: i32, s: str) {
-    
-    }
-
-    fn row_insert_char(row: &mut erow, at: i32, c: i32) {
-    
-    }
-
-    fn row_delete_char(row: &mut erow, at: i32m) {
     
     }
 
