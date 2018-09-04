@@ -162,31 +162,6 @@ void editorSelectSyntaxHighlight()
     }
 }
 
-void editorUpdateRow(erow *row)
-{
-    int tabs = 0;
-    for (int i = 0; i < row->size; i++) {
-        if (row->chars[i] == '\t') tabs++;
-    }
-    free(row->render);
-    row->render = malloc(row->size + tabs*(TAB_STOP-1) + 1);
-
-    int idx = 0;
-    for (int j = 0; j < row->size; j++) {
-        if (row->chars[j] == '\t') {
-            row->render[idx++] = ' ';
-            while (idx % TAB_STOP != 0) row->render[idx++] = ' ';
-        } else {
-            row->render[idx++] = row->chars[j]; 
-        }
-    }
-
-    row->render[idx] = '\0';
-    row->rsize = idx;
-
-    editorUpdateSyntax(row);
-}
-
 void editorInsertRow(int at, char *s, size_t len)
 {
     if (at < 0 || at > E.numrows) return;
@@ -233,15 +208,6 @@ void editorRowInsertChar(erow *row, int at, int c)
     E.dirty++;
 }
 
-void editorInsertChar(int c)
-{
-    if (E.cy == E.numrows) {
-        editorInsertRow(E.numrows, "", 0);
-    }
-    editorRowInsertChar(&E.row[E.cy], E.cx, c);
-    E.cx++;
-}
-
 void editorRowDelChar(erow *row, int at)
 {
     if (at < 0 || at >= row->size) return;
@@ -275,76 +241,6 @@ void editorRowAppendString(erow *row, char *s, size_t len)
     row->chars[row->size] = '\0';
     editorUpdateRow(row);
     E.dirty++;
-}
-
-void editorDelChar()
-{
-    if (E.cy == E.numrows) return;
-    if (E.cx == 0 && E.cy == 0) return;
-
-    erow *row = &E.row[E.cy];
-    if (E.cx > 0) {
-        editorRowDelChar(row, E.cx - 1);
-        E.cx--;
-    } else {
-        E.cx = E.row[E.cy - 1].size;
-        editorRowAppendString(&E.row[E.cy - 1], row->chars, row->size);
-        editorDelRow(E.cy);
-        E.cy--;
-    }
-}
-
-char *editorRowsToString(int *buflen)
-{
-    int totlen = 0;
-    for (int i = 0; i < E.numrows; i++) {
-        totlen += E.row[i].size + 1;
-    }
-    *buflen = totlen;
-
-    char *buf = malloc(totlen);
-    char *p = buf;
-    for (int j = 0; j < E.numrows; j++) {
-        memcpy(p, E.row[j].chars, E.row[j].size);
-        p += E.row[j].size;
-        *p = '\n';
-        p++;
-    }
-
-    return buf;
-}
-
-void editorSave()
-{
-    if (E.filename == NULL) {
-        E.filename = editorPrompt("Save as: %s", NULL);
-        if (E.filename == NULL) {
-            editorSetStatusMessage("Save aborted");
-            return;
-        }
-        editorSelectSyntaxHighlight();
-    }
-
-    int len;
-    char *buf = editorRowsToString(&len);
-
-    int fd = open(E.filename, O_RDWR | O_CREAT, 0644);
-    if (fd != -1) {
-        if (ftruncate(fd, len) != -1) {
-            if (write(fd, buf, len) == len) {
-                close(fd);
-                free(buf);
-                E.dirty = 0;
-                editorSetStatusMessage("%d bytes written to disk", len);
-                return;
-            }
-        }
-
-        close(fd);
-    }
-
-    free(buf);
-    editorSetStatusMessage("Can't save! I/O error: %s", strerror(errno));
 }
 
 void editorFindCallback(char *query, int key)
@@ -416,36 +312,6 @@ void editorFind()
         E.rowoff = saved_rowoff;
     }
 
-}
-
-void abAppend(struct abuf *ab, const char *s, int len)
-{
-    char *new = realloc(ab->b, ab->len + len);
-
-    if (new == NULL) return;
-    memcpy(&new[ab->len], s, len);
-    ab->b = new;
-    ab->len += len;
-}
-
-void editorScroll()
-{
-    E.rx = 0;
-    if (E.cy < E.numrows) {
-        E.rx = editorRowCxToRx(&E.row[E.cy], E.cx);
-    }
-    if (E.cy < E.rowoff) {
-        E.rowoff = E.cy; 
-    }
-    if (E.cy >= E.rowoff + E.screenrows) {
-        E.rowoff = E.cy - E.screenrows + 1; 
-    }
-    if (E.rx < E.coloff) {
-        E.coloff = E.rx; 
-    }
-    if (E.rx >= E.coloff + E.screencols) {
-        E.coloff = E.rx - E.screencols + 1; 
-    }
 }
 
 void editorDrawRows(struct abuf *ab)
@@ -548,31 +414,6 @@ void editorDrawMessageBar(struct abuf *ab)
         abAppend(ab, E.statusmsg, msglen);
 }
 
-void editorRefreshScreen()
-{
-    editorScroll();
-
-    struct abuf ab = ABUF_INIT;
-
-    abAppend(&ab, "\x1b[?25l", 6);
-    abAppend(&ab, "\x1b[H", 3);
-
-    editorDrawRows(&ab);
-    editorDrawStatusBar(&ab);
-    editorDrawMessageBar(&ab);
-
-    char buf[32];
-    snprintf(buf, sizeof(buf), "\x1b[%d;%dH", (E.cy - E.rowoff) + 1,
-                                                (E.rx - E.coloff) + 1);
-    abAppend(&ab, buf, strlen(buf));
-
-    abAppend(&ab, "\x1b[?25h", 6);
-
-    write(STDOUT_FILENO, ab.b, ab.len);
-    abFree(&ab);
-
-}
-
 void editorSetStatusMessage(const char *fmt, ...)
 {
     va_list ap;
@@ -580,83 +421,5 @@ void editorSetStatusMessage(const char *fmt, ...)
     vsnprintf(E.statusmsg, sizeof(E.statusmsg), fmt, ap);
     va_end(ap);
     E.statusmsg_time = time(NULL);
-}
-
-char *editorPrompt(char *prompt, void (*callback)(char *, int))
-{
-    size_t bufsize = 128;
-    char *buf = malloc(bufsize);
-
-    size_t buflen = 0;
-    buf[0] = '\0';
-
-    while (1) {
-        editorSetStatusMessage(prompt, buf);
-        editorRefreshScreen();
-
-        int c = editorReadKey();
-        if (c == DEL_KEY || c == CTRL_KEY('h') || c == BACKSPACE){
-            if (buflen != 0) buf[--buflen] = '\0';
-        } else if (c == '\x1b'){
-            editorSetStatusMessage("");
-            if (callback) callback(buf, c);
-            free(buf);
-            return NULL;
-        } else if (c == '\r') {
-            if (buflen != 0) {
-                editorSetStatusMessage("");
-                if (callback) callback(buf, c);
-                return buf;
-            }
-        } else if (!iscntrl(c) && c < 128) {
-            if (buflen == bufsize - 1) {
-                bufsize *= 2;
-                buf = realloc(buf, bufsize);
-            }
-
-            buf[buflen++] = c;
-            buf[buflen] = '\0';
-        }
-
-        if (callback) callback(buf, c);
-    }
-}
-
-void editorMoveCursor(int key)
-{
-    erow *row = (E.cy >= E.numrows) ? NULL : &E.row[E.cy];
-
-    switch (key) {
-        case ARROW_LEFT:
-            if (E.cx != 0)
-                E.cx--;
-            else if (E.cy > 0) {
-                E.cy--;
-                E.cx = E.row[E.cy].size;
-            }
-            
-            break;
-        case ARROW_RIGHT:
-            if (row && E.cx < row->size)
-                E.cx++;
-            else if (row && E.cx == row->size) {
-                E.cy++;
-                E.cx = 0;
-            }
-            break;
-        case ARROW_UP:
-            if (E.cy != 0)
-                E.cy--;
-            break;
-        case ARROW_DOWN:
-            if (E.cy < E.numrows)
-                E.cy++;
-            break;
-    }
-
-    row = (E.cy >= E.numrows) ? NULL : &E.row[E.cy];
-    int rowlen = row ? row->size : 0;
-    if (E.cx > rowlen)
-        E.cx = rowlen;
 }
 

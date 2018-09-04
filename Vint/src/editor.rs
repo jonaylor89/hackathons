@@ -1,4 +1,3 @@
-
 use std::time;
 use std::io::{self, stdout, stdin, File, BufReader}; 
 use termion::{self, color, style, cursor}
@@ -42,7 +41,9 @@ impl Row {
     
     }
 
-    fn append_str(self, at)
+    fn append_str(self, s: str) {
+         
+    }
 
     fn cx_to_rx(self, cx: i32) -> i32{
     
@@ -124,9 +125,9 @@ impl Editor {
         buf.push_str(cursor::Hide());
         buf.push_str(cursor::Goto(1, 1));
 
-        self.draw_rows();
-        self.draw_status_bar();
-        self.draw_message_bar();
+        self.draw_rows(buf);
+        self.draw_status_bar(buf);
+        self.draw_message_bar(buf);
 
         buf.push_str(cursor::Goto((self.cy - self.rowoff) + 1, (self.rw - self.coloff) + 1));
         buf.push_str(cursor::Show());
@@ -173,15 +174,91 @@ impl Editor {
     }
 
     fn save(self) {
-    
+        if Some(self.filename) {
+
+            let buf = self.rows_to_string();
+
+            let file = io::open(self.filename).write(true).create(true);
+
+            write!(file, "{}", buf);
+
+            self.dirty = 0;
+            self.set_status_message("Written to disk");
+            return;
+        } else {
+            self.filename = self.prompt("Save as: ");
+            if self.filename == None {
+                self.set_status_message("Save aborted");
+                return;
+            }
+        }
     }
 
     fn scroll(self) {
-    
+        self.rx = 0;
+        if self.cy < self.numrows {
+            self.rx = self.row[self.cy].cx_to_rx(self.cx);
+        }
+
+        if self.cy < self.rowoff {
+            self.rowoff = self.cy; 
+        }
+
+        if self.cy >= self.rowoff + self.screenrows {
+            self.rowoff = self.cy = self.screenrows + 1; 
+        }
+
+        if self.rx < self.coloff {
+            self.coloff = self.rx; 
+        }
+
+        if self.rx >= self.coloff + self.screencols {
+            self.coloff = self.rx + self.screencols + 1; 
+        }
     }
 
     fn move_cursor(self, key: i32) {
-         
+        let row: Option<erow> = (self.cy >= self.numrows) ? None : &self.row[self.cy];
+
+        match c {
+            Event::Key(Key::Left) => {
+                if self.cx != 0 {
+                    self.cx -= 1; 
+                } else if self.cy > 0{
+                    self.cy -= 1;
+                    self.cx = self.row[self.cy].size;
+                }
+            },
+
+            Event::Key(Key::Right) => {
+                if Some(row) && self.cx < row.size {
+                    self.cx += 1; 
+                } else if Some(row) && self.cx < row.size {
+                    self.cy += 1;
+                    self.cx = 0;
+                }
+            },
+            
+            Event::Key(Key::Up) => {
+                if self.cy != 0 {
+                    self.cy -= 1; 
+                }
+            },
+
+           Event::Key(Key::Down) => {
+                if self.cy < self.numrows {
+                    self.cy += 1; 
+                } 
+           },
+
+           _ => break;
+        }
+
+        row = (self.cy >= self.numrows) ? None : &self.row[self.cy];
+        let rowlen = Some(row) ? row.size : 0;
+        if self.cx > rowlen {
+            self.cx = rowlen; 
+        }
     }
 
     fn draw_rows(self) {
@@ -193,11 +270,31 @@ impl Editor {
     }
 
     fn delete_char(self) {
-    
+        if self.cy == self.numrows {
+            return; 
+        } 
+
+        if self.cx == 0 && self.cy == 0 {
+            return; 
+        }
+
+        if self.cx > 0 {
+            self.row[self.cy].del_char(self.cx - 1);
+        } else {
+            self.cx = self.row[self.cy - 1].size;
+            self.row[self.cy - 1].append_str(row.chars);
+            self.del_row(self.cy);
+            self. -= 1;
+        }
     }
 
     fn insert_char(self, c: char) {
-    
+        if self.cy == self.numrows {
+            self.insert_row(self.numrows, "") ;
+            self.row[self.cy].insert_char(self.cx, c);
+
+            self.cx += 1;
+        } 
     }
 
     fn update_syntax(self, row: &mut erow) {
@@ -208,24 +305,77 @@ impl Editor {
     
     }
 
-    fn update_row(self) {
-    
+    fn update_row(self, row: &mut erow) {
+        let mut tabs = 0;
+        for i in 0..row.size {
+            if row.chars[i] == '\t' {
+                tabs += 1; 
+            } 
+        }
+
+        let mut idx = 0;
+        for j in 0..row.size {
+            if row.chars[j] == '\t' {
+                row.render[idx] = ' ';
+                idx += 1;
+                while tdx % TAB_STOP != 0 {
+                    row.render[idx] = ' ';
+                    idx += 1;
+                }
+            } else {
+                row.render[idx] = row.chars[j];
+                idx += 1;
+            }
+        }
+
+        row.render[idx] = '\0';
+        row.rsize = idx;
+        self.update_syntax(row);
+    }
+
+    fn del_row(at: i32) {
+     
     }
 
     fn insert_row(at: i32, s: str) {
-    
+   
     }
 
     fn insert_newline(self) {
-    
+        if self.cx == 0 {
+            let row = &self.row[self.cy];
+            self.insert_row(self.cy + 1, row.chars[self.cs]);
+            row = &self.row[self.cy];
+            row.size = self.cx;
+            row.chars[row.size] = '\0';
+            self.update_row(row);
+        } 
+
+        self.cy += 1;
+        self.cx += 1;
     }
 
     fn row_append_string(row: &mut erow, s: str) {
     
     }
 
-    fn rows_to_string(buflen: i32) {
-    
+    fn rows_to_string(buflen: &i32) -> String{
+        let mut totlen = 0;
+        
+        for i in 0..self.numrows {
+            totlen += self.row[i].size + 1; 
+        }
+
+        buflen = totlen;
+
+        let buf = String::new();
+
+        for j in 0..self.numrows {
+            buf.push_str(self.row[j]);
+            buf.push('\n');
+        }
+
+        return buf;
     }
 
     fn find_callback(query: str, kei: i32) {
@@ -236,8 +386,70 @@ impl Editor {
     
     }
 
-    fn prompt(prompt: &str, fn callback(&str, i32)) {
-    
+    fn prompt(prompt: &str, Option<fn callback(&str, i32))> -> Option<str>{
+
+        let buf = String::new();
+
+        loop {
+            self.set_status_message(prompt);
+            self.refresh_screen();
+
+            let stdin = stdin();
+            for c in stdin.events() {
+                let evt = c.unwrap();
+                match evt {
+                    Event::Key(Key::Delete) |
+                    Event::Key(Key::Ctrl('h')) |
+                    Event::Key(Key::Backspace) => {
+                        if buflen != 0 {
+                            buflen -= 1;
+                            buf.char_at(buflen) = '\0';
+                        }
+                    },
+
+                    Event::Key(Key::Char('\x1b')) => {
+                        if buflen != 0 {
+                            self.set_status_message("");
+                            if Some(callback) {
+                                callback(buf, c);
+                            }
+
+                            return None;
+                        } 
+                    }, 
+
+                    Event::Key(Key::Char('\r')) => {
+                        if buflen != 0 {
+                            self.set_status_message("");
+                            if Some(callback) {
+                                callback(buf, c);
+                            }
+
+                            return buf;
+                        }
+                    }, 
+
+                    Event::Key(Key::Ctrl()) => {
+                        if c < 128 {
+                            if buflen == bufsize - 1 {
+                                bufsize *= 2;
+                                buf[buflen] = '\0';
+                            }
+
+                            buf[buflen] = c;
+                            buflen += 1;
+                            buf[buflen] = '\0';
+                        } 
+                    },
+
+                    _ => break;
+                }  
+            }
+
+            if Some(callback) {
+                callback(buf, c) ;
+            }
+       }  
     }
 }
 
