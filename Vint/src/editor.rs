@@ -30,7 +30,31 @@ struct Editor {
 impl Row {
 
     fn update(self) {
-    
+        let mut tabs = 0;
+            for i in 0..row.size {
+                if row.chars[i] == '\t' {
+                    tabs += 1; 
+                } 
+            }
+
+            let mut idx = 0;
+            for j in 0..row.size {
+                if row.chars[j] == '\t' {
+                    row.render[idx] = ' ';
+                    idx += 1;
+                    while tdx % TAB_STOP != 0 {
+                        row.render[idx] = ' ';
+                        idx += 1;
+                    }
+                } else {
+                    row.render[idx] = row.chars[j];
+                    idx += 1;
+                }
+            }
+
+            row.render[idx] = '\0';
+            row.rsize = idx;
+            self.update_syntax(row);
     }
 
     fn insert_char(self, at: i32, c: char) {
@@ -42,7 +66,7 @@ impl Row {
     }
 
     fn append_str(self, s: str) {
-         
+        self.push_str(s);
     }
 
     fn cx_to_rx(self, cx: i32) -> i32{
@@ -192,6 +216,20 @@ impl Editor {
                 return;
             }
         }
+    }
+
+    fn find(self) {
+        let saved_cx = self.cx;
+        let save_cy = self.cy;
+        let saved_coloff = self.coloff;
+        let saved_rowoff = self.rowoff;
+
+        let query = self.prompt("Search: {} (ESC/Arrows/Enter)", self.find_callback);
+
+        self.cx = saved_cx;
+        self.cy = saved_cy;
+        self.coloff = saved_coloff;
+        self.rowoff = saved_rowoff;
     }
 
     fn scroll(self) {
@@ -382,8 +420,59 @@ impl Editor {
     
     }
 
-    fn draw_message_bar(s: String) {
-    
+    fn draw_status_bar(self s: &String) {
+
+        let mut len = 0;
+        let mut rlen = 0;
+
+        s.push_str("\x1b[7m");
+
+        let status = format!("{} - {} lines {}",
+                             Some(self.filename) ? self.filename : "[No Name]",
+                             self.numrows,
+                             self.dirty > 0 ? "(modified)" : "");
+
+        let rstatus = format!("{} | {}/{}", 
+                              Some(self.syntax) ? self.syntax.filetype : "no ft",
+                              self.cy + 1, self.numrows);
+
+        if status.len > self.screencols {
+            len = self.screencols;     
+        }
+
+        s.push_str(status);
+
+        while len < self.screencols {
+            if self.screencols - len == rlen {
+                s.push_str(rstsatus);
+                break;
+            } else {
+                s.push(' ');
+                len += 1;
+            }
+        }
+
+        s.push_str("\x1b[m");
+        s.push_str("\r\n");
+    }
+
+    fn draw_message_bar(s: &mut String) {
+        s.push_str("\x1b[K");
+
+        let msglen = s.len();
+
+        if msglen > self.screencols {
+            msglen = self.screencols; 
+        }
+
+        if msglen && time::Instant::now() - self.statusmsg_time < 5 {
+            s.push_str(self.status_msg, msglen);
+        }
+    }
+
+    fn set_status_message(self, s: str) {
+        self.statusmsg = format!(str);
+        self.status_msg_time = time::Instant::now();
     }
 
     fn prompt(prompt: &str, Option<fn callback(&str, i32))> -> Option<str>{
