@@ -70,11 +70,19 @@ impl Row {
     }
 
     fn insert_char(self, at: i32, c: char) {
-    
+        if at < 0 || at > row.size { at = row.size; }
+
+        row.chars[at + 1] = row.chars[at];
+        row.size += 1;
+        row.chars[at] = c;
     }
 
-    fn delete_char(self, s: str) {
-    
+    fn delete_char(self, at: i32) {
+        if at < 0 || at >= self.size { return; } 
+
+        row.chars[at] = row.chars[at + 1];
+
+        row.size -= 1;
     }
 
     fn append_str(self, s: str) {
@@ -315,8 +323,10 @@ impl Editor {
         }
     }
 
-    fn draw_rows(self) {
-    
+    fn draw_rows(self, s: String) {
+        for y in 0..self.screenrows {
+             
+        } 
     }
 
     fn draw_status_bar(self) {
@@ -351,66 +361,56 @@ impl Editor {
         } 
     }
 
-    fn update_syntax(self, row: &mut erow) {
-    
-    }
-
-    fn syntax_to_color(hl: i32) {
-    
-    }
-
-    fn update_row(self, row: &mut erow) {
-        let mut tabs = 0;
-        for i in 0..row.size {
-            if row.chars[i] == '\t' {
-                tabs += 1; 
-            } 
-        }
-
-        let mut idx = 0;
-        for j in 0..row.size {
-            if row.chars[j] == '\t' {
-                row.render[idx] = ' ';
-                idx += 1;
-                while tdx % TAB_STOP != 0 {
-                    row.render[idx] = ' ';
-                    idx += 1;
-                }
-            } else {
-                row.render[idx] = row.chars[j];
-                idx += 1;
-            }
-        }
-
-        row.render[idx] = '\0';
-        row.rsize = idx;
-        self.update_syntax(row);
-    }
-
     fn del_row(at: i32) {
-     
+        if at < 0 || at >= self.numrows { return; }     
+        self.row[at] = self.row[at + 1];
+        for j in at..self.numrows {
+            self.row[j].idx -= 1;
+        }
+
+        self.numrows -= 1;
+        self.dirty += 1;
     }
 
     fn insert_row(at: i32, s: str) {
-   
+        if at < 0 || at > self.numrows { return; } 
+
+        self.row[at + 1] = self.row[at];
+
+        for j in at+1..self.numrows {
+            self.row[j].idx += 1; 
+        }
+
+        self.row[at].idx = at;
+        self.row[at].chars = String::new();
+        self.row[at].chars = s;
+
+        self.row[at].rsize = 0;
+        self.row[at].render = None;
+        self.row[at].hl = None;
+        self.row[at].hl_open_comment = 0;
+        
+        self.row[at].update();
+
+        self.numrows += 1;
+        self.dirty += 1;
+
     }
 
     fn insert_newline(self) {
-        if self.cx == 0 {
+        if self.cx != 0 {
             let row = &self.row[self.cy];
             self.insert_row(self.cy + 1, row.chars[self.cs]);
             row = &self.row[self.cy];
             row.size = self.cx;
             row.chars[row.size] = '\0';
             self.update_row(row);
-        } 
+        } else {
+            self.insert_row(row);
+        }
 
         self.cy += 1;
-        self.cx += 1;
-    }
-
-    fn row_append_string(row: &mut erow, s: str) {
-    
+        self.cx = 0;
     }
 
     fn rows_to_string(buflen: &i32) -> String{
@@ -432,8 +432,67 @@ impl Editor {
         return buf;
     }
 
-    fn find_callback(query: str, kei: i32) {
-    
+    fn find_callback(query: str, key: i32) {
+        static let mut last_match = -1; 
+        static let mut direction = 1;
+
+        static let mut saved_hl_line: i32;
+        static let mut saved_hl: Option<String>;
+
+        if Some(saved_hl) {
+            self.row[saved_hl_line].hl = saved_hl;
+            saved_hl = None;
+        }
+
+        match key {
+            '\r' | '\x1b' => {
+                last_match = 1;
+                direction = 1;
+            }, 
+            Key::Right | Key::Down => {
+                direction = 1; 
+            },
+            Key::Left | Key::Up {
+                direction = -1; 
+            },
+            _ => {
+                last_match = -1;
+                direction = 1;
+            }
+
+            if last_match = -1 {
+                direction = 1; 
+            }
+
+            let mut current = last_match;
+
+            for i in 0..numrows {
+                current += direction; 
+
+                if current == -1 {
+                    current = self.numrows - 1; 
+                } else if current == self.numrows {
+                    current = 0; 
+                }
+                
+                let row = &self.row[current];
+
+                let mat = row.render.find(query);
+                
+                if row.render.contains(query) {
+                    last_match = current;
+                    self.cy = current;
+                    self.cx = row.rx_to_cx(mat - row.render);
+                    self.rowoff = E.numrows;
+
+                    saved_hl_line = current;
+                    saved_hl = String::new();
+                    saved_hl = row.hl;
+                    row.hl[mat - row.render] = HL_MATCH;
+                    break;
+                }
+
+            }
     }
 
     fn draw_status_bar(self s: &String) {
