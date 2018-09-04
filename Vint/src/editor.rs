@@ -3,6 +3,18 @@ use std::io::{self, stdout, stdin, File, BufReader};
 use termion::{self, color, style, cursor}
 use termion::event::{Key, Event};
 
+fn syntax_color(hl: i32) {
+    match hl {
+        COMMENT | MLCOMMENT => return 36;
+        KEYWORD1 => return 33;
+        KEYWORD2 => return 34;
+        STRING => return 35;
+        NUMBER => return 31;
+        MATCH => return 34;
+        _ => return 37;
+    }
+}
+
 struct Row {
     idx: i32,
     size: i32,
@@ -94,6 +106,10 @@ impl Row {
         }
 
         return cx;
+    }
+
+    fn update_syntax(self) {
+    
     }
 }
 
@@ -539,6 +555,10 @@ impl Editor {
                 callback(buf, c) ;
             }
        }  
+    }
+
+    fn select_syntax_highlight() {
+         
     }
 }
 
