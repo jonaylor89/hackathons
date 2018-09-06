@@ -1,67 +1,80 @@
 
 extern crate termion;
 
-
+use std::io::{self, Write, Stdout, stdout, stdin}; 
 use std::process::exit;
-use std::io::{Write, stdout, stdin};
-
 use termion::input::TermRead;
-use termion::raw::IntoRawMode;
 use termion::event::Key;
+use termion::raw::{IntoRawMode, RawTerminal};
 
-struct editor {
-
+struct Editor {
+    stdout: RawTerminal<Stdout>,
+    screenrows: u16,
+    screencols: u16,
 }
 
-fn draw_rows() {
+impl Editor {
+    fn new() -> io::Result<Editor> {
+        let stdout = stdout().into_raw_mode().unwrap();
+        let (xsize, ysize) = termion::terminal_size().unwrap();
 
-    let mut stdout = stdout().into_raw_mode().unwrap();
-
-    let (xsize, ysize) = termion::terminal_size().unwrap();
-
-    for y in 0..ysize {
-        write!(stdout, "~\r\n");
+        Ok(Editor {
+            stdout: stdout,
+            screenrows: ysize,
+            screencols: xsize,
+        })
     }
-}
 
-fn refresh_screen() {
-    let mut stdout = stdout().into_raw_mode().unwrap();
-    write!(stdout, "{}{}", termion::clear::All, termion::cursor::Goto(1, 1));
+    fn draw_rows(&mut self) {
 
-    stdout.flush().unwrap();
+        for y in 0..self.screenrows {
+            write!(self.stdout, "~");
 
-    draw_rows();
-
-    write!(stdout, "{}{}", termion::clear::All, termion::cursor::Goto(1, 1));
-
-}
-
-fn process_keypress() {
-    
-    let stdin = stdin();
-    let mut stdout = stdout().into_raw_mode().unwrap();
-
-    for c in stdin.keys() {
-        let key = c.unwrap();
-        match key {
-            Key::Ctrl('q') => {
-                write!(stdout, "{}{}", termion::clear::All, termion::cursor::Goto(1, 1));
-                exit(0);
-            } ,
-
-            _ => {}
+            if y < self.screenrows - 1 {
+                write!(self.stdout, "\r\n");
+            }
         }
     }
 
+
+    fn refresh_screen(&mut self) {
+        write!(self.stdout, "{}{}", termion::clear::All, termion::cursor::Goto(1, 1));
+
+        self.stdout.flush().unwrap();
+
+        self.draw_rows();
+
+        write!(self.stdout, "{}{}", termion::clear::All, termion::cursor::Goto(1, 1));
+
+    }
+
+    fn process_keypress(&mut self) {
+    
+        let stdin = stdin();
+
+        for c in stdin.keys() {
+            let key = c.unwrap();
+            match key {
+                Key::Ctrl('q') => {
+                    write!(self.stdout, "{}{}", termion::clear::All, termion::cursor::Goto(1, 1));
+                    exit(0);
+                } ,
+
+                _ => {}
+            }
+        }
+
+    }
 }
 
 
 fn main() {
 
+    let mut editor = Editor::new().unwrap();
 
     loop {
-        refresh_screen();
-        process_keypress();
+        editor.refresh_screen();
+        editor.process_keypress();
     }
 
 }
