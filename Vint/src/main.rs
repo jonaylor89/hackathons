@@ -25,26 +25,29 @@ impl Editor {
         })
     }
 
-    fn draw_rows(&mut self) {
+    fn draw_rows(&mut self, buf: &mut String) {
 
         for y in 0..self.screenrows {
-            write!(self.stdout, "~");
+            buf.push_str("~");
 
             if y < self.screenrows - 1 {
-                write!(self.stdout, "\r\n");
+                buf.push_str("\r\n");
             }
         }
     }
 
 
     fn refresh_screen(&mut self) {
-        write!(self.stdout, "{}{}", termion::clear::All, termion::cursor::Goto(1, 1));
 
-        self.stdout.flush().unwrap();
+         let mut buf = String::new();
 
-        self.draw_rows();
+        buf.push_str(format!("{}{}", termion::clear::All, termion::cursor::Goto(1, 1)).as_str());
 
-        write!(self.stdout, "{}{}", termion::clear::All, termion::cursor::Goto(1, 1));
+        self.draw_rows(&mut buf);
+
+        buf.push_str(format!("{}{}", termion::clear::All, termion::cursor::Goto(1, 1)).as_str());
+
+        write!(self.stdout, "{}", buf);
 
     }
 
