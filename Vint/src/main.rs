@@ -1,25 +1,47 @@
 
 extern crate termion;
 
-mod editor
 
-use std::env;
+use std::process::exit;
+use std::io::{Write, stdout, stdin};
+
+use termion::input::TermRead;
+use termion::raw::IntoRawMode;
+use termion::event::Key;
+
+
+fn refresh_screen() {
+    let mut stdout = stdout().into_raw_mode().unwrap();
+    write!(stdout, "{}", termion::clear::All);
+
+    stdout.flush().unwrap();
+}
+
+fn process_keypress() {
+    
+    let stdin = stdin();
+    let mut stdout = stdout().into_raw_mode().unwrap();
+
+    for c in stdin.keys() {
+        let key = c.unwrap();
+        match key {
+            Key::Ctrl('q') => {
+                exit(0);
+            } ,
+
+            _ => {}
+        }
+    }
+
+}
+
 
 fn main() {
 
-    let args = env::args().collect();
-    let editor = editor::Editor::init();
-
-    if args.length >= 2 {
-        editor.open(args);
-    } else {
-        editor.open(None);
-    }
-
-    editor.set_status_message("HELP: Ctrl-S = save | Ctrl-Q = quit | Ctrl-F = find");
 
     loop {
-        editor.refresh_screen();
-        editor.process_keypress();
+        refresh_screen();
+        process_keypress();
     }
+
 }
