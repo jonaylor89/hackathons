@@ -8,9 +8,11 @@ use termion::event::Key;
 use termion::raw::{IntoRawMode, RawTerminal};
 
 struct Editor {
+    cx: i32,
+    cy: i32,
     stdout: RawTerminal<Stdout>,
-    screenrows: u16,
-    screencols: u16,
+    screenrows: usize,
+    screencols: usize,
 }
 
 impl Editor {
@@ -19,9 +21,11 @@ impl Editor {
         let (xsize, ysize) = termion::terminal_size().unwrap();
 
         Ok(Editor {
+            cx: 0,
+            cy: 0,
             stdout: stdout,
-            screenrows: ysize,
-            screencols: xsize,
+            screenrows: ysize as usize,
+            screencols: xsize as usize,
         })
     }
 
@@ -32,10 +36,10 @@ impl Editor {
             if y == self.screenrows / 3 {
                 let welcome = "Vint Editor";
 
-                if welcome.len() > self.screencols as usize{
-                    let (first_str, last_str) = welcome.split_at(self.screencols as usize);
+                if welcome.len() > self.screencols{
+                    let (first_str, last_str) = welcome.split_at(self.screencols);
 
-                    let mut padding = (self.screencols as usize - first_str.len()) / 2;
+                    let mut padding = (self.screencols - first_str.len()) / 2;
                     if padding != 0 {
                         buf.push_str("~");
                         padding -= 1;
@@ -50,7 +54,7 @@ impl Editor {
 
                 } else {
 
-                    let mut padding = (self.screencols as usize - welcome.len()) / 2;
+                    let mut padding = (self.screencols - welcome.len()) / 2;
                     if padding != 0 {
                         buf.push_str("~");
                         padding -= 1;
