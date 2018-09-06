@@ -90,11 +90,22 @@ impl Editor {
 
         self.draw_rows(&mut buf);
 
-        buf.push_str(format!("{}", termion::cursor::Goto(1, 1)).as_str());
+        buf.push_str(format!("{}", termion::cursor::Goto((self.cy + 1) as u16, (self.cx + 1) as u16)).as_str());
+
         buf.push_str(format!("{}", termion::cursor::Show).as_str());
 
         write!(self.stdout, "{}", buf);
 
+    }
+
+    fn move_cursor(&mut self, key: Key) {
+        match key {
+            Key::Char('a') => self.cx -= 1,
+            Key::Char('d') => self.cy += 1,
+            Key::Char('w') => self.cy -= 1,
+            Key::Char('s') => self.cy += 1,
+            _ => {}
+        } 
     }
 
     fn process_keypress(&mut self) {
@@ -109,6 +120,8 @@ impl Editor {
                     self.stdout.flush().unwrap();
                     exit(0);
                 } ,
+
+                Key::Char('w') | Key::Char('s') | Key::Char('a') | Key::Char('d') => self.move_cursor(key),
 
                 _ => {}
             }
