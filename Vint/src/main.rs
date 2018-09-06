@@ -9,12 +9,31 @@ use termion::input::TermRead;
 use termion::raw::IntoRawMode;
 use termion::event::Key;
 
+struct editor {
+
+}
+
+fn draw_rows() {
+
+    let mut stdout = stdout().into_raw_mode().unwrap();
+
+    let (xsize, ysize) = termion::terminal_size().unwrap();
+
+    for y in 0..ysize {
+        write!(stdout, "~\r\n");
+    }
+}
 
 fn refresh_screen() {
     let mut stdout = stdout().into_raw_mode().unwrap();
-    write!(stdout, "{}", termion::clear::All);
+    write!(stdout, "{}{}", termion::clear::All, termion::cursor::Goto(1, 1));
 
     stdout.flush().unwrap();
+
+    draw_rows();
+
+    write!(stdout, "{}{}", termion::clear::All, termion::cursor::Goto(1, 1));
+
 }
 
 fn process_keypress() {
@@ -26,6 +45,7 @@ fn process_keypress() {
         let key = c.unwrap();
         match key {
             Key::Ctrl('q') => {
+                write!(stdout, "{}{}", termion::clear::All, termion::cursor::Goto(1, 1));
                 exit(0);
             } ,
 
