@@ -1,7 +1,17 @@
 
 extern crate termion;
 
-use std::io::{self, Write, Stdout, stdout, stdin}; 
+use std::fs::File;
+use std::io::{
+    self, 
+    Write, 
+    Stdout, 
+    stdout, 
+    stdin,
+    BufReader,
+}; 
+
+use std::env;
 use std::process::exit;
 use termion::input::TermRead;
 use termion::event::Key;
@@ -38,24 +48,24 @@ impl Editor {
         })
     }
 
-    fn open(self) {
+    fn open(self, filename: String) {
 
-        let f = io::open(self.filename).expect("File IO error");
-        let mut file = BufRead::new(&f);
+        let f = File::open(filename).expect("File IO error");
+        let mut file = BufReader::new(f);
         let mut line: &mut String;
 
-        let mut linelen = io::read_line(file, line).unwrap();
+        let mut linelen = file.read_line(line).unwrap();
 
-        while linelen > 0 && line.char_at(linelen - 1) == '\n' || line.char_at(linelen - 1) {
+        while linelen > 0 && line.as_str().char_at(linelen - 1) == '\n' || line.as_str().char_at(linelen - 1) {
             linelen -= 1; 
         }
 
         let row = Row {
             size: linelen,
-            chars: line,
-        }
+            chars: line.to_string(),
+        };
 
-        self.row = row;
+        self.row = Some(row);
         self.numrows = 1;
         
     }
@@ -200,9 +210,10 @@ impl Editor {
 
 
 fn main() {
+    let args: Vec<String> = env::args().collect();
 
     let mut editor = Editor::new().unwrap();
-    editor.open();
+    editor.open(args[1]);
 
     loop {
         editor.refresh_screen();
