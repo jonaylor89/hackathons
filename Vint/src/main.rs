@@ -23,12 +23,12 @@ struct Editor {
     stdout: RawTerminal<Stdout>,
     screenrows: usize,
     screencols: usize,
-    numrows: i32,
+    numrows: usize,
     row: Option<Row>,
 }
 
 struct Row {
-    size: i32,
+    size: usize,
     chars: String,
 }
 
@@ -52,11 +52,11 @@ impl Editor {
 
         let f = File::open(filename).expect("File IO error");
         let mut file = BufReader::new(f);
-        let mut line: &mut String;
+        let mut line: &str;
 
-        let mut linelen = file.read_line(line).unwrap();
+        let mut linelen: usize = file.read_line(&mut line).unwrap().expect("read_line error");
 
-        while linelen > 0 && line.as_str().char_at(linelen - 1) == '\n' || line.as_str().char_at(linelen - 1) {
+        while linelen > 0 && line.char_at(linelen - 1) == '\n' || line.char_at(linelen - 1) {
             linelen -= 1; 
         }
 
@@ -114,9 +114,9 @@ impl Editor {
                     buf.push_str("~");
                 }
             } else {
-                let len = self.size;
+                let len = self.row.unwrap().size;
                 if len > self.screencols {len = self.screencols;}
-                buf.push_str(self.row.chars);
+                buf.push_str(&self.row.unwrap().chars);
             }
 
             buf.push_str(format!("{}", termion::clear::UntilNewline).as_str());
