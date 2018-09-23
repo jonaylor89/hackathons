@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ebadbd3-8916-4b16-acff-b7b899a8e701" name="Default Changelist" comment="" />
+    <list default="true" id="8ebadbd3-8916-4b16-acff-b7b899a8e701" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/hello/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/hello/tests.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,13 +11,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ZeroPWNdAPI$Test__hello_tests_SimpleTest_test_clean.coverage" NAME="Test: hello.tests.SimpleTest.test_clean Coverage Results" MODIFIED="1537687918716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/ZeroPWNdAPI$Test__hello_tests_APITest_test_clean.coverage" NAME="Test: hello.tests.APITest.test_clean Coverage Results" MODIFIED="1537706917535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/ZeroPWNdAPI$Test__hello_tests_SimpleTest_test_clean.coverage" NAME="Test: hello.tests.SimpleTest.test_clean Coverage Results" MODIFIED="1537709832057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/ZeroPWNdAPI$Test__hello_tests_APITest_test_clean.coverage" NAME="Test: hello.tests.APITest.test_clean Coverage Results" MODIFIED="1537707740033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/ZeroPWNdAPI$Test__hello_tests_SimpleTest_test_get.coverage" NAME="Test: hello.tests.SimpleTest.test_get Coverage Results" MODIFIED="1537688406674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/ZeroPWNdAPI$Test__hello_tests_SimpleTest_test_user_error.coverage" NAME="Test: hello.tests.SimpleTest.test_user_error Coverage Results" MODIFIED="1537688422269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/ZeroPWNdAPI$Test__hello_tests_SimpleTest.coverage" NAME="Test: hello.tests.SimpleTest Coverage Results" MODIFIED="1537690205916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/ZeroPWNdAPI$Test__hello_tests_SimpleTest_test_user_error.coverage" NAME="Test: hello.tests.SimpleTest.test_user_error Coverage Results" MODIFIED="1537709207782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/ZeroPWNdAPI$Test__hello_tests_SimpleTest.coverage" NAME="Test: hello.tests.SimpleTest Coverage Results" MODIFIED="1537708635483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/ZeroPWNdAPI$Test__hello_tests_SimpleTest_test_details.coverage" NAME="Test: hello.tests.SimpleTest.test_details Coverage Results" MODIFIED="1537687928446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/ZeroPWNdAPI$Test__hello_tests_APITest.coverage" NAME="Test: hello.tests.APITest Coverage Results" MODIFIED="1537706907061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/ZeroPWNdAPI$Test__hello_tests_APITest.coverage" NAME="Test: hello.tests.APITest Coverage Results" MODIFIED="1537707551003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -48,14 +50,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Django Console" value="10" />
           <entry key="html" value="829" />
-          <entry key="py" value="5662" />
+          <entry key="py" value="6155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="829" />
-          <entry key="Python" value="5662" />
+          <entry key="Python" value="6165" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -64,11 +67,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hello/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            <state relative-caret-position="55">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#1#36#0" expanded="true" />
               </folding>
@@ -76,15 +79,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hello/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="281">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
-                <marker date="1537690273403" expanded="true" signature="617:622" ph="..." />
-                <marker date="1537690273403" expanded="true" signature="617:626" ph="..." />
+                <marker date="1537709606195" expanded="true" signature="620:625" ph="..." />
+                <marker date="1537709606195" expanded="true" signature="620:629" ph="..." />
               </folding>
             </state>
           </provider>
@@ -106,11 +109,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/gettingstarted/settings.py" />
-        <option value="$PROJECT_DIR$/hello/tests.py" />
         <option value="$PROJECT_DIR$/hello/templates/base.html" />
         <option value="$PROJECT_DIR$/hello/forms.py" />
         <option value="$PROJECT_DIR$/hello/templates/index.html" />
         <option value="$PROJECT_DIR$/hello/views.py" />
+        <option value="$PROJECT_DIR$/hello/tests.py" />
       </list>
     </option>
   </component>
@@ -197,7 +200,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django tests.Test: hello.tests.APITest.test_clean">
+  <component name="RunManager" selected="Django tests.Test: hello.tests.SimpleTest.test_clean">
     <configuration name="Test: hello.tests.APITest" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
       <module name="ZeroPWNdAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -258,7 +261,7 @@
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test: hello.tests.SimpleTest.test_get" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+    <configuration name="Test: hello.tests.SimpleTest.test_clean" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
       <module name="ZeroPWNdAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -271,7 +274,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="hello.tests.SimpleTest.test_get" />
+      <option name="TARGET" value="hello.tests.SimpleTest.test_clean" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
@@ -304,6 +307,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="gettingstarted.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -325,17 +329,17 @@
       <item itemvalue="Django server.ZeroPWNdAPI" />
       <item itemvalue="Django tests.Test: hello.tests.SimpleTest.test_user_error" />
       <item itemvalue="Django tests.Test: hello.tests.SimpleTest" />
-      <item itemvalue="Django tests.Test: hello.tests.SimpleTest.test_get" />
       <item itemvalue="Django tests.Test: hello.tests.APITest" />
       <item itemvalue="Django tests.Test: hello.tests.APITest.test_clean" />
+      <item itemvalue="Django tests.Test: hello.tests.SimpleTest.test_clean" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Django tests.Test: hello.tests.SimpleTest.test_clean" />
+        <item itemvalue="Django tests.Test: hello.tests.SimpleTest.test_user_error" />
+        <item itemvalue="Django tests.Test: hello.tests.SimpleTest" />
         <item itemvalue="Django tests.Test: hello.tests.APITest.test_clean" />
         <item itemvalue="Django tests.Test: hello.tests.APITest" />
-        <item itemvalue="Django tests.Test: hello.tests.SimpleTest" />
-        <item itemvalue="Django tests.Test: hello.tests.SimpleTest.test_user_error" />
-        <item itemvalue="Django tests.Test: hello.tests.SimpleTest.test_get" />
       </list>
     </recent_temporary>
   </component>
@@ -353,35 +357,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test__hello_tests_SimpleTest_test_details - 2018.09.23 at 03h 32m 09s.xml">
-      <configuration name="Test: hello.tests.SimpleTest.test_details" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__hello_tests_SimpleTest_test_clean - 2018.09.23 at 09h 13m 42s.xml">
+      <configuration name="Test: hello.tests.SimpleTest.test_clean" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__hello_tests_SimpleTest - 2018.09.23 at 03h 32m 14s.xml">
+    <history-entry file="Test__hello_tests_SimpleTest - 2018.09.23 at 09h 17m 16s.xml">
       <configuration name="Test: hello.tests.SimpleTest" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__hello_tests_SimpleTest_test_user_error - 2018.09.23 at 03h 32m 40s.xml">
+    <history-entry file="Test__hello_tests_SimpleTest_test_clean - 2018.09.23 at 09h 19m 53s.xml">
+      <configuration name="Test: hello.tests.SimpleTest.test_clean" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__hello_tests_SimpleTest_test_user_error - 2018.09.23 at 09h 20m 33s.xml">
       <configuration name="Test: hello.tests.SimpleTest.test_user_error" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__hello_tests_SimpleTest_test_get - 2018.09.23 at 03h 40m 07s.xml">
-      <configuration name="Test: hello.tests.SimpleTest.test_get" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__hello_tests_SimpleTest_test_clean - 2018.09.23 at 09h 23m 29s.xml">
+      <configuration name="Test: hello.tests.SimpleTest.test_clean" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__hello_tests_SimpleTest_test_user_error - 2018.09.23 at 03h 40m 12s.xml">
+    <history-entry file="Test__hello_tests_SimpleTest_test_user_error - 2018.09.23 at 09h 26m 49s.xml">
       <configuration name="Test: hello.tests.SimpleTest.test_user_error" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__hello_tests_SimpleTest_test_user_error - 2018.09.23 at 03h 40m 23s.xml">
-      <configuration name="Test: hello.tests.SimpleTest.test_user_error" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__hello_tests_SimpleTest_test_clean - 2018.09.23 at 09h 28m 12s.xml">
+      <configuration name="Test: hello.tests.SimpleTest.test_clean" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__hello_tests_SimpleTest - 2018.09.23 at 03h 40m 31s.xml">
-      <configuration name="Test: hello.tests.SimpleTest" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__hello_tests_SimpleTest_test_clean - 2018.09.23 at 09h 28m 40s.xml">
+      <configuration name="Test: hello.tests.SimpleTest.test_clean" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__hello_tests_SimpleTest - 2018.09.23 at 04h 10m 19s.xml">
-      <configuration name="Test: hello.tests.SimpleTest" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__hello_tests_SimpleTest_test_clean - 2018.09.23 at 09h 33m 17s.xml">
+      <configuration name="Test: hello.tests.SimpleTest.test_clean" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__hello_tests_APITest - 2018.09.23 at 08h 48m 28s.xml">
-      <configuration name="Test: hello.tests.APITest" configurationId="DjangoTestsConfigurationType" />
-    </history-entry>
-    <history-entry file="Test__hello_tests_APITest_test_clean - 2018.09.23 at 08h 48m 38s.xml">
-      <configuration name="Test: hello.tests.APITest.test_clean" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__hello_tests_SimpleTest_test_clean - 2018.09.23 at 09h 33m 27s.xml">
+      <configuration name="Test: hello.tests.SimpleTest.test_clean" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -395,6 +399,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="29" width="1400" height="783" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15758468" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -402,15 +407,15 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49852726" visible="true" weight="0.3299566" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39942113" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299566" />
-      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.3299566" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3299566" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5014728" side_tool="true" weight="0.3299566" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4992636" weight="0.2098408" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4992636" weight="0.47756875" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3299566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -483,24 +488,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/tests.py">
+    <entry file="file://$PROJECT_DIR$/hello/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="55">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
-            <element signature="e#0#58#0" expanded="true" />
-            <marker date="1537690273403" expanded="true" signature="617:622" ph="..." />
-            <marker date="1537690273403" expanded="true" signature="617:626" ph="..." />
+            <element signature="e#1#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/views.py">
+    <entry file="file://$PROJECT_DIR$/hello/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        <state relative-caret-position="281">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
-            <element signature="e#1#36#0" expanded="true" />
+            <element signature="e#0#58#0" expanded="true" />
+            <marker date="1537709606195" expanded="true" signature="620:625" ph="..." />
+            <marker date="1537709606195" expanded="true" signature="620:629" ph="..." />
           </folding>
         </state>
       </provider>

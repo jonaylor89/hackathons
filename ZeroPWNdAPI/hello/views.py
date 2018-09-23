@@ -16,7 +16,7 @@ def index(request):
 
     if request.method == 'POST':
 
-        body = request.body.decode()
+        body = json.loads(request.body.decode())[""]
         form = NameForm(request.POST)
 
         if form.is_valid():
