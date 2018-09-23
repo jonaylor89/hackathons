@@ -13,7 +13,7 @@ def index(request):
     if request.method == 'POST':
 
         params = {'apikey': '88a3fcdbe688d5928b05d668797d6b0da729e1f403909e12d2b15ca36ff12a99',
-                    'url': 'https://www.facebook.com'}
+                    'url': request.body.decode()}
         headers = {
             "Accept-Encoding": "gzip, deflate",
             "User-Agent": "ZeroPWNd"
@@ -23,7 +23,7 @@ def index(request):
                             data=params)
 
         params = {'apikey': '88a3fcdbe688d5928b05d668797d6b0da729e1f403909e12d2b15ca36ff12a99',
-                'resource': 'https://www.facebook.com'}
+                'resource': request.body.decode()}
         response = requests.post('https://www.virustotal.com/vtapi/v2/url/report',
                                 params=params,
                                 headers=headers).json()
@@ -40,6 +40,8 @@ def index(request):
                 exploits.append(k)
 
             return HttpResponse(str(exploits))
+
+    return HttpResponse("[]")
 
 
 def db(request):
