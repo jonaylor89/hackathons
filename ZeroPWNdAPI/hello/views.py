@@ -13,6 +13,8 @@ import json
 @csrf_exempt
 def index(request):
 
+    result = ""
+
     if request.method == 'POST':
 
         form = NameForm(request.POST)

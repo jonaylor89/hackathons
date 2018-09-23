@@ -10,10 +10,13 @@
         {% csrf_token %}
         {{ form }}
 
-    <label for="url">URL to inspect: </label>
+    <label>URL to inspect: </label>
     <input id="url" type="text" name="url-box">
     <input type="submit" value="OK">
 </form>
+
+
+{{ result }}
 
 </div>
 
