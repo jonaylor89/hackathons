@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 
 from .models import Greeting
+from .forms import NameForm
 
 import requests
 import json
@@ -13,6 +14,8 @@ import json
 def index(request):
 
     if request.method == 'POST':
+
+        form = NameForm(request.POST)
 
         print(request.body.decode())
 
@@ -49,10 +52,10 @@ def index(request):
         except:
             return HttpResponse("[]")
 
-    elif request.method == "GET":
-        return render(request, "index.html")
     else:
-        return HttpResponse("[]")
+        form = NameForm()
+
+    return render(request, "index.html", {"form": form})
 
 
 def db(request):
