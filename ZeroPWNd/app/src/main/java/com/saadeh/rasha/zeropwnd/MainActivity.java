@@ -2,6 +2,7 @@ package com.saadeh.rasha.zeropwnd;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     EditText mEdit;
     String fakeResult = "";
     public String postUrl= "https://zeropwnd.herokuapp.com/";
-    public String postBody="{url:www.facebook.com}";
+    public String postBody;
     public int responseBody;
 
     public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
@@ -36,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+    public void getText(){
+        EditText text = (EditText) findViewById(R.id.editText);
+        postBody = text.getText().toString();
     }
 
     private void postRequest(String postUrl, String postBody) {
@@ -58,7 +63,10 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                 responseBody =parseResponse(response);
+//                Log.d("TAG", tempResponse.body().string());
+                 responseBody = parseResponse(response);
+
+
 
 
             }
@@ -66,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public int parseResponse(Response response) throws IOException {
-
 
         return (Integer.parseInt(Integer.toString(response.body().string().length())));
 
@@ -80,14 +87,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
     public void clickBtn(View view){
 
-        try {
-            postRequest(postUrl,postBody);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
+        EditText text = (EditText) findViewById(R.id.editText);
+        postBody = text.getText().toString();
         mTextView = findViewById(R.id.text_results);
 
         if(responseBody == 11){
@@ -96,6 +101,16 @@ public class MainActivity extends AppCompatActivity {
         } else{
             mTextView.setText("This website is not safe");
         }
+        try {
+            postRequest(postUrl,postBody);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+
+
+
         //mTextView = (TextView) findViewById(R.id.text_results);
         //mTextView.setText("This website is safe");
 //                        if (responseBody == 0){
