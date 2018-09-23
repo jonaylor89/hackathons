@@ -32,18 +32,21 @@ def index(request):
 
         print(json.dumps(response))
         response_dict = json.loads(json.dumps(response))
-        if response_dict["positives"] == 0:
+        try:
+            if response_dict["positives"] == 0:
+                return HttpResponse("[]")
+            else:
+                response_dict = json.loads(response)
+                exploits = []
+
+                for k, v in response_dict["scans"]:
+                    exploits.append(k)
+
+                return HttpResponse(str(exploits))
+        except:
             return HttpResponse("[]")
-        else:
-            response_dict = json.loads(response)
-            exploits = []
 
-            for k, v in response_dict["scans"]:
-                exploits.append(k)
-
-            return HttpResponse(str(exploits))
-
-    return HttpResponse("[]")
+        return HttpResponse("[]")
 
 
 def db(request):
