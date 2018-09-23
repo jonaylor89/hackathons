@@ -19,7 +19,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
-
+    public boolean scam = false;
     private TextView mTextView;
     EditText mEdit;
 
@@ -58,22 +58,26 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                Log.d("TAG",response.body().string());
                 parseResponse(response);
             }
         });
     }
 
-    public Response parseResponse(Response response){
-        return response;
+    public int parseResponse(Response response) throws IOException {
+
+        return Integer.parseInt(Integer.toString(response.body().string().length()));
     }
 
+
+
     public void clickBtn(View view){
+
         try {
             postRequest(postUrl,postBody);
         } catch (Exception e) {
             e.printStackTrace();
         }
+
 
 
 //        mTextView = findViewById(R.id.text_results);
