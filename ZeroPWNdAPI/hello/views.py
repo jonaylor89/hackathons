@@ -14,6 +14,8 @@ def index(request):
 
     if request.method == 'POST':
 
+        print(request.body.decode())
+
         params = {'apikey': '88a3fcdbe688d5928b05d668797d6b0da729e1f403909e12d2b15ca36ff12a99',
                     'url': request.body.decode()}
         headers = {
