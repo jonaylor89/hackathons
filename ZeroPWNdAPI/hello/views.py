@@ -16,12 +16,13 @@ def index(request):
 
     if request.method == 'POST':
 
+        body = request.body.decode()
         form = NameForm(request.POST)
 
         if form.is_valid():
             url = form.cleaned_data["url"]
         else:
-            url = request.body.decode()
+            url = body
 
         print(url)
 
