@@ -63,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public int parseResponse(Response response) throws IOException {
+    public void parseResponse(Response response) throws IOException {
 
-        return Integer.parseInt(Integer.toString(response.body().string().length()));
+        System.out.println(Integer.parseInt(Integer.toString(response.body().string().length())));
     }
 
 
