@@ -16,15 +16,14 @@ def index(request):
 
     if request.method == 'POST':
 
-        print(request.body)
-
-        form = None
-        body = None
+        print(request.body.decode())
 
         try:
             body = json.loads(request.body.decode())["url"]
         except:
-            form = NameForm(request.POST)
+            body = None
+
+        form = NameForm(request.POST)
 
         if form.is_valid():
             url = form.cleaned_data["url"]
