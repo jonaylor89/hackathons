@@ -16,7 +16,7 @@ def index(request):
         "User-Agent": "ZeroPWNd"
     }
 
-    _ = requests.post('https://www.virustotal.com/vtapi/v2/file/scan',
+    _ = requests.post('https://www.virustotal.com/vtapi/v2/url/scan',
                       data=params,
                       headers=headers)
 
