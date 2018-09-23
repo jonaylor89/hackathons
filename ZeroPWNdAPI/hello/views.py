@@ -17,11 +17,11 @@ def index(request):
 
     _ = requests.post('https://www.virustotal.com/vtapi/v2/file/scan',
                       params=params,
-                      headers=headers).json()
+                      headers=headers)
     response = requests.get('https://www.virustotal.com/vtapi/v2/file/scan',
                             params=params,
                             headers=headers).json()
-    print(response.text)
+    print(response)
     return HttpResponse(response)
 
 
