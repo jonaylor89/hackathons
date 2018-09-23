@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from .models import Greeting
 
 import requests
+import json
 
 
 # Create your views here.
@@ -21,8 +22,9 @@ def index(request):
     response = requests.get('https://www.virustotal.com/vtapi/v2/file/report',
                             params=params,
                             headers=headers).json()
-    print(response)
-    return HttpResponse(response)
+
+    print(json.dumps(response))
+    return HttpResponse("<pre>" + json.dump(response) + "</pre>")
 
 
 def db(request):
