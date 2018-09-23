@@ -20,7 +20,7 @@ def index(request):
                       data=params)
 
     params = {'apikey': '88a3fcdbe688d5928b05d668797d6b0da729e1f403909e12d2b15ca36ff12a99',
-              'resources': 'https://www.facebook.com'}
+              'resource': 'https://www.facebook.com'}
     response = requests.post('https://www.virustotal.com/vtapi/v2/url/report',
                              params=params,
                              headers=headers).json()
