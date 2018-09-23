@@ -10,7 +10,7 @@ import json
 # Create your views here.
 def index(request):
     params = {'apikey': '88a3fcdbe688d5928b05d668797d6b0da729e1f403909e12d2b15ca36ff12a99',
-              'resource': 'http://www.virustotal.com'}
+              'resource': '7657fcb7d772448a6d8504e4b20168b8'}
     headers = {
         "Accept-Encoding": "gzip, deflate",
         "User-Agent": "ZeroPWNd"
