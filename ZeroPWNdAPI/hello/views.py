@@ -24,7 +24,7 @@ def index(request):
                             headers=headers).json()
 
     print(json.dumps(response))
-    return HttpResponse("<pre>" + json.dump(response) + "</pre>")
+    return HttpResponse("<pre>" + json.dumps(response) + "</pre>")
 
 
 def db(request):
