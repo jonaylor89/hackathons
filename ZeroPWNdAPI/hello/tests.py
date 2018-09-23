@@ -16,3 +16,20 @@ class SimpleTest(TestCase):
         # Test my_view() as if it were deployed at /customer/details
         response = index(request)
         self.assertEqual(response.status_code, 200)
+
+    def test_clean(self):
+        # Create an instance of a POST request
+        request = self.factory.post('/')
+        request.user = AnonymousUser()
+        request.body = "www.facebook.com"
+
+        response = index(request)
+        self.assertEqual(response.content, "[]")
+
+    def test_user_error(self):
+        request = self.factory.post('/')
+        request.user = AnonymousUser()
+        request.body = "wlsrjgnkwjfbnskd"  # Random value
+
+        response = index(request)
+        self.assertEqual(response.content, "[]")
