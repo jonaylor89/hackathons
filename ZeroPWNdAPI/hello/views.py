@@ -9,34 +9,37 @@ import json
 
 # Create your views here.
 def index(request):
-    params = {'apikey': '88a3fcdbe688d5928b05d668797d6b0da729e1f403909e12d2b15ca36ff12a99',
-              'url': 'https://www.facebook.com'}
-    headers = {
-        "Accept-Encoding": "gzip, deflate",
-        "User-Agent": "ZeroPWNd"
-    }
 
-    _ = requests.post('https://www.virustotal.com/vtapi/v2/url/scan',
-                      data=params)
+    if request.method == 'POST':
 
-    params = {'apikey': '88a3fcdbe688d5928b05d668797d6b0da729e1f403909e12d2b15ca36ff12a99',
-              'resource': 'https://www.facebook.com'}
-    response = requests.post('https://www.virustotal.com/vtapi/v2/url/report',
-                             params=params,
-                             headers=headers).json()
+        params = {'apikey': '88a3fcdbe688d5928b05d668797d6b0da729e1f403909e12d2b15ca36ff12a99',
+                    'url': 'https://www.facebook.com'}
+        headers = {
+            "Accept-Encoding": "gzip, deflate",
+            "User-Agent": "ZeroPWNd"
+        }
 
-    print(json.dumps(response))
-    response_dict = json.loads(json.dumps(response))
-    if response_dict["positives"] == 0:
-        return HttpResponse("[]")
-    else:
-        response_dict = json.loads(response)
-        exploits = []
+        _ = requests.post('https://www.virustotal.com/vtapi/v2/url/scan',
+                            data=params)
 
-        for k, v in response_dict["scans"]:
-            exploits.append(k)
+        params = {'apikey': '88a3fcdbe688d5928b05d668797d6b0da729e1f403909e12d2b15ca36ff12a99',
+                'resource': 'https://www.facebook.com'}
+        response = requests.post('https://www.virustotal.com/vtapi/v2/url/report',
+                                params=params,
+                                headers=headers).json()
 
-        return HttpResponse(str(exploits))
+        print(json.dumps(response))
+        response_dict = json.loads(json.dumps(response))
+        if response_dict["positives"] == 0:
+            return HttpResponse("[]")
+        else:
+            response_dict = json.loads(response)
+            exploits = []
+
+            for k, v in response_dict["scans"]:
+                exploits.append(k)
+
+            return HttpResponse(str(exploits))
 
 
 def db(request):
