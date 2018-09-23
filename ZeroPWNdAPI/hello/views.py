@@ -48,8 +48,6 @@ def index(request):
         except:
             return HttpResponse("[]")
 
-        return HttpResponse("[]")
-
 
 def db(request):
 
