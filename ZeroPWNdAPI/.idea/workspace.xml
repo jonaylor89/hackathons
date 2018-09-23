@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8ebadbd3-8916-4b16-acff-b7b899a8e701" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/hello/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,13 +52,13 @@
         <counts>
           <entry key="Django Console" value="10" />
           <entry key="html" value="829" />
-          <entry key="py" value="6291" />
+          <entry key="py" value="6353" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="829" />
-          <entry key="Python" value="6301" />
+          <entry key="Python" value="6363" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -71,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hello/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="103">
+              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
               <folding>
                 <element signature="e#1#36#0" expanded="true" />
               </folding>
@@ -83,12 +82,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hello/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+            <state relative-caret-position="133">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
-                <marker date="1537709606195" expanded="true" signature="620:625" ph="..." />
-                <marker date="1537709606195" expanded="true" signature="620:629" ph="..." />
+                <marker date="1537710427325" expanded="true" signature="620:625" ph="..." />
+                <marker date="1537710427325" expanded="true" signature="620:629" ph="..." />
               </folding>
             </state>
           </provider>
@@ -113,8 +112,8 @@
         <option value="$PROJECT_DIR$/hello/templates/base.html" />
         <option value="$PROJECT_DIR$/hello/forms.py" />
         <option value="$PROJECT_DIR$/hello/templates/index.html" />
-        <option value="$PROJECT_DIR$/hello/tests.py" />
         <option value="$PROJECT_DIR$/hello/views.py" />
+        <option value="$PROJECT_DIR$/hello/tests.py" />
       </list>
     </option>
   </component>
@@ -358,15 +357,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test__hello_tests_SimpleTest_test_clean - 2018.09.23 at 09h 19m 53s.xml">
-      <configuration name="Test: hello.tests.SimpleTest.test_clean" configurationId="DjangoTestsConfigurationType" />
-    </history-entry>
-    <history-entry file="Test__hello_tests_SimpleTest_test_user_error - 2018.09.23 at 09h 20m 33s.xml">
-      <configuration name="Test: hello.tests.SimpleTest.test_user_error" configurationId="DjangoTestsConfigurationType" />
-    </history-entry>
-    <history-entry file="Test__hello_tests_SimpleTest_test_clean - 2018.09.23 at 09h 23m 29s.xml">
-      <configuration name="Test: hello.tests.SimpleTest.test_clean" configurationId="DjangoTestsConfigurationType" />
-    </history-entry>
     <history-entry file="Test__hello_tests_SimpleTest_test_user_error - 2018.09.23 at 09h 26m 49s.xml">
       <configuration name="Test: hello.tests.SimpleTest.test_user_error" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
@@ -387,6 +377,15 @@
     </history-entry>
     <history-entry file="Test__hello_tests_SimpleTest_test_clean - 2018.09.23 at 09h 37m 13s.xml">
       <configuration name="Test: hello.tests.SimpleTest.test_clean" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__hello_tests_SimpleTest - 2018.09.23 at 09h 45m 21s.xml">
+      <configuration name="Test: hello.tests.SimpleTest" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__hello_tests_SimpleTest - 2018.09.23 at 09h 46m 25s.xml">
+      <configuration name="Test: hello.tests.SimpleTest" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__hello_tests_SimpleTest - 2018.09.23 at 09h 47m 08s.xml">
+      <configuration name="Test: hello.tests.SimpleTest" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -491,20 +490,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hello/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        <state relative-caret-position="133">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-            <marker date="1537709606195" expanded="true" signature="620:625" ph="..." />
-            <marker date="1537709606195" expanded="true" signature="620:629" ph="..." />
+            <marker date="1537710427325" expanded="true" signature="620:625" ph="..." />
+            <marker date="1537710427325" expanded="true" signature="620:629" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hello/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="103">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
           <folding>
             <element signature="e#1#36#0" expanded="true" />
           </folding>
