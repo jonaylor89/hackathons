@@ -17,8 +17,7 @@ def index(request):
     }
 
     _ = requests.post('https://www.virustotal.com/vtapi/v2/url/scan',
-                      data=params,
-                      headers=headers)
+                      data=params)
 
     params = {'apikey': '88a3fcdbe688d5928b05d668797d6b0da729e1f403909e12d2b15ca36ff12a99',
               'resources': 'http://www.virustotal.com'}
