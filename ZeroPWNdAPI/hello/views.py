@@ -26,7 +26,16 @@ def index(request):
                              headers=headers).json()
 
     print(json.dumps(response))
-    return HttpResponse(json.dumps(response))
+    if json.loads(response)["positives"] == 0:
+        return HttpResponse("[]")
+    else:
+        response_dict = json.loads(response)
+        exploits = []
+
+        for k, v in response_dict["scans"]:
+            exploits.append(k)
+
+        return HttpResponse(str(exploits))
 
 
 def db(request):
