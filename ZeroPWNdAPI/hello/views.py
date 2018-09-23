@@ -26,7 +26,8 @@ def index(request):
                              headers=headers).json()
 
     print(json.dumps(response))
-    if json.loads(response)["positives"] == 0:
+    response_dict = json.loads(response)
+    if response_dict["positives"] == 0:
         return HttpResponse("[]")
     else:
         response_dict = json.loads(response)
