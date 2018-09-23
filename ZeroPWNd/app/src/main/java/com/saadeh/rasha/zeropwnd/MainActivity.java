@@ -1,14 +1,12 @@
-package com.saadeh.rasha.getbentpt2;
+package com.saadeh.rasha.zeropwnd;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import java.io.IOException;
-import java.net.URL;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -20,11 +18,12 @@ import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
     public boolean scam = false;
-    private TextView mTextView;
+    public TextView mTextView;
     EditText mEdit;
-
+    String fakeResult = "";
     public String postUrl= "https://zeropwnd.herokuapp.com/";
-    public String postBody="https://facebook.com";
+    public String postBody="{url:www.facebook.com}";
+    public int responseBody;
 
     public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
 
@@ -33,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("ZeroPWNd");
 
 
 
@@ -58,14 +58,24 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                parseResponse(response);
+                 responseBody =parseResponse(response);
+
+
             }
         });
     }
 
     public int parseResponse(Response response) throws IOException {
 
-        return Integer.parseInt(Integer.toString(response.body().string().length()));
+
+        return (Integer.parseInt(Integer.toString(response.body().string().length())));
+
+
+        //responseBody = response.body().string().length();
+        //mTextView = (TextView) findViewById(R.id.text_results);
+        //mTextView.setText("This website is safe");
+        //String num = (String) (Integer.toString(response.body().string().length()));
+
     }
 
 
@@ -78,6 +88,22 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        mTextView = findViewById(R.id.text_results);
+
+        if(responseBody == 11){
+
+            mTextView.setText("This website is safe!");
+        } else{
+            mTextView.setText("This website is not safe");
+        }
+        //mTextView = (TextView) findViewById(R.id.text_results);
+        //mTextView.setText("This website is safe");
+//                        if (responseBody == 0){
+//                    mTextView.setText("This website is safe");
+//                } else{
+//                    mTextView.setText("This website is not safe");
+//                }
+       // mTextView.setText("This website is safe");
 
 
 //        mTextView = findViewById(R.id.text_results);
