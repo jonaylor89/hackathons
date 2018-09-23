@@ -1,4 +1,3 @@
-from typing import List, Any
 
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -14,8 +13,6 @@ import json
 # Create your views here.
 @csrf_exempt
 def index(request):
-
-    result = ""
 
     if request.method == 'POST':
 
@@ -59,7 +56,7 @@ def index(request):
 
                 return HttpResponse(str(exploits))
         except:
-            return HttpResponse("[invalid]")
+            return HttpResponse("invalid url")
 
     else:
         form = NameForm()
