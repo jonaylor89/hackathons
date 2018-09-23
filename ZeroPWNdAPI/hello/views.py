@@ -50,7 +50,7 @@ def index(request):
             return HttpResponse("[]")
 
     elif request.method == "GET":
-        return render("index.html")
+        return render(request, "index.html")
     else:
         return HttpResponse("[]")
 
