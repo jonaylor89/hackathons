@@ -3,6 +3,20 @@
 
 {% block content %}
 
+<div className="App">
 
+<header>
+  <h1>ZeroPWNd</h1>
+</header>
+
+<form onSubmit=handleSubmit>
+  <label>
+  Enter URL to inspect:
+  <input type="text" onChange=handleChange />
+  </label>
+  <input type="submit" value="Submit" />
+</form>
+
+</div>
 
 {% endblock %}

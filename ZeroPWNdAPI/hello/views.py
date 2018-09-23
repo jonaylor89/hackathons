@@ -49,7 +49,10 @@ def index(request):
         except:
             return HttpResponse("[]")
 
-    return HttpResponse("[]")
+    elif request.method == "GET":
+        return render("index.html")
+    else:
+        return HttpResponse("[]")
 
 
 def db(request):
