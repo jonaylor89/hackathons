@@ -57,7 +57,7 @@ def index(request):
 
                 return HttpResponse(str(exploits))
         except:
-            return HttpResponse("[]")
+            return HttpResponse("[invalid]")
 
     else:
         form = NameForm()
