@@ -53,13 +53,13 @@
         <counts>
           <entry key="Django Console" value="10" />
           <entry key="html" value="829" />
-          <entry key="py" value="6467" />
+          <entry key="py" value="6490" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="829" />
-          <entry key="Python" value="6477" />
+          <entry key="Python" value="6500" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -71,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hello/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="104">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding>
                 <element signature="e#1#36#0" expanded="true" />
               </folding>
@@ -125,8 +125,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
-    <option name="y" value="29" />
+    <option name="x" value="17" />
+    <option name="y" value="22" />
     <option name="width" value="1400" />
     <option name="height" value="783" />
   </component>
@@ -358,9 +358,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test__hello_tests_SimpleTest_test_clean - 2018.09.23 at 09h 28m 40s.xml">
-      <configuration name="Test: hello.tests.SimpleTest.test_clean" configurationId="DjangoTestsConfigurationType" />
-    </history-entry>
     <history-entry file="Test__hello_tests_SimpleTest_test_clean - 2018.09.23 at 09h 33m 17s.xml">
       <configuration name="Test: hello.tests.SimpleTest.test_clean" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
@@ -388,6 +385,9 @@
     <history-entry file="Test__hello_tests_SimpleTest - 2018.09.23 at 10h 19m 27s.xml">
       <configuration name="Test: hello.tests.SimpleTest" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
+    <history-entry file="Test__hello_tests_SimpleTest - 2018.09.23 at 10h 21m 33s.xml">
+      <configuration name="Test: hello.tests.SimpleTest" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,15 +399,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="29" width="1400" height="783" extended-state="0" />
-    <editor active="true" />
+    <frame x="17" y="22" width="1400" height="783" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15758468" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49852726" visible="true" weight="0.44428363" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49852726" weight="0.37192476" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39942113" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -416,7 +415,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3299566" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5014728" side_tool="true" weight="0.3299566" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4992636" weight="0.47756875" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4992636" visible="true" weight="0.47756875" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3299566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -503,8 +502,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hello/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="104">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
             <element signature="e#1#36#0" expanded="true" />
           </folding>
