@@ -3,7 +3,8 @@ from django.test import TestCase, RequestFactory
 
 from .views import index
 
-class SimpleTest(TestCase):
+
+class APITest(TestCase):
     def setUp(self):
         # Every test needs access to the request factory.
         self.factory = RequestFactory()
@@ -19,17 +20,23 @@ class SimpleTest(TestCase):
 
     def test_clean(self):
         # Create an instance of a POST request
-        request = self.factory.post('/')
+        request = self.factory.post('/', json={"body", "www.facebook.com"})
         request.user = AnonymousUser()
-        request.body = "www.facebook.com"
 
         response = index(request)
-        self.assertEqual(response.content, "[]")
+        self.assertEqual(response.content.decode(), "[]")
 
     def test_user_error(self):
-        request = self.factory.post('/')
+        request = self.factory.post('/', json={"body", "skfbkwhsbfkers"})  # Random Value
         request.user = AnonymousUser()
-        request.body = "wlsrjgnkwjfbnskd"  # Random value
 
         response = index(request)
-        self.assertEqual(response.content, "[]")
+        self.assertEqual(response.content.decode(), "[]")
+
+    def test_get(self):
+        request = self.factory.get('/')
+        request.user = AnonymousUser()
+
+        response = index(request)
+        self.assertEqual(response.content.decode(), "[]")
+

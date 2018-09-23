@@ -34,6 +34,7 @@ def index(request):
 
         print(json.dumps(response))
         response_dict = json.loads(json.dumps(response))
+
         try:
             if response_dict["positives"] == 0:
                 return HttpResponse("[]")
