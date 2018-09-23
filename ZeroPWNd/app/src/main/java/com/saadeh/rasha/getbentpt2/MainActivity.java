@@ -34,11 +34,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        try {
-            postRequest(postUrl,postBody);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
 
     }
@@ -58,16 +53,28 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call call, IOException e) {
                 call.cancel();
+
             }
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 Log.d("TAG",response.body().string());
+                parseResponse(response);
             }
         });
     }
 
+    public Response parseResponse(Response response){
+        return response;
+    }
+
     public void clickBtn(View view){
+        try {
+            postRequest(postUrl,postBody);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
 
 //        mTextView = findViewById(R.id.text_results);
 //        OkHttpClient client =  new OkHttpClient();
