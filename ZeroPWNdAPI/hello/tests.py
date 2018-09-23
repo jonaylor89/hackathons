@@ -20,13 +20,13 @@ class SimpleTest(TestCase):
 
     def test_clean(self):
         # Create an instance of a POST request
-        request = self.factory.post('/', data={"": "www.facebook.com"}, content_type="application/json")
+        request = self.factory.post('/', data={"url": "www.facebook.com"}, content_type="application/json")
         request.user = AnonymousUser()
         response = index(request)
         self.assertEqual(response.content.decode(), "[]")
 
     def test_user_error(self):
-        request = self.factory.post('/', data={"": "skfbkwhsbfkers"})  # Random Value
+        request = self.factory.post('/', data={"url": "skfbkwhsbfkers"}, content_type="application/json")  # Random Value
         request.user = AnonymousUser()
 
         response = index(request)
