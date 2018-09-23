@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public int parseResponse(Response response) throws IOException {
+    public void parseResponse(Response response) throws IOException {
 
         return (Integer.parseInt(Integer.toString(response.body().string().length())));
 
@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         //mTextView.setText("This website is safe");
         //String num = (String) (Integer.toString(response.body().string().length()));
 
+>>>>>>> c7f9e259dabb51bad44f250fae178cfd39a7eab4:app/src/main/java/com/saadeh/rasha/zeropwnd/MainActivity.java
     }
 
 
