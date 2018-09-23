@@ -18,10 +18,9 @@ def index(request):
         form = NameForm(request.POST)
 
         if form.is_valid():
-            url = form
+            url = form.cleaned_data["url"]
         else:
             url = request.body.decode()
-
 
         print(url)
 
