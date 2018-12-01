@@ -1,7 +1,7 @@
 
 extern crate termion;
 
-use std::fs::File;
+use std::fs::OpenOptions;
 use std::io::{
     self, 
     Write, 
@@ -48,15 +48,18 @@ impl Editor {
         })
     }
 
-    fn open(self, filename: String) {
+    fn open(&mut self, filename: String) {
 
-        let f = File::open(filename).expect("File IO error");
-        let mut file = BufReader::new(f);
-        let mut line: &str;
+        let f = OpenOptions::new().append(true)
+                                    .read(true)
+                                    .create(true)
+                                    .open(filename);
+        let mut reader = BufReader::new(f.unwrap());
 
-        let mut linelen: usize = file.read_line(&mut line).unwrap().expect("read_line error");
+        let line: String = reader.read_line().unwrap().expect("read_line error");
+        let mut linelen = line.len();
 
-        while linelen > 0 && line.char_at(linelen - 1) == '\n' || line.char_at(linelen - 1) {
+        while linelen > 0 && line.as_bytes()[linelen - 1] as char == '\n' {
             linelen -= 1; 
         }
 
@@ -79,7 +82,7 @@ impl Editor {
                     let welcome = "Vint Editor";
 
                     if welcome.len() > self.screencols{
-                        let (first_str, last_str) = welcome.split_at(self.screencols);
+                        let (first_str, _last_str) = welcome.split_at(self.screencols);
 
                         let mut padding = (self.screencols - first_str.len()) / 2;
                         if padding != 0 {
@@ -114,9 +117,9 @@ impl Editor {
                     buf.push_str("~");
                 }
             } else {
-                let len = self.row.unwrap().size;
-                if len > self.screencols {len = self.screencols;}
-                buf.push_str(&self.row.unwrap().chars);
+                // let mut len = &self.row.unwrap().size;
+                // if len > &self.screencols {len = &self.screencols;}
+                buf.push_str(&self.row.as_ref().unwrap().chars);
             }
 
             buf.push_str(format!("{}", termion::clear::UntilNewline).as_str());
@@ -210,10 +213,10 @@ impl Editor {
 
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
+    let file = env::args().nth(1).expect("Missing Argument");
 
     let mut editor = Editor::new().unwrap();
-    editor.open(args[1]);
+    editor.open(file);
 
     loop {
         editor.refresh_screen();
