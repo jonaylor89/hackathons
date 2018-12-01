@@ -8,6 +8,7 @@ use std::io::{
     Stdout, 
     stdout, 
     stdin,
+    BufRead,
     BufReader,
 }; 
 
@@ -24,7 +25,7 @@ struct Editor {
     screenrows: usize,
     screencols: usize,
     numrows: usize,
-    row: Option<Row>,
+    row: Vec<Option<Row>>,
 }
 
 struct Row {
@@ -44,7 +45,7 @@ impl Editor {
             screenrows: ysize as usize,
             screencols: xsize as usize,
             numrows: 0,
-            row: None,
+            row: Vec::with_capacity(1),
         })
     }
 
@@ -56,21 +57,25 @@ impl Editor {
                                     .open(filename);
         let mut reader = BufReader::new(f.unwrap());
 
-        let line: String = reader.read_line().unwrap().expect("read_line error");
-        let mut linelen = line.len();
-
-        while linelen > 0 && line.as_bytes()[linelen - 1] as char == '\n' {
-            linelen -= 1; 
+        for line in reader.lines() {
+            let line_str = line.unwrap();
+            let linelen = line_str.len();
+            self.append_row(line_str, linelen); 
         }
+    }
+
+    fn append_row(&mut self, s: String, len: usize) {
+
+        let at = self.numrows;
 
         let row = Row {
-            size: linelen,
-            chars: line.to_string(),
+            chars: s.to_string(), 
+            size: len
         };
 
-        self.row = Some(row);
-        self.numrows = 1;
-        
+        self.row[at] = Some(row);
+        self.numrows += 1;
+
     }
 
     fn draw_rows(&mut self, buf: &mut String) {
@@ -78,7 +83,7 @@ impl Editor {
         for y in 0..self.screenrows {
 
             if y >= self.numrows {
-                if y == self.screenrows / 3 {
+                if self.numrows == 0 && y == self.screenrows / 3 {
                     let welcome = "Vint Editor";
 
                     if welcome.len() > self.screencols{
@@ -119,7 +124,7 @@ impl Editor {
             } else {
                 // let mut len = &self.row.unwrap().size;
                 // if len > &self.screencols {len = &self.screencols;}
-                buf.push_str(&self.row.as_ref().unwrap().chars);
+                buf.push_str(&self.row[y].as_ref().unwrap().chars);
             }
 
             buf.push_str(format!("{}", termion::clear::UntilNewline).as_str());
