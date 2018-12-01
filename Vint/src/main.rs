@@ -21,6 +21,7 @@ use termion::raw::{IntoRawMode, RawTerminal};
 struct Editor {
     cx: usize,
     cy: usize,
+    rowoff: usize,
     stdout: RawTerminal<Stdout>,
     screenrows: usize,
     screencols: usize,
@@ -41,6 +42,7 @@ impl Editor {
         Ok(Editor {
             cx: 0,
             cy: 0,
+            rowoff: 0,
             stdout: stdout,
             screenrows: ysize as usize,
             screencols: xsize as usize,
@@ -66,23 +68,30 @@ impl Editor {
 
     fn append_row(&mut self, s: String, len: usize) {
 
-        let at = self.numrows;
-
         let row = Row {
             chars: s.to_string(), 
             size: len
         };
 
-        self.row[at] = Some(row);
+        self.row.push(Some(row));
         self.numrows += 1;
+    }
 
+    fn scroll(&mut self) {
+        if self.cy < self.rowoff {
+            self.rowoff = self.cy; 
+        } 
+
+        if self.cy >= self.rowoff + self.screenrows {
+            self.rowoff = self.cy - self.screenrows + 1;
+        }
     }
 
     fn draw_rows(&mut self, buf: &mut String) {
 
         for y in 0..self.screenrows {
-
-            if y >= self.numrows {
+            let filerow = y + self.rowoff;
+            if filerow >= self.numrows {
                 if self.numrows == 0 && y == self.screenrows / 3 {
                     let welcome = "Vint Editor";
 
@@ -124,7 +133,7 @@ impl Editor {
             } else {
                 // let mut len = &self.row.unwrap().size;
                 // if len > &self.screencols {len = &self.screencols;}
-                buf.push_str(&self.row[y].as_ref().unwrap().chars);
+                buf.push_str(&self.row[filerow].as_ref().unwrap().chars);
             }
 
             buf.push_str(format!("{}", termion::clear::UntilNewline).as_str());
@@ -137,6 +146,8 @@ impl Editor {
 
 
     fn refresh_screen(&mut self) {
+
+        self.scroll();
 
         let mut buf = String::new();
 
@@ -174,7 +185,7 @@ impl Editor {
             },
 
             Key::Down => {
-                if self.cy != self.screencols - 1 {
+                if self.cy < self.numrows {
                     self.cy += 1;
                 }
             },
@@ -229,3 +240,4 @@ fn main() {
     }
 
 }
+
