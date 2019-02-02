@@ -3,12 +3,24 @@
  */
 var SpotifyWebApi = require('spotify-web-api-node');
 var querystring = require('querystring');
+var fs = require('fs')
 
 var client_id = '';
 var client_secret = '';
-var redirect_uri = '';
+var redirect_uri = 'http://localhost:3000/spotifyCallback';
 var stateKey = 'spotify_auth_state';
 
+fs.readFile('./controllers/creds.json', 'utf8', function(err, contents){
+
+  if (err) {
+    console.log(err) 
+  }
+
+  let obj = JSON.parse(contents)
+
+  client_id = obj.client_id
+  client_secret = obj.client_secret
+});
 
 //Spotify Login
 module.exports.spotifyLogin = function (res) {
