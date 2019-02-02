@@ -28,7 +28,7 @@ router.get('/musicScape', function(req, res, next) {
 });
 
 router.get('/spotifycallback', function(req, res) {
-spotifyController.spotifyCallback(req, res)
+  spotifyController.spotifyCallback(req, res)
 });
 
 router.get('/login', function(req, res) {
