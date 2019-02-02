@@ -22,5 +22,9 @@ public class DrawView extends View {
         canvas.drawText("Hello world", (float)(getWidth() / 2), (float)(getHeight() / 2), paint);
     }
 
+    public boolean onTouchEvent(MotionEvent mEvent) {
 
+
+        return super.onTouchEvent(mEvent);
+    }
 }

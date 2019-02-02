@@ -9,7 +9,7 @@ public class APIClient {
     private static Retrofit retrofit = null;
 
     static Retrofit getClient() {
-
+/*
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
@@ -23,6 +23,28 @@ public class APIClient {
 
 
         return retrofit;
+        */
 
+
+        String API_BASE_URL = "https://api.github.com/";
+
+        OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
+
+        Retrofit.Builder builder =
+                new Retrofit.Builder()
+                        .baseUrl(API_BASE_URL)
+                        .addConverterFactory(
+                                GsonConverterFactory.create()
+                        );
+
+        Retrofit retrofit =
+                builder
+                        .client(
+                                httpClient.build()
+                        )
+                        .build();
+
+        AudioMeClient client =  retrofit.create(AudioMeClient.class);
+        return retrofit;
     }
 }
