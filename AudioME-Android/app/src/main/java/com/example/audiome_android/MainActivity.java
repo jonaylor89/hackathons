@@ -16,6 +16,9 @@ import com.spotify.protocol.types.Track;
 
 import java.io.IOException;
 
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(drawView);
+        Retrofit.Builder builder= new Retrofit.Builder().baseUrl("https://api.github.com/").addConverterFactory(GsonConverterFactory.create());
+        Retrofit retrofit = builder.build();
     }
 
     @Override
