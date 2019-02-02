@@ -1,5 +1,7 @@
 package com.example.audiome_android;
 
+import android.media.MediaPlayer;
+import android.os.UserManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,18 +14,20 @@ import com.spotify.protocol.client.Subscription;
 import com.spotify.protocol.types.PlayerState;
 import com.spotify.protocol.types.Track;
 
+import java.io.IOException;
+
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String CLIENT_ID = "your_client_id";
     private static final String REDIRECT_URI = "http://com.yourdomain.yourapp/callback";
     private SpotifyAppRemote mSpotifyAppRemote;
-
+    private DrawView drawView = new DrawView(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(drawView);
     }
 
     @Override
@@ -53,6 +57,16 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+        System.out.println("Testing print");
+
+        MediaPlayer mp = new MediaPlayer();
+        try {
+            mp.setDataSource("https://sample-videos.com/audio/mp3/crowd-cheering.mp3");
+            mp.prepare();
+            mp.start();
+        } catch (IOException io) {
+
+        }
     }
 
     @Override
@@ -73,5 +87,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
         */
+
+         System.out.println("testing print");
+
+
     }
 }
