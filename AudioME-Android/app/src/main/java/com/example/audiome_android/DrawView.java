@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.view.MotionEvent;
 import android.view.View;
 
 public class DrawView extends View {
@@ -20,4 +21,6 @@ public class DrawView extends View {
         paint.setTextSize(100);
         canvas.drawText("Hello world", (float)(getWidth() / 2), (float)(getHeight() / 2), paint);
     }
+
+
 }

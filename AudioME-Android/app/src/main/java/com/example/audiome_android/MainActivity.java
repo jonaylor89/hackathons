@@ -1,6 +1,7 @@
 package com.example.audiome_android;
 
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.UserManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import com.spotify.protocol.types.PlayerState;
 import com.spotify.protocol.types.Track;
 
 import java.io.IOException;
+import java.net.URI;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -22,17 +24,29 @@ public class MainActivity extends AppCompatActivity {
     private static final String CLIENT_ID = "your_client_id";
     private static final String REDIRECT_URI = "http://com.yourdomain.yourapp/callback";
     private SpotifyAppRemote mSpotifyAppRemote;
-    private DrawView drawView = new DrawView(this);
+    private DrawView drawView;
+    private SteamMP3 steamMP3;
+    private MediaPlayer mediaPlayer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        drawView = new DrawView(this);
         setContentView(drawView);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+        mediaPlayer = new MediaPlayer();
+        try {
+            mediaPlayer.setDataSource("https://sample-videos.com/audio/mp3/crowd-cheering.mp3");
+            mediaPlayer.prepare();
+            mediaPlayer.start();
+        } catch (IOException io) {
+            io.printStackTrace();
+        }
 
         ConnectionParams connectionParams =
                 new ConnectionParams.Builder(CLIENT_ID)
@@ -57,16 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-        System.out.println("Testing print");
 
-        MediaPlayer mp = new MediaPlayer();
-        try {
-            mp.setDataSource("https://sample-videos.com/audio/mp3/crowd-cheering.mp3");
-            mp.prepare();
-            mp.start();
-        } catch (IOException io) {
-
-        }
     }
 
     @Override
