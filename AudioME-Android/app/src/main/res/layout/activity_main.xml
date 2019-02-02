@@ -20,13 +20,9 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="285dp"
         android:text="Button"
-<<<<<<< HEAD
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="216dp" />
-=======
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="398dp" />
->>>>>>> 2af39f295da1f5cea1d7e95fdcd2c8bdc15e33fb
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

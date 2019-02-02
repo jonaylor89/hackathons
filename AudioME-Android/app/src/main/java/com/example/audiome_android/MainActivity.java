@@ -5,10 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+import retrofit2.Call;
 import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import retrofit2.http.QueryMap;
 import retrofit2.Retrofit;
@@ -25,21 +30,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         drawView = new DrawView(this);
         setContentView(drawView);
 
+        /*
         b1 = findViewById(R.id.buttonOne);
         b1.setOnClickListener(this);
-        Retrofit rf = RetrofitClient.getClient("http://api.github.com");
+        */
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://api.github.com")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
 
-        RestAdapter rest = new RestAdapter.Builder().setEndpoint(BASEPATH).build();
-        API service = rest.create(API.class);
-
-        Map<String, String> params = new HashMap<String, String>();
-        params.put("key1", "val1");
-        params.put("key2", "val2");
-        // ... as much as you need.
-
-        service.getMyThing(params, new Callback<String>() {
-            // ... do some stuff here.
-        });
+        APIService service = retrofit.create(APIService.class);
+        Call<List<AudioMeItems>> listCall = service.listRepos("dragonfury24");
+        try {
+            Response<List<AudioMeItems>> listResponse = listCall.execute();
+            List<AudioMeItems> items = listResponse.body();
+            System.out.println(items);
+        } catch (IOException io) {
+            io.printStackTrace();
+        }
+        System.out.println(service.listRepos("dragonfury24"));
     }
 
     @Override
@@ -48,8 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mp3Player = new MP3Player("https://sample-videos.com/audio/mp3/crowd-cheering.mp3");
         mp3Player.play();
 
-        Controller controller = new Controller();
-        controller.start();
+
     }
 
     @Override
@@ -62,12 +70,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.buttonOne) {
             //do something
         }
-    }
-
-
-    private interface API {
-        @GET("/thing")
-        void getMyThing(@QueryMap Map<String, String> params, new Callback<String> callback);
     }
 }
 
