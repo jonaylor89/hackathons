@@ -115,7 +115,7 @@ module.exports.spotifyCallback = function (req, res) {
                     liveness: liveness / data.body.audio_features.length
                 };
                 req.session.obj = obj;
-                res.redirect('/musicScape');
+                res.redirect('/audiome');
             }).catch(function(e) {
               console.log(e);
             });
@@ -149,3 +149,7 @@ function frequent(array) {
     }
     return maxEl;
 }
+
+modules.exports.spotifySearch = function(req, res) {
+    
+};

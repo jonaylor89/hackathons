@@ -10,7 +10,9 @@ router.get('/', function(req, res, next) {
   });
 });
 
-router.get('/musicScape', function(req, res, next) {
+router.get('/audiome', function(req, res, next) {
+
+
 
   // this is an JSON obj that contains the avg of the song features
   var obj = req.session.obj;
