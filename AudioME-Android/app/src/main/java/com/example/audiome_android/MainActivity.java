@@ -5,6 +5,8 @@ import android.os.UserManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.spotify.android.appremote.api.ConnectionParams;
 import com.spotify.android.appremote.api.Connector;
@@ -20,8 +22,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity  implements View.OnClickListener {
+    private Button b1;
     private static final String CLIENT_ID = "your_client_id";
     private static final String REDIRECT_URI = "http://com.yourdomain.yourapp/callback";
     private SpotifyAppRemote mSpotifyAppRemote;
@@ -31,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(drawView);
+        b1 = findViewById(R.id.buttonOne);
+        b1.setOnClickListener(this);
         Retrofit.Builder builder= new Retrofit.Builder().baseUrl("https://api.github.com/").addConverterFactory(GsonConverterFactory.create());
         Retrofit retrofit = builder.build();
     }
@@ -96,5 +100,12 @@ public class MainActivity extends AppCompatActivity {
          System.out.println("testing print");
 
 
+    }
+
+    @Override
+    public void onClick(View v) {
+if (v.getId() == R.id.buttonOne){
+    //do something
+}
     }
 }
