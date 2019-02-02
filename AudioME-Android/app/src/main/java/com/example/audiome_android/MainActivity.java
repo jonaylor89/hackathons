@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(new DrawView(this));
+        setContentView(R.layout.activity_main);
     }
 
     @Override
@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void connected() {
         mSpotifyAppRemote.getPlayerApi().play("spotify:playlist:37i9dQZF1DX2sUQwD7tbmL");
-
          /*
         mSpotifyAppRemote.getPlayerApi()
                 .subscribeToPlayerState()
