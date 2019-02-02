@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private MP3Player mp3Player;
 
     private Button b1;
+    TextView text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,21 +38,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b1.setOnClickListener(this);
         */
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://api.github.com")
+                .baseUrl("https://api.github.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-
         APIService service = retrofit.create(APIService.class);
         Call<List<AudioMeItems>> listCall = service.listRepos("dragonfury24");
-        try {
-            Response<List<AudioMeItems>> listResponse = listCall.execute();
-            List<AudioMeItems> items = listResponse.body();
-            System.out.println(items);
-        } catch (IOException io) {
-            io.printStackTrace();
-        }
-        System.out.println(service.listRepos("dragonfury24"));
+        listCall.enqueue(new Callback<List<AudioMeItems>>() {
+            @Override
+            public void onResponse(Call<List<AudioMeItems>> call, Response<List<AudioMeItems>> response) {
+                //Response<List<AudioMeItems>> listResponse = listCall.execute();
+                List<AudioMeItems> items = response.body();
+                Toast.makeText(getApplicationContext(), "System worked", Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onFailure(Call<List<AudioMeItems>> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), "System didn't work", Toast.LENGTH_LONG).show();
+                //System.out.print("System didn't work.");
+            }
+        });
+
+
     }
+
 
     @Override
     protected void onStart() {
