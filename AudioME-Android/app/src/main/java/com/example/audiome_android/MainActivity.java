@@ -5,6 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import retrofit2.Callback;
+import retrofit2.http.GET;
+import retrofit2.http.QueryMap;
+import retrofit2.Retrofit;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private DrawView drawView;
     private MP3Player mp3Player;
@@ -19,6 +27,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         b1 = findViewById(R.id.buttonOne);
         b1.setOnClickListener(this);
+        Retrofit rf = RetrofitClient.getClient("http://api.github.com");
+
+        RestAdapter rest = new RestAdapter.Builder().setEndpoint(BASEPATH).build();
+        API service = rest.create(API.class);
+
+        Map<String, String> params = new HashMap<String, String>();
+        params.put("key1", "val1");
+        params.put("key2", "val2");
+        // ... as much as you need.
+
+        service.getMyThing(params, new Callback<String>() {
+            // ... do some stuff here.
+        });
     }
 
     @Override
@@ -41,6 +62,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.buttonOne) {
             //do something
         }
+    }
+
+
+    private interface API {
+        @GET("/thing")
+        void getMyThing(@QueryMap Map<String, String> params, new Callback<String> callback);
     }
 }
 
