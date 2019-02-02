@@ -127,9 +127,15 @@ module.exports.spotifyCallback = function (req, res) {
                 };
                 req.session.obj = obj;
                 res.redirect('/musicScape');
+            }).catch(function(e) {
+              console.log(e);
             });
+        }).catch(function(e) {
+          console.log(e);
         });
         req.session.user = data.body.id.length > 10? data.body.display_name : data.body.id;
+    }).catch(function(e) {
+      console.log(e);
     });
 };
 
