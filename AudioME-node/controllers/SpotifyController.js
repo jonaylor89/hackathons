@@ -161,5 +161,10 @@ module.exports.spotifySearch = function(req, res) {
 			var song = playlist[index];
 			return YoutubeController.getInstrumental(song);
 		}
+	})
+	.catch((error) => {
+	  assert.isNotOk(error,'Promise error');
+	  done();
 	});
+	
 };
