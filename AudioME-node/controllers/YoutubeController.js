@@ -9,7 +9,7 @@ module.exports.grabInstrumental = function(title) {
 
   let opts = {
     maxResults: 1,
-    key: ''
+    key: 'AIzaSyArKNxoDuAkrTGXKrk9nFnAPseRX1xDStM'
   };
  
   return search(title, opts, function(err, results) {
