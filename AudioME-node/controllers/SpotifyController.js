@@ -152,20 +152,18 @@ function frequent(array) {
 
 module.exports.spotifySearch = function(req, res) {
  return  spotifyApi.getMe(function(err, user) {
-		var userPlaylists = spotifyApi.getUserPlaylists(user);
-		if (userPlaylists.length != 0) 
-		{
-			var index = (Math.random() * userPlaylists.length);
-			var playlist = userPlaylists[index];
+		spotifyApi.getUserPlaylists(user.body.id, function(data) {
+      console.log(data);
+    	if (data.length != 0) {
+			  var index = (Math.random() * userPlaylists.length);
+			  var playlist = userPlaylists[index];
 
-			index = (Math.random() * playlist.length);
-			var song = playlist[index];
-			return YoutubeController.getInstrumental(song);
-		}
-	})
-	.catch((error) => {
-	  assert.isNotOk(error,'Promise error');
-	  done();
+			  index = (Math.random() * playlist.length);
+			  var song = playlist[index];
+			  return YoutubeController.getInstrumental(song);
+		
+      }
+	  });
 	});
 	
 };
