@@ -15,6 +15,8 @@
     "morgan": "~1.9.0",
     "querystring": "^0.2.0",
     "serve-favicon": "~2.4.5",
-    "spotify-web-api-node": "^2.5.0"
+    "spotify-web-api-node": "^2.5.0",
+    "youtube-dl": "^1.12.2",
+    "youtube-search": "^1.1.4"
   }
 }
