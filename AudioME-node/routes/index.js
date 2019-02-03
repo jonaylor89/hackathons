@@ -12,20 +12,26 @@ router.get('/', function(req, res, next) {
 
 router.get('/audiome', function(req, res, next) {
 
+  /* 
+   * This is where the magic happens 
+   */
 
+
+  // this is the retrival of the mp3
+  var music = spotifyController.spotifySearch();
 
   // this is an JSON obj that contains the avg of the song features
   var obj = req.session.obj;
-  // this is the time difference between the first song and the last played song
-  var landscapeSize = req.session.timeDiff;
+
   // this is userName
   var user = req.session.user;
-  res.render('visualisation', {
-    title: 'musicScape',
-    d: obj,
-    t: landscapeSize,
-    u: user
-  });
+
+  res.render('visuals', {
+    title: 'audiome',
+    d : obj,
+    m : music
+    u : user
+  })
 
 });
 
