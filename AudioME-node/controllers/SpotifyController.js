@@ -150,6 +150,17 @@ function frequent(array) {
     return maxEl;
 }
 
-modules.exports.spotifySearch = function(req, res) {
+module.exports.spotifySearch = function(req, res) {
+    spotifyApi.getMe(function(err, user) {
+		var userPlaylists = spotify.getUserPlaylist(user);
+		if (playlist.length != 0) 
+		{
+			var index = (Math.random() * userPlaylists.length);
+			var playlist = userPlaylists[index];
+			index = (Math.random() * playlist.length);
+			var song = playlist[index];
+			YoutubeController.getInstrumental(song);
+		}
+	});
     
 };
