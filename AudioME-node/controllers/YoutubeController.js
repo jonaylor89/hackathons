@@ -17,7 +17,13 @@ module.exports.grabInstrumental = function(title) {
  
       console.log(results);
 
-      
+      let url = results[0];
+
+      ytdl.exec(url, ['-i', '--audio-format', 'mp3'], {}, function(err, output) {
+        if (err) throw err;
+
+        console.log(output.join('\n'));
+      });   
   });
   
 };

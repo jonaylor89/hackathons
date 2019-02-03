@@ -162,5 +162,4 @@ module.exports.spotifySearch = function(req, res) {
 			YoutubeController.getInstrumental(song);
 		}
 	});
-    
 };
