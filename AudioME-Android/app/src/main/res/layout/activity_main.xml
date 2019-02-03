@@ -8,20 +8,23 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="428dp"
-        android:text="Button"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="472dp"
+        android:text="play"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="313dp"
-        android:layout_height="113dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="186dp" />
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="472dp"
+        android:text="pause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

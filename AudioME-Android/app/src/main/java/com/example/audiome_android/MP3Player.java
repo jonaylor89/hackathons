@@ -13,8 +13,7 @@ public class MP3Player {
         mediaPlayer = new MediaPlayer();
     }
 
-    public void play() {
-        mediaPlayer = new MediaPlayer();
+    public boolean play() {
         try {
             mediaPlayer.setDataSource(MP3Link);
             mediaPlayer.prepare();
@@ -22,5 +21,7 @@ public class MP3Player {
         } catch (IOException io) {
             io.printStackTrace();
         }
+
+        return true;
     }
 }

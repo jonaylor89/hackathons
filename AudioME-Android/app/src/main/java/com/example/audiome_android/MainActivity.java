@@ -57,18 +57,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //System.out.print("System didn't work.");
             }
         });
-
-
-    }
-
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        mp3Player = new MP3Player("https://sample-videos.com/audio/mp3/crowd-cheering.mp3");
-        mp3Player.play();
-
-
     }
 
     @Override
