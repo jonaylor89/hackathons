@@ -157,6 +157,7 @@ module.exports.spotifySearch = function(req, res) {
 		{
 			var index = (Math.random() * userPlaylists.length);
 			var playlist = userPlaylists[index];
+
 			index = (Math.random() * playlist.length);
 			var song = playlist[index];
 			return YoutubeController.getInstrumental(song);
