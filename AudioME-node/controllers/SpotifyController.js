@@ -152,7 +152,7 @@ function frequent(array) {
 
 module.exports.spotifySearch = function(req, res) {
  return  spotifyApi.getMe(function(err, user) {
-		var userPlaylists = spotify.getUserPlaylist(user);
+		var userPlaylists = spotifyApi.getUserPlaylist(user);
 		if (playlist.length != 0) 
 		{
 			var index = (Math.random() * userPlaylists.length);
