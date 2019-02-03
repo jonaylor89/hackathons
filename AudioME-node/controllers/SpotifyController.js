@@ -3,7 +3,10 @@
  */
 var SpotifyWebApi = require('spotify-web-api-node');
 var querystring = require('querystring');
-var fs = require('fs')
+var fs = require('fs');
+var https = require('https');
+var request = require('request');
+var YoutubeController = require('./YoutubeController');
 
 var client_id = process.env.CLIENT_ID
 var client_secret = process.env.CLIENT_SECRET
@@ -152,22 +155,31 @@ function frequent(array) {
 
 module.exports.spotifySearch = function(req, res) {
  return  spotifyApi.getMe(function(err, user) {
-		spotifyApi.getUserPlaylists(user, function(err, userPlaylists){
-                console.log(userPlaylists);
-		if (userPlaylists.length != 0) 
-		{
-		var index = (Math.random() * userPlaylists.length);
-		var playlist = useruserPlaylist.length;
-		index = (Math.random() * userPlaylists.length);
-		var song = playlist[index];
-		return YoutubeController.getInstrumental(song);
-		}	
-		});
+		spotifyApi.getUserPlaylists(user.body.id).then(function(data) {
+    	if (data.body.items.length != 0) {
+			  var index = (Math.floor(Math.random() * data.body.items.length));
 
-	})
-	.catch((error) => {
-	  assert.isNotOk(error,'Promise error');
-	  done();
+			  var playlist = data.body.items[index];
+
+        request({ url : playlist.href,
+          auth: {
+            'bearer' : spotifyApi.getAccessToken() }
+        }, function(err, res) {
+
+          let data = JSON.parse(res.body)
+
+          index = Math.floor(Math.random() * data.tracks.items.length);
+          let song = data.tracks.items[index].track.name
+
+          console.log("SONG SELECTION: " + song);
+
+          return YoutubeController.grabInstrumental(song)
+          
+        });
+		
+      }
+	  }, function(err) {
+      console.log(err) 
+    });
 	});
-	
 };
