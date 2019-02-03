@@ -151,7 +151,7 @@ function frequent(array) {
 }
 
 module.exports.spotifySearch = function(req, res) {
-    spotifyApi.getMe(function(err, user) {
+ return  spotifyApi.getMe(function(err, user) {
 		var userPlaylists = spotify.getUserPlaylist(user);
 		if (playlist.length != 0) 
 		{
@@ -159,7 +159,7 @@ module.exports.spotifySearch = function(req, res) {
 			var playlist = userPlaylists[index];
 			index = (Math.random() * playlist.length);
 			var song = playlist[index];
-			YoutubeController.getInstrumental(song);
+			return YoutubeController.getInstrumental(song);
 		}
 	});
 };
