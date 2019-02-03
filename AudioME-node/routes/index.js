@@ -29,7 +29,7 @@ router.get('/audiome', function(req, res, next) {
   res.render('visuals', {
     title: 'audiome',
     d : obj,
-    m : music
+    m : music,
     u : user
   })
 

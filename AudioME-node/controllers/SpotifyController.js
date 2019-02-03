@@ -150,6 +150,6 @@ function frequent(array) {
     return maxEl;
 }
 
-modules.exports.spotifySearch = function(req, res) {
+module.exports.spotifySearch = function(req, res) {
     
 };
