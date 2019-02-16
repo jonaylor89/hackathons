@@ -10,5 +10,8 @@ require (
 	github.com/gobuffalo/mw-paramlogger v0.0.0-20190129202837-395da1998525
 	github.com/gobuffalo/packr v1.22.0
 	github.com/gobuffalo/pop v4.9.8+incompatible
+	github.com/gobuffalo/suite v2.6.0+incompatible
+	github.com/gobuffalo/uuid v2.0.5+incompatible
+	github.com/gobuffalo/validate v2.0.3+incompatible
 	github.com/unrolled/secure v1.0.0
 )
