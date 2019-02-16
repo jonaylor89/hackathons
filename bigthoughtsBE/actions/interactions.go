@@ -9,7 +9,7 @@ import (
 func GetClassMembers(c buffalo.Context) error {
 	// []models.Person
 
-	_, err := c.Response().Write([]byte("Hello"))
+	_, err := c.Response().Write([]byte("Hello World"))
 
 	return err
 }
@@ -18,7 +18,7 @@ func GetClassMembers(c buffalo.Context) error {
 func GetClassList(c buffalo.Context) error {
 	// []models.Class
 
-	_, err := c.Response().Write([]byte("Hello"))
+	_, err := c.Response().Write([]byte("Hello World"))
 
 	return err
 }
@@ -31,7 +31,7 @@ func GetClassList(c buffalo.Context) error {
 func GetMessageHist(c buffalo.Context) error {
 	// []models.Message
 
-	_, err := c.Response().Write([]byte("Hello"))
+	_, err := c.Response().Write([]byte("Hello World"))
 
 	return err
 }
@@ -41,7 +41,7 @@ func GetMessageHist(c buffalo.Context) error {
 func GetNameByID(c buffalo.Context) error {
 	//string
 
-	_, err := c.Response().Write([]byte("Hello"))
+	_, err := c.Response().Write([]byte("Hello World"))
 
 	return err
 }
@@ -54,7 +54,7 @@ func GetNameByID(c buffalo.Context) error {
 // author and userID are equal if author is student in question
 func SendMessage(c buffalo.Context) error {
 
-	_, err := c.Response().Write([]byte("Hello"))
+	_, err := c.Response().Write([]byte("Hello World"))
 
 	return err
 }
@@ -63,7 +63,7 @@ func SendMessage(c buffalo.Context) error {
 func PopulateDataForTA(c buffalo.Context) error {
 	// models.SuperDuperMegaContainer
 
-	_, err := c.Response().Write([]byte("Hello"))
+	_, err := c.Response().Write([]byte("Hello World"))
 
 	return err
 }
