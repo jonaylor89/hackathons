@@ -8,9 +8,9 @@ import (
 )
 
 type Person struct {
-	user_id    string `db:"user_id"`
-	first_name string `db:"first_name"`
-	last_name  string `db:"last_name"`
+	User_id    string `db:"user_id"`
+	First_name string `db:"first_name"`
+	Last_name  string `db:"last_name"`
 }
 
 // String is not required by pop and may be deleted
