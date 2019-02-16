@@ -59,6 +59,10 @@ func App() *buffalo.App {
 		app.Use(translations())
 
 		app.GET("/", HomeHandler)
+		app.GET("/ta/{taid}/classes", PopulateDataForTA)
+		app.GET("/classes/{classID}/members", GetClassMembers)
+		app.GET("/classes/{classID}/{userID}/messages", GetMessageHist)
+		app.POST("/messaages/{content, author, classID, userID}", SendMessage)
 
 		app.ServeFiles("/", assetsBox) // serve files from the public directory
 

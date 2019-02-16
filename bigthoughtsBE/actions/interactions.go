@@ -1,18 +1,19 @@
 package actions
 
 import (
-	"github.com/bigthoughts/models"
 	"github.com/gobuffalo/buffalo"
 )
 
 //Takes parameter classID - ID of the class
 // to get the members of
-func GetClassMembers(c buffalo.Context) []models.Person {
+func GetClassMembers(c buffalo.Context) error {
+	// []models.Person
 	return nil
 }
 
 //Takes parameter TAID teachers assistant ID
-func GetClassList(c buffalo.Context) []models.Class {
+func GetClassList(c buffalo.Context) error {
+	// []models.Class
 	return nil
 }
 
@@ -21,7 +22,8 @@ func GetClassList(c buffalo.Context) []models.Class {
 //	classID - class ID of messages to retrieve
 //	userID - student ID of messages to retrieve
 //	offset - where in the history to start retrieving from
-func GetMessageHist(c buffalo.Context) []models.Message {
+func GetMessageHist(c buffalo.Context) error {
+	// []models.Message
 	return nil
 }
 
@@ -37,11 +39,12 @@ func GetNameByID(c buffalo.Context) string {
 //	classID - ID of class message was sent in
 //	userID - userID of student message was in regards to
 // author and userID are equal if author is student in question
-func SendMessage(c buffalo.Context) {
-
+func SendMessage(c buffalo.Context) error {
+	return nil
 }
 
 //Takes parameter taid, the userID of the TA
-func PopulateDataForTA(c buffalo.Context) models.SuperDuperMegaContainer {
-	return models.SuperDuperMegaContainer{}
+func PopulateDataForTA(c buffalo.Context) error {
+	// models.SuperDuperMegaContainer
+	return nil
 }
