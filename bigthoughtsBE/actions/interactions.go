@@ -41,7 +41,7 @@ func GetMessageHist(c buffalo.Context) error {
 func GetNameByID(c buffalo.Context) error {
 	//string
 
-	_, err := c.Response().Write([]byte("Hello World"))
+	_, err := c.Response().Write([]byte(c.Param("userID")))
 
 	return err
 }
