@@ -1,8 +1,6 @@
 package actions
 
 import (
-	"fmt"
-
 	"github.com/bigthoughts/models"
 	"github.com/gobuffalo/buffalo"
 )
@@ -14,7 +12,6 @@ func GetClassMembersLogical(classID int) []models.Person {
 	rows := models.DB.RawQuery("select * from person where user_id in (select distinct user_id from message where class_id = ?);", classID)
 
 	rows.All(&members)
-	fmt.Print(members[0].First_name)
 	return members
 }
 

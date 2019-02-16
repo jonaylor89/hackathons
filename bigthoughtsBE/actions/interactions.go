@@ -9,7 +9,7 @@ import (
 func GetClassMembers(c buffalo.Context) error {
 	// []models.Person
 
-	_, err := c.Response().Write([]byte("Hello World"))
+	_, err := c.Response().Write([]byte(GetClassMembersLogical(1)[0].String()))
 
 	return err
 }
