@@ -59,6 +59,7 @@ func App() *buffalo.App {
 		app.Use(translations())
 
 		app.GET("/", HomeHandler)
+		app.GET("/users/{userID}", GetNameByID)
 		app.GET("/ta/{taid}/classes", PopulateDataForTA)
 		app.GET("/classes/{classID}/members", GetClassMembers)
 		app.GET("/classes/{classID}/{userID}/messages", GetMessageHist)

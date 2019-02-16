@@ -29,8 +29,9 @@ func GetMessageHist(c buffalo.Context) error {
 
 //Takes parameter userID, returns first and last name of
 // user assosciated with that ID
-func GetNameByID(c buffalo.Context) string {
-	return ""
+func GetNameByID(c buffalo.Context) error {
+	//string
+	return nil
 }
 
 //Takes parameters content, author, classID, and userID
@@ -48,3 +49,4 @@ func PopulateDataForTA(c buffalo.Context) error {
 	// models.SuperDuperMegaContainer
 	return nil
 }
+
