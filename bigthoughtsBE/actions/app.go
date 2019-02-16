@@ -1,6 +1,8 @@
 package actions
 
 import (
+	"net/http"
+
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/envy"
 	forcessl "github.com/gobuffalo/mw-forcessl"
@@ -64,6 +66,9 @@ func App() *buffalo.App {
 		app.GET("/classes/{classID}/members", GetClassMembers)
 		app.GET("/classes/{classID}/{userID}/messages", GetMessageHist)
 		app.POST("/messages/{content, author, classID, userID}", SendMessage)
+
+		http.HandleFunc("/updater", Updater)
+		http.ListenAndServe("ws://localhost:9090", nil)
 
 		app.ServeFiles("/", assetsBox) // serve files from the public directory
 
