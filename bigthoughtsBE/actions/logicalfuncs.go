@@ -1,8 +1,9 @@
 package actions
 
 import (
+	"fmt"
+
 	"github.com/bigthoughts/models"
-	"github.com/gobuffalo/buffalo"
 )
 
 //Takes parameter classID - ID of the class
@@ -21,13 +22,20 @@ func GetClassMembersLogical(classID int) []models.Person {
 //	userID - student ID of messages to retrieve
 //	offset - where in the history to start retrieving from
 func GetMessageHistLogical(classID int, userID string) []models.Message {
-	return nil
+	messages := []models.Message{}
+	query := models.DB.RawQuery("select * from message;")
+	query.Where("user_id like ? and class_id = ?", userID, classID)
+	return messages
 }
 
 //Takes parameter userID, returns first and last name of
 // user assosciated with that ID
-func GetNameByIDLogical(userID string) string {
-	return ""
+func GetNameByIDLogical(userID string) models.Person {
+	fmt.Print(userID)
+	p := models.Person{}
+	rows := models.DB.RawQuery("select * from person;")
+	rows.Where("user_id like ?", userID).First(&p)
+	return p
 }
 
 //Takes parameters content, author, classID, and userID
@@ -41,6 +49,6 @@ func SendMessageLogical(content, author, userID string, classID int) {
 }
 
 //Takes parameter taid, the userID of the TA
-func PopulateDataForTALogical(c buffalo.Context) models.SuperDuperMegaContainer {
-	return models.SuperDuperMegaContainer{}
-}
+//func PopulateDataForTALogical(c buffalo.Context) models.SuperDuperMegaContainer {
+//	return models.SuperDuperMegaContainer{}
+//}
