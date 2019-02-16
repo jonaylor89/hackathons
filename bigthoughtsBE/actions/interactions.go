@@ -8,13 +8,19 @@ import (
 // to get the members of
 func GetClassMembers(c buffalo.Context) error {
 	// []models.Person
-	return nil
+
+	_, err := c.Response().Write([]byte("Hello World"))
+
+	return err
 }
 
 //Takes parameter TAID teachers assistant ID
 func GetClassList(c buffalo.Context) error {
 	// []models.Class
-	return nil
+
+	_, err := c.Response().Write([]byte("Hello World"))
+
+	return err
 }
 
 //Takes parameters num, classID, userID, offset
@@ -24,14 +30,20 @@ func GetClassList(c buffalo.Context) error {
 //	offset - where in the history to start retrieving from
 func GetMessageHist(c buffalo.Context) error {
 	// []models.Message
-	return nil
+
+	_, err := c.Response().Write([]byte("Hello World"))
+
+	return err
 }
 
 //Takes parameter userID, returns first and last name of
 // user assosciated with that ID
 func GetNameByID(c buffalo.Context) error {
 	//string
-	return nil
+
+	_, err := c.Response().Write([]byte(c.Param("userID")))
+
+	return err
 }
 
 //Takes parameters content, author, classID, and userID
@@ -41,12 +53,17 @@ func GetNameByID(c buffalo.Context) error {
 //	userID - userID of student message was in regards to
 // author and userID are equal if author is student in question
 func SendMessage(c buffalo.Context) error {
-	return nil
+
+	_, err := c.Response().Write([]byte("Hello World"))
+
+	return err
 }
 
 //Takes parameter taid, the userID of the TA
 func PopulateDataForTA(c buffalo.Context) error {
 	// models.SuperDuperMegaContainer
-	return nil
-}
 
+	_, err := c.Response().Write([]byte("Hello World"))
+
+	return err
+}
