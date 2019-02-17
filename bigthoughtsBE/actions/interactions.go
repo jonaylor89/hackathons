@@ -8,7 +8,7 @@ import (
 	socketio "github.com/googollee/go-socket.io"
 )
 
-var server socketio.Server
+var server *socketio.Server
 
 func StartWebSocketServer() {
 	var err error
