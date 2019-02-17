@@ -360,6 +360,10 @@ github.com/google/martian v2.1.0+incompatible/go.mod h1:9I4somxYTbIHy5NJKHRl3wXi
 github.com/google/pprof v0.0.0-20181206194817-3ea8567a2e57/go.mod h1:zfwlbNMJ+OItoe0UupaVj+oy1omPYYDuagoSzA8v9mc=
 github.com/googleapis/gax-go v2.0.0+incompatible/go.mod h1:SFVmujtThgffbyetf+mdk2eWhX2bMyUtNHzFKcPA9HY=
 github.com/googleapis/gax-go/v2 v2.0.3/go.mod h1:LLvjysVCY1JZeum8Z6l8qUty8fiNwE08qbEPm1M08qg=
+github.com/googollee/go-engine.io v0.0.0-20190213132105-4e7e01159ce8 h1:8HLaB8ZIMgfiTTmT6tBs9S3qnfH6/jsoBThZVq+BYcA=
+github.com/googollee/go-engine.io v0.0.0-20190213132105-4e7e01159ce8/go.mod h1:MBpz1MS3P4HtRcBpQU4HcjvWXZ9q+JWacMEh2/BFYbg=
+github.com/googollee/go-socket.io v0.0.0-20190212104026-acaa89b622f6 h1:ZWEXt939m5lEiflyguvAylaliU06j8sByjYW44zhkaM=
+github.com/googollee/go-socket.io v0.0.0-20190212104026-acaa89b622f6/go.mod h1:ftBGBMhSYToR5oV4ImIPKvAIsNaTkLC+tTvoNafqxlQ=
 github.com/gopherjs/gopherjs v0.0.0-20181017120253-0766667cb4d1/go.mod h1:wJfORRmW1u3UXTncJ5qlYoELFm8eSnnEO6hX4iZ3EWY=
 github.com/gorilla/context v1.1.1 h1:AWwleXJkX/nhcU9bZSnZoi3h/qGYqQAGhq6zZe/aQW8=
 github.com/gorilla/context v1.1.1/go.mod h1:kBGZzfjB9CEq2AlWe17Uuf7NDRt0dE0s8S51q0aT7Yg=

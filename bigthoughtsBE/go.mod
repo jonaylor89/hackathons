@@ -13,6 +13,8 @@ require (
 	github.com/gobuffalo/suite v2.6.0+incompatible
 	github.com/gobuffalo/uuid v2.0.5+incompatible
 	github.com/gobuffalo/validate v2.0.3+incompatible
+	github.com/googollee/go-engine.io v0.0.0-20190213132105-4e7e01159ce8 // indirect
+	github.com/googollee/go-socket.io v0.0.0-20190212104026-acaa89b622f6
 	github.com/gorilla/websocket v1.4.0
 	github.com/markbates/grift v1.0.5
 	github.com/pkg/errors v0.8.1
