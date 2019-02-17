@@ -7,14 +7,15 @@ import (
 	"log"
 	"net/http"
 	"net/url"
+	"os"
 	"strings"
 )
 
 func Text(To, From string) {
 
 	// Set initial variables
-	accountSid := "TWILIO_ACCOUNT_SID"
-	authToken := "TWILIO_AUTH_TOKEN"
+	accountSid := os.Getenv("TWILIO_ACCOUNT_SID")
+	authToken := os.Getenv("TWILIO_AUTH_TOKEN")
 	urlStr := "https://api.twilio.com/2010-04-01/Accounts/" + accountSid + "/Messages.json"
 
 	// Build out the data for our message

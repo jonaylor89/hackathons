@@ -1,8 +1,40 @@
 package actions
 
 import (
+	"log"
+	"net/http"
+
 	"github.com/gobuffalo/buffalo"
+	socketio "github.com/googollee/go-socket.io"
 )
+
+var server socketio.Server
+
+func StartWebSocketServer() {
+	var server, err = socketio.NewServer(nil)
+	if err != nil {
+		log.Fatal(err)
+	}
+	server.On("connection", func(so socketio.Socket) {
+		log.Println("on connection")
+		so.Join("chat")
+
+		so.On("chat message", func(msg string) {
+			log.Println("emit:", so.Emit("chat message", msg))
+			server.BroadcastTo("chat", "chat message", msg)
+		})
+		so.On("disconnection", func() {
+			log.Println("on disconnect")
+		})
+	})
+	server.On("error", func(so socketio.Socket, err error) {
+		log.Println("error:", err)
+	})
+
+	http.Handle("/", server)
+	log.Println("Serving web socket connection at localhost:5000...")
+	http.ListenAndServe(":5000", nil)
+}
 
 //Takes parameter classID - ID of the class
 // to get the members of

@@ -16,7 +16,10 @@ require (
 	github.com/googollee/go-engine.io v0.0.0-20190213132105-4e7e01159ce8 // indirect
 	github.com/googollee/go-socket.io v0.0.0-20190212104026-acaa89b622f6
 	github.com/gorilla/websocket v1.4.0
+	github.com/jtolds/gls v4.2.1+incompatible // indirect
 	github.com/markbates/grift v1.0.5
 	github.com/pkg/errors v0.8.1
+	github.com/smartystreets/assertions v0.0.0-20190215210624-980c5ac6f3ac // indirect
+	github.com/smartystreets/goconvey v0.0.0-20181108003508-044398e4856c // indirect
 	github.com/unrolled/secure v1.0.0
 )
