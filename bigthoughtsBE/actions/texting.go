@@ -6,6 +6,8 @@ import (
 	"net/url"
 	"os"
 	"strings"
+
+	"github.com/gobuffalo/buffalo"
 )
 
 var (
@@ -40,4 +42,8 @@ func Text(To, msg string) error {
 	log.Println(resp.Status)
 
 	return nil
+}
+
+func IncomingMsgHandler(c buffalo.Context) {
+	// TODO
 }
