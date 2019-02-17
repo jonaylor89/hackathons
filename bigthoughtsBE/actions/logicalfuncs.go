@@ -1,6 +1,7 @@
 package actions
 
 import (
+	"encoding/json"
 	"fmt"
 
 	"github.com/bigthoughts/models"
@@ -21,11 +22,21 @@ func GetClassMembersLogical(classID int) []models.Person {
 //	classID - class ID of messages to retrieve
 //	userID - student ID of messages to retrieve
 //	offset - where in the history to start retrieving from
-func GetMessageHistLogical(classID int, userID string) []models.Message {
-	messages := []models.Message{}
-	query := models.DB.RawQuery("select * from message;")
-	query.Where("user_id like ? and class_id = ?", userID, classID)
-	return messages
+func GetMessageHistLogical(classID int, userID string) string {
+	//messages := []models.Message{}
+	//fmt.Print(userID)
+	//fmt.Print("\n")
+	//query := models.DB.RawQuery("select * from message;")
+	//right_user := query.Where("user_id like $1", userID)
+	//right_user.All(&messages)
+	//return messages
+	fmt.Print(userID)
+	p := []models.Message{}
+	rows := models.DB.RawQuery("select * from message where user_id like ? and class_id = ?", userID, classID)
+	//user := rows.Where("user_id like ? and class_id = ?", userID, classID)
+	rows.All(&p)
+	js, _ := json.Marshal(p)
+	return string(js)
 }
 
 //Takes parameter userID, returns first and last name of
@@ -33,8 +44,8 @@ func GetMessageHistLogical(classID int, userID string) []models.Message {
 func GetNameByIDLogical(userID string) models.Person {
 	fmt.Print(userID)
 	p := models.Person{}
-	rows := models.DB.RawQuery("select * from person;")
-	rows.Where("user_id like ?", userID).First(&p)
+	rows := models.DB.RawQuery("select * from person where user_id like ?;", userID)
+	rows.First(&p)
 	return p
 }
 

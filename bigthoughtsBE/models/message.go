@@ -2,18 +2,19 @@ package models
 
 import (
 	"encoding/json"
+	"time"
 
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/validate"
 )
 
 type Message struct {
-	time_stamp int    `db:"time_stamp"`
-	content    string `db:"content"`
-	author     string `db:"author"`
-	class_id   int    `db:"class_id"`
-	message_id int    `db:"message_id"`
-	user_id    string `db:"user_id"`
+	Time_stamp time.Time `db:"time_stamp"`
+	Content    string    `db:"content"`
+	Author     string    `db:"author"`
+	Class_id   int       `db:"class_id"`
+	Message_id int       `db:"message_id"`
+	User_id    string    `db:"user_id"`
 }
 
 // String is not required by pop and may be deleted

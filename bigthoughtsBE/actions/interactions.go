@@ -64,7 +64,7 @@ func GetClassList(c buffalo.Context) error {
 func GetMessageHist(c buffalo.Context) error {
 	// []models.Message
 
-	_, err := c.Response().Write([]byte(GetMessageHistLogical(1, c.Param("userID"))[0].String()))
+	_, err := c.Response().Write([]byte(GetMessageHistLogical(1, c.Param("userID"))))
 
 	return err
 }
