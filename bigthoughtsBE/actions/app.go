@@ -59,13 +59,16 @@ func App() *buffalo.App {
 		app.Use(translations())
 
 		//StartWebSocketServer()
+		_ = Text("+15404097366", "Server starting up")
 
 		app.GET("/", HomeHandler)
 		app.GET("/users/{userID}", GetNameByID)
 		app.GET("/ta/{taid}/classes", PopulateDataForTA)
 		app.GET("/classes/{classID}/members", GetClassMembers)
 		app.GET("/classes/{classID}/{userID}/messages", GetMessageHist)
+
 		app.POST("/messages/{content, author, classID, userID}", SendMessage)
+		app.POST("/incoming", IncomingMsgHandler)
 
 		app.ServeFiles("/", assetsBox) // serve files from the public directory
 

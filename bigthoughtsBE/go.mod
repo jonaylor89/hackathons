@@ -1,6 +1,7 @@
 module github.com/bigthoughts
 
 require (
+	github.com/desertbit/glue v0.0.0-20171018142742-09c14070c2b1
 	github.com/gobuffalo/buffalo v0.13.13
 	github.com/gobuffalo/buffalo-pop v1.7.0
 	github.com/gobuffalo/envy v1.6.15
@@ -21,5 +22,6 @@ require (
 	github.com/pkg/errors v0.8.1
 	github.com/smartystreets/assertions v0.0.0-20190215210624-980c5ac6f3ac // indirect
 	github.com/smartystreets/goconvey v0.0.0-20181108003508-044398e4856c // indirect
+	github.com/subosito/twilio v0.0.1
 	github.com/unrolled/secure v1.0.0
 )

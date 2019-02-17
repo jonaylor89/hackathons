@@ -1,35 +1,39 @@
 package actions
 
 import (
-	"encoding/json"
-	"fmt"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"net/url"
 	"os"
 	"strings"
+
+	"github.com/gobuffalo/buffalo"
 )
 
-func Text(To, From string) {
+var (
+	AccountSid   = os.Getenv("TWILIO_ACCOUNT_SID")
+	AuthToken    = os.Getenv("TWILIO_AUTH_TOKEN")
+	UrlStr       = "https://api.twilio.com/2010-04-01/Accounts/" + AccountSid + "/Messages.json"
+	TwilioNumber = "+15404862896"
+)
 
-	// Set initial variables
-	accountSid := os.Getenv("TWILIO_ACCOUNT_SID")
-	authToken := os.Getenv("TWILIO_AUTH_TOKEN")
-	urlStr := "https://api.twilio.com/2010-04-01/Accounts/" + accountSid + "/Messages.json"
+func Text(To, msg string) error {
 
 	// Build out the data for our message
 	v := url.Values{}
 	v.Set("To", To)
-	v.Set("From", From)
-	v.Set("Body", "Brooklyn's in the house!")
+	v.Set("From", TwilioNumber)
+	v.Set("Body", msg)
 	rb := *strings.NewReader(v.Encode())
 
 	// Create client
 	client := &http.Client{}
 
-	req, _ := http.NewRequest("POST", urlStr, &rb)
-	req.SetBasicAuth(accountSid, authToken)
+	req, err := http.NewRequest("POST", UrlStr, &rb)
+	if err != nil {
+		return err
+	}
+	req.SetBasicAuth(AccountSid, AuthToken)
 	req.Header.Add("Accept", "application/json")
 	req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
 
@@ -37,14 +41,9 @@ func Text(To, From string) {
 	resp, _ := client.Do(req)
 	log.Println(resp.Status)
 
-	if resp.StatusCode >= 200 && resp.StatusCode < 300 {
-		var data map[string]interface{}
-		bodyBytes, _ := ioutil.ReadAll(resp.Body)
-		err := json.Unmarshal(bodyBytes, &data)
-		if err == nil {
-			fmt.Println(data["sid"])
-		}
-	} else {
-		fmt.Println(resp.Status)
-	}
+	return nil
+}
+
+func IncomingMsgHandler(c buffalo.Context) {
+	// TODO
 }
