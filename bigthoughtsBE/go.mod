@@ -1,6 +1,7 @@
 module github.com/bigthoughts
 
 require (
+	github.com/desertbit/glue v0.0.0-20171018142742-09c14070c2b1
 	github.com/gobuffalo/buffalo v0.13.13
 	github.com/gobuffalo/buffalo-pop v1.7.0
 	github.com/gobuffalo/envy v1.6.15

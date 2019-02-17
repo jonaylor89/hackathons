@@ -1,39 +1,46 @@
 package actions
-
 import (
-	"log"
-	"net/http"
+		"log"
 
-	"github.com/gobuffalo/buffalo"
-	socketio "github.com/googollee/go-socket.io"
-)
-
-var server socketio.Server
+		"github.com/gobuffalo/buffalo"
+		"github.com/desertbit/glue"
+       )
 
 func StartWebSocketServer() {
-	var server, err = socketio.NewServer(nil)
+	// Create a new glue server.
+server := glue.NewServer(glue.Options{
+HTTPListenAddress: "ws://localhost:8080/sockjs-node/218/oinu33eb/websocket",
+})
+
+// Release the glue server on defer.
+// This will block new incoming connections
+// and close all current active sockets.
+defer server.Release()
+
+	// Set the glue event function to handle new incoming socket connections.
+server.OnNewSocket(onNewSocket)
+
+	// Run the glue server.
+	err := server.Run()
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalf("Glue Run: %v", err)
 	}
-	server.On("connection", func(so socketio.Socket) {
-		log.Println("on connection")
-		so.Join("chat")
+}
 
-		so.On("chat message", func(msg string) {
-			log.Println("emit:", so.Emit("chat message", msg))
-			server.BroadcastTo("chat", "chat message", msg)
-		})
-		so.On("disconnection", func() {
-			log.Println("on disconnect")
-		})
-	})
-	server.On("error", func(so socketio.Socket, err error) {
-		log.Println("error:", err)
-	})
+func onNewSocket(s *glue.Socket) {
+    // Set a function which is triggered as soon as the socket is closed.
+    s.OnClose(func() {
+        log.Printf("socket closed with remote address: %s", s.RemoteAddr())
+    })
 
-	http.Handle("/", server)
-	log.Println("Serving web socket connection at localhost:5000...")
-	http.ListenAndServe(":5000", nil)
+    // Set a function which is triggered during each received message.
+    s.OnRead(func(data string) {
+        // Echo the received data back to the client.
+        s.Write(data)
+    })
+
+    // Send a welcome string to the client.
+    s.Write("Hello Client")
 }
 
 //Takes parameter classID - ID of the class
@@ -43,7 +50,7 @@ func GetClassMembers(c buffalo.Context) error {
 
 	_, err := c.Response().Write([]byte(GetClassMembersLogical(1)[0].String()))
 
-	return err
+		return err
 }
 
 //Takes parameter TAID teachers assistant ID
@@ -52,7 +59,7 @@ func GetClassList(c buffalo.Context) error {
 
 	_, err := c.Response().Write([]byte("Hello World"))
 
-	return err
+		return err
 }
 
 //Takes parameters num, classID, userID, offset
@@ -65,7 +72,7 @@ func GetMessageHist(c buffalo.Context) error {
 
 	_, err := c.Response().Write([]byte(GetMessageHistLogical(1, c.Param("userID"))[0].String()))
 
-	return err
+		return err
 }
 
 //Takes parameter userID, returns first and last name of
@@ -75,7 +82,7 @@ func GetNameByID(c buffalo.Context) error {
 
 	_, err := c.Response().Write([]byte(GetNameByIDLogical(c.Param("userID")).String()))
 
-	return err
+		return err
 }
 
 //Takes parameters content, author, classID, and userID
@@ -88,7 +95,7 @@ func SendMessage(c buffalo.Context) error {
 
 	_, err := c.Response().Write([]byte("Hello World"))
 
-	return err
+		return err
 }
 
 //Takes parameter taid, the userID of the TA
@@ -97,5 +104,5 @@ func PopulateDataForTA(c buffalo.Context) error {
 
 	_, err := c.Response().Write([]byte("Hello World"))
 
-	return err
+		return err
 }

@@ -2,7 +2,7 @@ development:
   dialect: postgres
   database: bigthoughts
   user: postgres
-  password: ${DATABASE_PASSWORD}
+  password: bigthoughtsthoughtsbig
   host: 34.73.68.172
   pool: 5
 
