@@ -11,7 +11,8 @@ import (
 var server socketio.Server
 
 func StartWebSocketServer() {
-	var server, err = socketio.NewServer(nil)
+	var err error
+	server, err = socketio.NewServer(nil)
 	if err != nil {
 		log.Fatal(err)
 	}
