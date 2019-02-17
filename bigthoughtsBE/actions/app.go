@@ -59,6 +59,7 @@ func App() *buffalo.App {
 		app.Use(translations())
 
 		//StartWebSocketServer()
+		_ = Text("+15404097366", "Server starting up")
 
 		app.GET("/", HomeHandler)
 		app.GET("/users/{userID}", GetNameByID)
