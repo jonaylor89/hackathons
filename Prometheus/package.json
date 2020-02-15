@@ -9,7 +9,7 @@
     "babel-plugin-syntax-async-generators": "^6.13.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-stage-2": "^6.24.1",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "prop-types": "^15.5.10",
     "radium": "^0.19.4",
     "react": "^15.6.1",
