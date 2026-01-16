@@ -1,0 +1,22 @@
+{
+  "name": "faq-bot",
+  "version": "1.0.0",
+  "description": "RamHacks bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonaylor89/FAQ-Scrapper.git"
+  },
+  "author": "John Naylor, Darren Chan, Vinit Patel, Samuel Spelsberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonaylor89/FAQ-Scrapper/issues"
+  },
+  "homepage": "https://github.com/jonaylor89/FAQ-Scrapper#readme",
+  "dependencies": {
+    "puppeteer": "^0.10.2"
+  }
+}
