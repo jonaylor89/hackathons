@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  
+  <script>
+  // Fade in on start
+  $(document).ready(function() {
+    $("body").hide().fadeIn(2000);
+  });
+
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    var canvasW = 800;
+    var canvasH = 800;
+  } else {
+    var canvasW = 960;
+    var canvasH = 360;
+  }
+
+  var Y_AXIS = 1;
+  var X_AXIS = 2;
+
+  ////////// MUSIC VARIABLES ////////////
+  var mode = '<%= d.mode %>';
+  var valence = '<%= d.valence %>';
+  var energy = '<%= d.energy %>';
+  var landN = '<%= t %>'; // can be 0,1,2
+  var musicKey = '<%= d.key %>'; // from 0 to 11
+
+
+  //////////////////////////////////////
+
+  var musicHues = ['monochrome', 'blue', 'green', 'purple', 'pink', 'red', 'orange', 'yellow'];
+  var musicKHues = ['yellow', 'yellow', 'orange', 'red', 'red', 'pink', 'pink', 'purple', 'blue', 'blue', 'green', 'green'];
+  var musicLums = ['light', 'bright', 'bright', 'bright', 'light', 'bright', 'light', 'bright', 'bright', 'light', 'bright', 'light'];
+  var keyNames = ["C", "C♯/D♭", "D", "D♯/E♭", "E", "F", "F♯/G♭", "G", "G♯/A♭", "A", "A♯/B♭", "B"];
+
+  var sunColors = [];
+  var sunSize;
+  var sunRange;
+  var sunPos;
+
+  var landColors;
+
+  var backgroundColor1;
+  var backgroundColor2;
+
+  /////////////////////////////////////
+var song;
+var amp;
+var button;
+let bg;
+let y = 0;
+let font,
+  fontsize = 80;
+
+function getStarted() {
+  if (song.isPlaying()) {
+    song.pause();
+  } else {
+    song.loop();
+  }
+}
+
+function preload() {
+  song = loadSound('stranger-things-theme-song.mp3');
+  font = loadFont('Potra.ttf');
+  bg = loadImage('image.jpg');
+}
+
+function setup() {
+// create the canvas
+  createCanvas(windowWidth, windowHeight);
+
+//
+  amp = new p5.Amplitude();
+// set a background color and all elements to not have a stroke
+  noStroke();
+  //background(83, 56, 94);
+
+  let inside = color(109, 165, 255);
+  let middle = color(3, 186, 137);
+  let outside = color(188, 186, 186);
+
+  push();
+  translate(0, 0);
+  fill(outside);
+  rect(0, 0, windowWidth, 100);
+  pop();
+
+// set the font size and location
+  textFont(font);
+  textSize(fontsize);
+  textAlign(CENTER, TOP);
+
+// create a button that takes you to login page
+  button = createButton('Get Started',770,200);
+  button.mousePressed(getStarted);
+
+// play the song file on a loop at a set volume
+  song.loop();
+  song.setVolume(0.125);
+}
+
+function draw() {
+  //background(bg);
+   image(bg, 0, height/1000, windowWidth, windowHeight);
+  //rect(400, windowHeight/2, 100, 100);
+  var vol = amp.getLevel();
+  //fill(200);
+  //ellipse(770,200,400,vol*1000);
+  textAlign(CENTER);
+  drawWords(width * 0.5);
+
+  // Displays the image at its actual size at point (0,0)
+//image(bg,bg, 0, 0);
+ // Displays the image at point (0, height/2) at half size
+ //image(bg, 0, height / 2, bg.width / 2, bg.height / 2);
+}
+
+function drawWords(x) {
+  // The text() function needs three parameters:
+  // the text to draw, the horizontal position,
+  // and the vertical position
+  fill(255);
+  text('Welcome to AudioME!',x,300);
+
+  // fill(50);
+  // text('A better way to make music', x, 20);
+
+}
+</script>
+
+</html>
