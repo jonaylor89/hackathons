@@ -1,0 +1,3 @@
+create_table("super_duper_mega_containers") {
+	t.Column("id", "uuid", {primary: true})
+}
