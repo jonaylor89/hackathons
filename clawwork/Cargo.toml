@@ -1,0 +1,27 @@
+[package]
+name = "clawwork"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.8", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sqlx = { version = "0.8", features = ["runtime-tokio", "postgres", "chrono", "uuid"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+tower-http = { version = "0.6", features = ["cors", "trace"] }
+tower-sessions = { version = "0.14.0", features = ["axum-core", "private"] }
+tower-sessions-redis-store = { version = "0.16.0", features = ["enable-rustls"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+rand = "0.8"
+sha2 = "0.10"
+hex = "0.4"
+reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false }
+argon2 = "0.5"
+secrecy = { version = "0.8", features = ["serde"] }
+anyhow = "1"
+thiserror = "2"
+time = "0.3"

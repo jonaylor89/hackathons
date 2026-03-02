@@ -1,0 +1,1 @@
+ALTER TABLE tasks ADD COLUMN IF NOT EXISTS recommended_skills TEXT NOT NULL DEFAULT '[]';
