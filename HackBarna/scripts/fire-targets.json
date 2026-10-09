@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "avila-burgohondo",
+    "name": "Ávila / Burgohondo",
+    "region": "Castilla y León",
+    "reportedBurnedAreaHa": 50000,
+    "center": [-4.5034, 40.3825],
+    "bbox": [-5.1, 40.0, -4.2, 40.8],
+    "datetime": "2026-07-15T00:00:00Z/2026-08-05T00:00:00Z",
+    "clusterId": "0d07b324-f69c-4a92-8192-fb01f53a424e",
+    "valuesAtRisk": [
+      { "id": "burgohondo-school", "name": "Burgohondo Primary School", "kind": "school", "location": [-4.7874, 40.4138], "preparationLeadMinutes": 45 },
+      { "id": "navaluenga-care", "name": "Navaluenga Care Residence", "kind": "care_facility", "location": [-4.7068, 40.4117], "preparationLeadMinutes": 90 }
+    ]
+  },
+  {
+    "slug": "guadalajara-la-mierla",
+    "name": "Guadalajara / La Mierla",
+    "region": "Castilla–La Mancha",
+    "reportedBurnedAreaHa": 32000,
+    "center": [-3.1010, 41.1855],
+    "bbox": [-3.8, 40.6, -2.7, 41.5],
+    "datetime": "2026-07-10T00:00:00Z/2026-08-05T00:00:00Z",
+    "clusterId": "1f33df72-bb83-4306-8dc3-9f1febf8f26e",
+    "valuesAtRisk": [
+      { "id": "mierla-school", "name": "La Mierla Rural School", "kind": "school", "location": [-3.0900, 41.1700], "preparationLeadMinutes": 50 },
+      { "id": "cogolludo-care", "name": "Cogolludo Care Facility", "kind": "care_facility", "location": [-3.0890, 40.9470], "preparationLeadMinutes": 100 }
+    ]
+  },
+  {
+    "slug": "ores-cinco-villas",
+    "name": "Orés / Cinco Villas",
+    "region": "Zaragoza, Aragón",
+    "reportedBurnedAreaHa": 15400,
+    "center": [-1.1423, 42.3709],
+    "bbox": [-1.6, 41.8, -0.4, 42.8],
+    "datetime": "2026-07-01T00:00:00Z/2026-08-05T00:00:00Z",
+    "clusterId": null,
+    "valuesAtRisk": [
+      { "id": "ores-school", "name": "Orés Rural School", "kind": "school", "location": [-1.0020, 42.2770], "preparationLeadMinutes": 45 },
+      { "id": "ejea-hospital", "name": "Ejea District Hospital", "kind": "hospital", "location": [-1.1370, 42.1270], "preparationLeadMinutes": 80 }
+    ]
+  },
+  {
+    "slug": "los-gallardos",
+    "name": "Los Gallardos",
+    "region": "Almería, Andalucía",
+    "reportedBurnedAreaHa": 7000,
+    "center": [-1.95, 37.15],
+    "bbox": [-2.5, 36.7, -1.4, 37.6],
+    "datetime": "2026-07-01T00:00:00Z/2026-08-10T00:00:00Z",
+    "clusterId": null,
+    "valuesAtRisk": [
+      { "id": "gallardos-school", "name": "Los Gallardos School", "kind": "school", "location": [-1.9400, 37.1680], "preparationLeadMinutes": 40 },
+      { "id": "vera-care", "name": "Vera Care Residence", "kind": "care_facility", "location": [-1.8700, 37.2460], "preparationLeadMinutes": 90 }
+    ]
+  },
+  {
+    "slug": "tuejar-valencia",
+    "name": "Tuéjar",
+    "region": "Valencia",
+    "reportedBurnedAreaHa": 690,
+    "center": [-1.04, 39.76],
+    "bbox": [-1.7, 39.2, -0.4, 40.3],
+    "datetime": "2026-09-01T00:00:00Z/2026-09-20T23:59:59Z",
+    "clusterId": null,
+    "valuesAtRisk": [
+      { "id": "tuejar-school", "name": "Tuéjar Public School", "kind": "school", "location": [-1.0380, 39.7640], "preparationLeadMinutes": 40 },
+      { "id": "alto-turia", "name": "Alto Turia Reserve Station", "kind": "infrastructure", "location": [-1.0800, 39.8000], "preparationLeadMinutes": 60 }
+    ]
+  }
+]

@@ -1,0 +1,1948 @@
+{
+  "provenance": {
+    "mode": "historical-deepfire-replay",
+    "bakedAt": "2026-09-19T17:40:50.521Z",
+    "source": "Deepfire API",
+    "runtimeDeepfireCalls": false,
+    "simulationId": null
+  },
+  "cluster": {
+    "id": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+    "name": "Los Gallardos",
+    "region": "Almería, Andalucía",
+    "burnedAreaHa": 7000,
+    "firstObserved": "2026-06-20T12:28:26Z",
+    "lastObserved": "2026-07-16T12:48:26Z",
+    "centroid": [
+      -2.29396123,
+      37.12119173
+    ]
+  },
+  "hotspots": [
+    {
+      "id": "8754095a-eec9-407e-888b-c69d38aa94cc",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-06-20T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 12.186,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "6dea075d-3318-4244-af48-0693605b65c7",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-06-22T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 10.382,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "21f7e4a3-20aa-4bf3-946e-15236acfcd96",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-06-23T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 10.587,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "c4b35fae-c6ca-4dc8-b03c-f33959072c01",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-06-24T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 10.741,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "b2b744f8-627d-4fed-a111-0b55fb17fa3d",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-06-26T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 12.132,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "ff22c6fc-58ee-49a6-b7e7-d5b6fffec793",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-06-27T12:28:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 12.25,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "d68c6802-b133-4bdf-9aa2-5bffaf751ad7",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-06-28T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 10.827,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "4ae9beca-d37c-410f-8b67-888e7d5ee749",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-06-28T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 11.46,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "b4dae92d-2c09-46ad-9aed-25b60fa3bf9e",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-06-28T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 11.181,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "306dd0bd-ac55-4de1-a01a-5cd37278e1bd",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-06-28T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 10.916,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "2d2c734e-51a7-4c5f-9e83-e2715a8295c2",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-06-30T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 9.766,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "c96b6a25-4d92-4eb2-ba62-0eb8ca8f3cf2",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-06-30T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 15.408,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "4acde5cc-aa93-43dc-be42-0f1359bd37ed",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-06-30T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 12.771,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "38ea3803-82c4-456c-9b9f-c2f96b0e46fb",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-01T12:18:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 14.229,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "c362013e-9076-4572-ac32-4635a7be9a7e",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-01T12:18:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 11.631,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "cf86085a-e0d8-4f3b-9967-ef8f9d0132ab",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-01T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 17.764,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "f9a34911-fbf5-4c05-9f10-3258e390e2ab",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-01T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 15.085,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "3092bc4b-fc37-4326-9e28-40d5ab7b6d09",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-02T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 12.537,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "e33a8a64-57d9-4ed7-906b-d853517c3ddb",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-02T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 10.501,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "83dc2ee3-831c-4cf9-bfd7-92caf328c25f",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-02T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 18.27,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "bf49f949-67d2-4f7a-8972-e3f11e375514",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-02T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 15.464,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "764083b0-7cf7-4ad3-a9de-14cda9b01033",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-03T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 26.74,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "fe9dd6ad-0ccc-4918-b750-91e02e1bf10c",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-03T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 19.844,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "fd15d7de-6121-4278-943a-50ef47893264",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-04T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 11.26,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "06004b70-6c60-46fc-8662-341374e6ce49",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-04T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 14.784,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "6ff30253-ca81-4b67-bb1d-c565b72d183a",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-04T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 19.754,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "03c1d746-3bfa-4f6d-b055-1e2d74562909",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-04T12:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 10.647,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "8b5c533b-0ba1-49dd-bb9c-a097c44abf6b",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-05T11:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 10.521,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "d7484e59-aa56-4f64-b370-3e3bb48d2abc",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-05T11:58:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 10.688,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "b19ba7a9-098d-4bd4-91d8-dc6267cd8ced",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-05T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 10.51,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "47ad467a-93fb-4b47-85a5-83e749e48a4b",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-05T12:18:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 22.125,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "76101d99-5434-4f4e-9452-38a388d2b320",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-05T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 19.623,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "83f2f6e1-9d9b-4633-9e0c-2803930407c8",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-05T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 17.546,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "dae4c2bc-db66-4aa2-b06a-eda751a7f12d",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-06T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 16.305,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "885f143d-4fbd-4a2d-96fe-20f7dd5f124b",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-06T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 23.965,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "633f97c4-8c19-49b4-8131-5dcb43fe0821",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-06T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 11.363,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "e48a3171-e499-46f2-82d9-91d39f820af3",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-06T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 17.938,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "f4d95df6-ea37-4111-9900-cca29999cb90",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-06T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 14.246,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "7c300979-bd75-450d-a7b1-e729c989cedc",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-07T12:08:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 14.423,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "90e19684-63c5-4659-be4a-e448baee5501",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-07T12:08:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 18.645,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "0ab20cb4-2338-4c5b-8b75-a5d869d79e6c",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-07T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.097,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "2791668b-6543-461f-88af-37ffdd9ed9e7",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-07T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 19.908,
+      "location": [
+        -2.302571,
+        37.112423
+      ]
+    },
+    {
+      "id": "55eaac06-2890-4e61-96c2-1a617f6e0abb",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-07T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 15.374,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "d9465ae9-24cf-46d4-b200-a4ba4f2cfb53",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-07T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 23.214,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "439be54f-4f78-43e0-9ce7-e3709a1240bd",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-07T12:38:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 21.49,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "fe91a3d6-4d5e-41a2-a436-21f612694399",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-07T12:38:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 23.64,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "1d7f6e40-0e9e-4522-9ba2-2a87a9799578",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-07T12:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 12.147,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "1246550e-70e5-4b48-93ff-2c47d1ad991c",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-08T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 11.897,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "7eab0245-c732-4d99-8520-dde1200806e2",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-08T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 18.886,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "41e78a60-3297-49b6-b3c6-fc3234cdc46c",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-08T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 13.605,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "b42e06e7-ac0a-42aa-b5ba-57328acf9438",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-08T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 18.457,
+      "location": [
+        -2.302571,
+        37.112423
+      ]
+    },
+    {
+      "id": "ed2b2b9c-b55b-49b2-8a73-e8e55682358f",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-08T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 24.263,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "15c6a29c-9b28-47f1-b348-14eb413e5729",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-08T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 22.651,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "73bc62a6-d314-4c2b-8898-fb705d4fb86a",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-08T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 14.211,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "e03d6a25-c0d1-4a69-8e1c-9a7a24381bb7",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-08T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 29.088,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "f2b482dc-f27a-4856-8393-13ef1ab08611",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-08T12:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 17.023,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "a1bca3c6-7d66-469f-bea6-dd3383cd1055",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-09T11:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 12.355,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "13cc57a7-0589-48db-90a6-dbf7b12f3d3b",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-09T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 11.676,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "f7b3715b-7977-4973-9eb0-0f49f7caafa6",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-09T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 11.769,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "6bd972d6-0190-4558-9dab-d1585b4e34b2",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-09T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 25.016,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "b3da82a9-8736-4bfa-8a5b-33da5dc73e87",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-09T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 18.845,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "646efe8f-a6ae-46af-8cfd-925df84fb0ed",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-09T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 18.439,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "886fffc3-b05e-49e0-a222-892d84cd4afd",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-09T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 17.54,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "bbe0d0e6-743f-46a5-a71a-29abb4ae5c1e",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-09T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 32.859,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "dbab12ae-ce9e-4926-b77b-07924b0e213c",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-09T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 19.422,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "d724bbae-0c8a-43ba-8b8b-f466c0c89d18",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-09T12:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 16.566,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "3b66ca74-2a54-4529-99b0-f8d2abcea823",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-10T11:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 12.933,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "1dd7f924-4f9f-4d31-9ef5-aa5a88337b3b",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-10T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 21.394,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "fa1750a7-0ccc-4c99-85b2-5a4d7f531d95",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-10T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 13.859,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "6a5e6234-0fe8-4188-be3b-1b6f00e0b113",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-10T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 12.187,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "276ef27f-c900-4598-93ff-6cda2c63d457",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-10T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 21.358,
+      "location": [
+        -2.302571,
+        37.112423
+      ]
+    },
+    {
+      "id": "653faa76-8c8a-4b61-a611-0858940377fd",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-10T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 22.891,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "be5e5cfc-b7ce-4fd0-a3ed-52f61230df8a",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-10T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 10.695,
+      "location": [
+        -2.279577,
+        37.124008
+      ]
+    },
+    {
+      "id": "e4381ee4-df34-4cf6-a880-1cbd53c6579e",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-10T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 16.173,
+      "location": [
+        -2.302571,
+        37.112423
+      ]
+    },
+    {
+      "id": "f2a8cfa6-2d0b-4cbc-bda1-2dd066a1c31e",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-10T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 21.337,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "531bbe10-a3ea-4b98-8bab-556b866cdf65",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-10T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 24.015,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "6f457d85-dc66-4453-abec-e1c845282d9f",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-10T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.474,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "ef972680-325e-4da9-8041-4f812eef1eee",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-10T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.97,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "fa5e3a9b-5828-4e4b-a3b6-67134389098d",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-10T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 18.869,
+      "location": [
+        -2.302571,
+        37.112423
+      ]
+    },
+    {
+      "id": "5109fa57-5d7c-40b4-9759-1c4a5135b3f3",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-10T12:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 18.405,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "73982d24-2fc7-4901-9281-db11865a7376",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-11T11:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 10.539,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "ad349371-da8d-4d8f-b913-22ed05426e0c",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-11T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 15.32,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "f183d354-ea01-4cf4-a255-819897ea04ea",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-11T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 20.086,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "8340bfca-9772-4673-a554-dc7bfaafa020",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-11T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 25.806,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "e1b8f156-227c-4e52-be57-6d30c31a0aac",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-11T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 25.611,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "32016c25-f700-442b-bd2e-27c1289a757b",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-11T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 16.199,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "764020ba-9238-482d-9a8b-97ec92ae7043",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-11T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 22.578,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "9c5e56f3-67f6-41d6-9e48-b8e543481b82",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-11T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 33.079,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "edaea4d5-8269-424a-b538-6b7ffca015f3",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-11T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 27.033,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "05651eec-fc4a-4af3-b754-c8a74cd9bbde",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-11T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 16.544,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "11bc5616-3638-4e7d-91f0-338573bc5ae5",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-11T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 38.71,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "f331813c-cd71-499a-9824-bc9b42d022a2",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-11T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 22.749,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "14664e50-6872-47e8-b824-a696a94e1cf1",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-11T12:48:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 18.736,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "e0d5c388-e969-41d7-87e3-b727ad878e51",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-12T11:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 11.154,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "0cabd550-5f57-4fb8-b179-1d15a78672eb",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-12T11:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 14.32,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "521624ab-6c6d-4eff-9108-e6b75de8d26c",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-12T11:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 14.093,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "38d2af88-eee6-45cb-9e80-aa2f1c8d627d",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-12T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 26.61,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "ce11d6ce-edf5-4771-8713-55f2f260203a",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-12T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 26.519,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "dac5574e-f814-41cd-8ef5-3131170425a5",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-12T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 30.583,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "ef1ac6b5-b266-4489-a323-8813dfc7149d",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-12T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 27.719,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "fc34aea2-f191-4ae4-8588-607bdcee222e",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-12T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 11.124,
+      "location": [
+        -2.279577,
+        37.124008
+      ]
+    },
+    {
+      "id": "1b2cf294-4980-44e1-a007-55c2cf06a25e",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-12T12:38:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 33.524,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "7fcd40b9-191b-461c-8b21-a557cae6540f",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-12T12:38:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 17.998,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "a5eb75ce-aaae-4605-aa80-714ef956a567",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-12T12:38:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 24.086,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "74ea18e2-1ff1-487e-a700-fe106a1fdbaf",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-12T12:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 15.964,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "1f2589a9-0052-4e04-abc6-4454852e634b",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-13T11:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 14.408,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "70ddfb8d-5b54-4a6b-8cdf-243d2e11b2cc",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-13T11:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 18.109,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "078547c6-9985-47a4-b7ab-749c0d5f4a42",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-13T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 26.648,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "598a5bf2-5f34-489a-ac60-a8af2035d681",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-13T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 22.125,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "757f1b29-6fc2-4cb2-bf05-41ca1cabb9c1",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-13T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.961,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "c1c1b5f4-44df-4c3c-bed3-0bf7c578ac44",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-13T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 28.767,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "2e01067b-26a2-400b-a7a2-8809cadf0906",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-13T12:18:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 15.829,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "a7eb1867-36e1-48fe-8143-a65345feb4ec",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-13T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 10.732,
+      "location": [
+        -2.279577,
+        37.124008
+      ]
+    },
+    {
+      "id": "edb51c40-3f80-4095-92b3-917855bc2c3e",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-13T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 29.397,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "67bdc851-c3c9-49b0-9845-51f5bdb201bf",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-13T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 22.971,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "6c74e1c1-9c3a-44c9-b485-d12187081fd8",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-13T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 20.648,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "9c0050ac-6596-4e7e-871a-e7d2e695e177",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-13T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 45.386,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "bd197e1a-fc3f-4e87-bd84-f1c4de1812f6",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-13T12:48:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 22.167,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "ba6e1c36-3c8f-4c28-bc89-2f327c524655",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-14T11:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 15.462,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "21541eff-0bd5-430e-b500-d222131087f8",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-14T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 15.822,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "f1a4bf69-d22d-4ab7-967d-abfe48d1c48c",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-14T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 22.815,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "35e17af6-9dd4-4aeb-a166-19d90328a97c",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-14T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.69,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "37a024d5-4825-4f25-85fe-f1cbf585c729",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-14T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 20.861,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "da126a7f-63bc-4adc-a9c8-cdb2722b5553",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-14T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 12.263,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "8ea6a8d3-a7b8-4e1d-a435-b063915cbb3c",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-14T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "LOW",
+      "fireRadiativePower": 20.504,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "f7259b42-309a-4a84-8a1e-9bed7330e480",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-14T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 40.715,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "ac6b3004-2c9d-4657-8d6d-a7836639b7c8",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-14T12:28:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 33.481,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "53ffa209-d8cb-4328-a9f6-d0d35ccc2f56",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-14T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 12.331,
+      "location": [
+        -2.279577,
+        37.124008
+      ]
+    },
+    {
+      "id": "ee63ca00-4648-4f8d-a8ca-df5b75960bfe",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-14T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 19.952,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "4ff23c37-0606-4515-878b-f43ec7224b50",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-14T12:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 15.182,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "45c4d021-3cee-45f8-973f-9dbba771a2c2",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T11:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 16.314,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "be842e6b-f56e-488f-87d6-501556d7e49e",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 22.425,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "e140688e-24ab-4e23-875a-9a9502c9b5c2",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 14.974,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "22cbe26d-2485-4b68-9323-ee56b8071e3b",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 30.286,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "4ab488bf-d51e-4577-b73b-9d0f68a4d9c9",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 26.647,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "20640864-7461-4183-9919-a3e3d83bb2a3",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 34.141,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "2362d283-55e0-4e79-959c-e179f2daa5a6",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 21.013,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "945ceae3-c2cf-46a7-a935-c6f6000215ce",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 46.257,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "e3ca5187-ccdc-4f9b-9272-018978247f95",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T12:18:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 14.971,
+      "location": [
+        -2.279577,
+        37.124008
+      ]
+    },
+    {
+      "id": "501fbbb4-0b74-474d-be6e-35011220e071",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 17.357,
+      "location": [
+        -2.279577,
+        37.124008
+      ]
+    },
+    {
+      "id": "5b31eda4-0ce9-4162-a4b6-a695bd72bccf",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 28.537,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "b88524e2-9931-41fd-9c0b-96eba98b0dbe",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 13.722,
+      "location": [
+        -2.279221,
+        37.112171
+      ]
+    },
+    {
+      "id": "5615c77c-8e7c-40ea-bc75-c96cd98eeff2",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 38.819,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "72713e83-6ad2-4534-84f6-fdfdf9d80269",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 22.461,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "7b5d71ab-9100-4e2a-88cf-b1f3327649af",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 23.387,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "1dac7c4b-d8e9-4499-9641-57e5531e6bca",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T12:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 20.15,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "6eb7269e-52b6-4c63-8752-7cd887d32920",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-15T12:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 12.548,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "2d67098f-72a7-49ec-b476-8502580de8e5",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-16T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 12.619,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "f6107343-b9d1-4f99-8dae-15ca99a5db1c",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-16T11:58:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 23.131,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "7cc3850e-c4ac-4d4e-987b-da0b5666c927",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-16T12:08:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "LOW",
+      "fireRadiativePower": 13.101,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "9570c72c-498d-4f92-bb5b-c12b61fd85f2",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-16T12:18:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 26.008,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "e691e53a-b35c-45d8-af82-0a4d3a54a3e7",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-16T12:18:29Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 18.906,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "0568a896-1a74-4d5c-bd36-669cc8b86aa2",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-16T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 17.331,
+      "location": [
+        -2.302902,
+        37.123924
+      ]
+    },
+    {
+      "id": "3af2605b-383c-4792-8e2f-0f79033a86a9",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-16T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 40.034,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "484910fb-394d-4b19-9710-37ac1f533178",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-16T12:28:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 29.832,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "35d6b243-2d97-411c-98ed-06353ebc12ae",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-16T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 20.242,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    },
+    {
+      "id": "7b925703-b1eb-4670-b829-b2a303314471",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-16T12:38:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 16.238,
+      "location": [
+        -2.290901,
+        37.112354
+      ]
+    },
+    {
+      "id": "984aa097-411f-440a-81b5-d44a223e6e78",
+      "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+      "observedAt": "2026-07-16T12:48:26Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 15.391,
+      "location": [
+        -2.291231,
+        37.123867
+      ]
+    }
+  ],
+  "perimeters": [],
+  "spread": {
+    "clusterId": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+    "durationHours": 12,
+    "ensembleMembers": 10,
+    "features": []
+  },
+  "valuesAtRisk": [
+    {
+      "id": "gallardos-school",
+      "name": "Los Gallardos School",
+      "kind": "school",
+      "location": [
+        -1.94,
+        37.168
+      ],
+      "preparationLeadMinutes": 40
+    },
+    {
+      "id": "vera-care",
+      "name": "Vera Care Residence",
+      "kind": "care_facility",
+      "location": [
+        -1.87,
+        37.246
+      ],
+      "preparationLeadMinutes": 90
+    }
+  ]
+}
