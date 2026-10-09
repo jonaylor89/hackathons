@@ -1,0 +1,15 @@
+.env*
+!.env.example
+.claude/
+node_modules/
+dist/
+*.tsbuildinfo
+backend/target/
+.run/
+.secrets/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+.DS_Store
+
+.secrets/

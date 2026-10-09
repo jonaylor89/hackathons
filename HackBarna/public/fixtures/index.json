@@ -1,0 +1,42 @@
+[
+  {
+    "id": "0d07b324-f69c-4a92-8192-fb01f53a424e",
+    "slug": "avila-burgohondo",
+    "name": "Ávila / Burgohondo",
+    "region": "Castilla y León",
+    "hotspotCount": 9992,
+    "file": "avila-burgohondo.json"
+  },
+  {
+    "id": "1f33df72-bb83-4306-8dc3-9f1febf8f26e",
+    "slug": "guadalajara-la-mierla",
+    "name": "Guadalajara / La Mierla",
+    "region": "Castilla–La Mancha",
+    "hotspotCount": 9387,
+    "file": "guadalajara-la-mierla.json"
+  },
+  {
+    "id": "55e11a78-7ebe-452e-bb71-5d8179565133",
+    "slug": "ores-cinco-villas",
+    "name": "Orés / Cinco Villas",
+    "region": "Zaragoza, Aragón",
+    "hotspotCount": 3063,
+    "file": "ores-cinco-villas.json"
+  },
+  {
+    "id": "0fef0567-9fda-45ef-a202-27dd5e4e2b1b",
+    "slug": "los-gallardos",
+    "name": "Los Gallardos",
+    "region": "Almería, Andalucía",
+    "hotspotCount": 158,
+    "file": "los-gallardos.json"
+  },
+  {
+    "id": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+    "slug": "tuejar-valencia",
+    "name": "Tuéjar",
+    "region": "Valencia",
+    "hotspotCount": 311,
+    "file": "tuejar-valencia.json"
+  }
+]

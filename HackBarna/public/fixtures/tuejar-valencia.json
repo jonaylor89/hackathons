@@ -1,0 +1,4871 @@
+{
+  "provenance": {
+    "mode": "historical-deepfire-replay",
+    "bakedAt": "2026-09-19T17:40:52.133Z",
+    "source": "Deepfire API",
+    "runtimeDeepfireCalls": false,
+    "simulationId": null
+  },
+  "cluster": {
+    "id": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+    "name": "Tuéjar",
+    "region": "Valencia",
+    "burnedAreaHa": 690,
+    "firstObserved": "2026-09-15T13:40:00Z",
+    "lastObserved": "2026-09-16T03:02:00Z",
+    "centroid": [
+      -1.07358856,
+      39.76334754
+    ]
+  },
+  "hotspots": [
+    {
+      "id": "40264c7b-9288-45fc-98bb-438eac34cd8a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T13:40:00Z",
+      "source": "VIIRS_SNPP_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 3.97,
+      "location": [
+        -1.04443,
+        39.75636
+      ]
+    },
+    {
+      "id": "6e97d1ae-f6e3-4df3-b51f-9db6403d5e79",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T13:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 8.784626960754395,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "af764330-02a9-4091-a21d-9d8b928cbab4",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T13:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 12.485416412353516,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "b75fb1cc-3e9b-4a58-b3e6-f3197eda475e",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T13:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 22.911680221557617,
+      "location": [
+        -1.03861856,
+        39.75771713
+      ]
+    },
+    {
+      "id": "e7fb7b42-49df-489f-9853-081940349397",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T13:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 26.063621520996094,
+      "location": [
+        -1.03841627,
+        39.74492264
+      ]
+    },
+    {
+      "id": "0c5e6314-7ce8-4ff5-9ff2-5c317ccb6a23",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T13:58:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 23.89531707763672,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "3ae136bf-d765-4043-8eda-b923bd2d582a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T13:58:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 10.955015182495117,
+      "location": [
+        -1.03861856,
+        39.75771713
+      ]
+    },
+    {
+      "id": "bc9db43d-12a7-4af0-a1bb-59401ed477aa",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T13:58:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 12.141692161560059,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "39e3f266-3825-4b5e-a0b6-be75419c3f5d",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T13:59:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 32.61,
+      "location": [
+        -1.0403,
+        39.7531
+      ]
+    },
+    {
+      "id": "aa5d34b5-6e76-4d7f-9494-17cb8e59c2c8",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T13:59:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 26.31,
+      "location": [
+        -1.04638,
+        39.75287
+      ]
+    },
+    {
+      "id": "4ffd415d-efd3-4516-9081-f506b298ed6b",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:08:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 76.42686462402344,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "fca506eb-adcd-4be3-a4bd-834cb1784edd",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:08:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 49.75314712524414,
+      "location": [
+        -1.03861856,
+        39.75771713
+      ]
+    },
+    {
+      "id": "34876f91-89bb-458c-ae9a-3edf8bde4bea",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:18:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 26.487985610961914,
+      "location": [
+        -1.03861856,
+        39.75771713
+      ]
+    },
+    {
+      "id": "431fe847-8d6e-45de-b3b9-65e7b6ce5f36",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:18:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 46.6047248840332,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "0cee84cf-994c-47c1-a008-854b7c6dd63b",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:28:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 32.837493896484375,
+      "location": [
+        -1.03861856,
+        39.75771713
+      ]
+    },
+    {
+      "id": "2810916e-b694-4b7e-9c7d-df6ed3f5a5a8",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:28:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 58.53791809082031,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "966ceaa0-e10b-487b-9754-c032123bbadb",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:28:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 9.122121810913086,
+      "location": [
+        -1.05101907,
+        39.77177429
+      ]
+    },
+    {
+      "id": "258fc069-6615-4e4d-9000-8c7b5f6cfab0",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:38:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 10.120612144470215,
+      "location": [
+        -1.05101907,
+        39.77177429
+      ]
+    },
+    {
+      "id": "2d3a8122-5348-43a5-9c81-35bcae5b551f",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:38:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 15.01785659790039,
+      "location": [
+        -1.03861856,
+        39.75771713
+      ]
+    },
+    {
+      "id": "36f11d0c-5c55-4c6d-b708-8a7dfcc74267",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:38:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 32.53282165527344,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "120294f1-81f7-4495-9738-ef2cd3791702",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 25.691204071044922,
+      "location": [
+        -1.03861856,
+        39.75771713
+      ]
+    },
+    {
+      "id": "297c2f8f-ad12-451b-bab7-72918d20db44",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 12.385594367980957,
+      "location": [
+        -1.05101907,
+        39.77177429
+      ]
+    },
+    {
+      "id": "42311b41-8a7e-438b-a698-59b8107ec4d6",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 24.585702896118164,
+      "location": [
+        -1.03841627,
+        39.74492264
+      ]
+    },
+    {
+      "id": "b2c0fe06-ad47-4319-9aa1-a26b584799de",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 35.79133224487305,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "ebefb372-6975-4905-9d88-a045cff101ea",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 44.2676887512207,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "0edc55cc-44aa-4dd4-a0c0-31c506e0bdb5",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:58:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 30.06252670288086,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "205e21c0-2ff2-44a6-a5eb-db9d3eec68be",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:58:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 59.96693420410156,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "8c1940e4-9dfb-4c83-9384-00f786b807ff",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:58:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 22.55160140991211,
+      "location": [
+        -1.03861856,
+        39.75771713
+      ]
+    },
+    {
+      "id": "f483e7b4-7d26-4879-9d6b-c4499b9c8ae8",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T14:58:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 10.635701179504395,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "4a1e0668-011a-4588-9fa5-5b74a28d4b9a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:08:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 43.31161880493164,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "4a83e167-585f-44d4-9cb5-5f2298c42b74",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:08:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 33.83792495727539,
+      "location": [
+        -1.03861856,
+        39.75771713
+      ]
+    },
+    {
+      "id": "4fad3a2c-be01-4699-b561-04d9da494847",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:08:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 10.435632705688477,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "6931ce53-707c-4123-b905-500e9967e2fa",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:08:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 89.02141571044922,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "f75661d3-21e6-47c7-b8ff-26f3158618ac",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:08:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 10.516595840454102,
+      "location": [
+        -1.0631721,
+        39.77180862
+      ]
+    },
+    {
+      "id": "0512f09e-0a3a-49e9-abdd-2faef596efdd",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:18:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 85.46863555908203,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "0c9e1b76-398b-42dc-ba45-2166a56358f6",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:18:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 44.61050033569336,
+      "location": [
+        -1.03861856,
+        39.75771713
+      ]
+    },
+    {
+      "id": "559b7755-f945-412c-bd09-d2f3bd059121",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:18:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 71.8743667602539,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "6f7e8378-27d1-4a5a-a115-5111395ad86f",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:18:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 628.5012817382812,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "8824a2ad-6e5f-45cf-bbfd-5b7ed0ea0bc4",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:18:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 137.22445678710938,
+      "location": [
+        -1.05101907,
+        39.77177429
+      ]
+    },
+    {
+      "id": "a1dc0852-4963-4d66-82c8-59e2c7691f7b",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:18:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 590.529296875,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "b8e20125-a5a3-456b-857e-a6c8b1076865",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:18:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 167.9974365234375,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "c5f7a6de-74ee-438c-a478-6e2303220d14",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:18:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 117.65607452392578,
+      "location": [
+        -1.0631721,
+        39.77180862
+      ]
+    },
+    {
+      "id": "94396463-0332-4bf9-9f1d-594410efba53",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:25:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 749.7,
+      "location": [
+        -1.06,
+        39.77
+      ]
+    },
+    {
+      "id": "0031994c-65ab-4db3-8944-e064596c34f7",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:28:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 178.43850708007812,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "00ac565a-d051-409a-8ed3-46ed87f03898",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:28:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 238.1872100830078,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "07f1c547-f9c2-4e01-9209-5c158e27a002",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:28:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 13.019140243530273,
+      "location": [
+        -1.03841627,
+        39.74492264
+      ]
+    },
+    {
+      "id": "11165070-3f08-44a6-b623-21ffa5d8f325",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:28:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 442.90802001953125,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "37d01d0a-e7df-4a39-8717-c84b4b186d17",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:28:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "LOW",
+      "fireRadiativePower": 49.32770919799805,
+      "location": [
+        -1.0631721,
+        39.77180862
+      ]
+    },
+    {
+      "id": "4dcfe77d-5484-428f-a12c-8422bbf86838",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:28:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 40.459529876708984,
+      "location": [
+        -1.05101907,
+        39.77177429
+      ]
+    },
+    {
+      "id": "5533a92b-c1d7-469f-ba1e-cab478a8d5d6",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:28:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 32.22621536254883,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "733255cc-6285-4cf8-a73f-ae0eb8881e9a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:28:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 124.64584350585938,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "7f791e7c-6a05-4732-b6c1-0563634204a5",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:28:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 21.022436141967773,
+      "location": [
+        -1.03861856,
+        39.75771713
+      ]
+    },
+    {
+      "id": "019f560f-9362-4562-8934-a7604a2d923c",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:38:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 136.32005310058594,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "140d28eb-40a1-43fd-9eb6-edd9b7467757",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:38:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 101.45820617675781,
+      "location": [
+        -1.05101907,
+        39.77177429
+      ]
+    },
+    {
+      "id": "3023b9b2-e2bf-4264-877f-173382e7243d",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:38:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 193.2320098876953,
+      "location": [
+        -1.0752933,
+        39.77100372
+      ]
+    },
+    {
+      "id": "401f6346-92c9-405a-a665-5098c0476549",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:38:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 911.0863647460938,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "61d30bcd-a378-437b-82bf-079fbad93beb",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:38:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 344.5243225097656,
+      "location": [
+        -1.0631721,
+        39.77180862
+      ]
+    },
+    {
+      "id": "68379550-2f02-4de4-a8fa-be220f8fd515",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:38:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 274.6535339355469,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "77376929-17d8-43f3-bb9a-b38545dea6a1",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:38:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 270.1159362792969,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "81d113ff-9068-4db9-93a0-180139364253",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:38:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 565.31298828125,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "5b479fcb-b22c-40c2-9f4b-1306a75035a1",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:40:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 387.2,
+      "location": [
+        -1.09,
+        39.77
+      ]
+    },
+    {
+      "id": "834d1329-3923-49cf-b00d-1d2d1f76823d",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:40:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 294.9,
+      "location": [
+        -1.06,
+        39.81
+      ]
+    },
+    {
+      "id": "e6f30547-522b-4b5b-b52a-7998e206d093",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:40:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 578.9,
+      "location": [
+        -1.06,
+        39.77
+      ]
+    },
+    {
+      "id": "1ef92440-b379-48d5-b6d2-2e60ba3b55ce",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:41:00Z",
+      "source": "MODIS_NRT",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 1566.97,
+      "location": [
+        -1.06611,
+        39.75312
+      ]
+    },
+    {
+      "id": "57f296f7-3371-441e-a5c8-69b80fb5c3c6",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:41:00Z",
+      "source": "MODIS_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 40.58,
+      "location": [
+        -1.08583,
+        39.75129
+      ]
+    },
+    {
+      "id": "ef8f613d-32ef-4262-ac58-53f8b66d3ed3",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:41:00Z",
+      "source": "MODIS_NRT",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 285.67,
+      "location": [
+        -1.04509,
+        39.75508
+      ]
+    },
+    {
+      "id": "1eafade2-293c-4ff5-ac38-e0e01ecd15c7",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 211.3769073486328,
+      "location": [
+        -1.0752933,
+        39.77100372
+      ]
+    },
+    {
+      "id": "27c32e26-15f6-4274-8c68-81bf1cfe0b6a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 213.18751525878906,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "2deeae4c-6589-4fad-93b4-43b1db0d1d1f",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 37.45781707763672,
+      "location": [
+        -1.07550347,
+        39.78381348
+      ]
+    },
+    {
+      "id": "40445395-189b-4fb4-be47-7c890a706d93",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 133.9196014404297,
+      "location": [
+        -1.05101907,
+        39.77177429
+      ]
+    },
+    {
+      "id": "45592623-a3da-4451-9822-a5a908b7418c",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 190.0487060546875,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "47147935-db48-4555-ae55-cafaead04b97",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 21.71739959716797,
+      "location": [
+        -1.08744621,
+        39.77103043
+      ]
+    },
+    {
+      "id": "60ea04ee-0e3b-46ea-8992-bab08a7b1fca",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 450.0610656738281,
+      "location": [
+        -1.0631721,
+        39.77180862
+      ]
+    },
+    {
+      "id": "81090bde-90b0-4ec6-9501-f6b3329ee344",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 59.11491012573242,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "addfbb35-830f-4cdf-9bf1-d67eff96be25",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 532.5521850585938,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "bf5f0c3e-8731-4e4e-8df6-7f40fd5b1d4d",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 56.32440185546875,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "48d0b375-c1da-4f8d-8b25-ae6ec06ca754",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:55:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 430.5,
+      "location": [
+        -1.09,
+        39.77
+      ]
+    },
+    {
+      "id": "4f2404bb-0dd3-4fb8-8564-07efc7f991a5",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:55:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 275.4,
+      "location": [
+        -1.09,
+        39.81
+      ]
+    },
+    {
+      "id": "79baac17-c0d6-4871-b4f2-9927ec558675",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:55:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 527.1,
+      "location": [
+        -1.06,
+        39.81
+      ]
+    },
+    {
+      "id": "9044acb1-6dc0-4d12-a377-129e0a7ae987",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:55:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 787.8,
+      "location": [
+        -1.06,
+        39.77
+      ]
+    },
+    {
+      "id": "21f3dab3-c3b7-43ce-b6bc-d3257e5d609d",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 125.82947540283203,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "2990897b-7a79-40f5-98db-061931690b11",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 306.6866760253906,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "504f9cac-1074-4309-a39c-814aceccce29",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 198.167724609375,
+      "location": [
+        -1.0752933,
+        39.77100372
+      ]
+    },
+    {
+      "id": "6e30cd66-7398-44da-bc79-6c358df26e95",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 76.2491226196289,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "703dec26-47f2-4df6-a341-ae1153e79422",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 809.4530639648438,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "80fd9eb0-dea9-43af-b6af-2c4751e7b6e2",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 311.2268371582031,
+      "location": [
+        -1.0631721,
+        39.77180862
+      ]
+    },
+    {
+      "id": "9e774076-aa3f-400f-9957-b34809bfa02c",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 255.60330200195312,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "9f2c6897-1363-464e-9593-b0b324024219",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 91.49303436279297,
+      "location": [
+        -1.05101907,
+        39.77177429
+      ]
+    },
+    {
+      "id": "d3d26b88-d4da-4e2b-b3f7-51d827856eec",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T15:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 29.48158073425293,
+      "location": [
+        -1.07550347,
+        39.78381348
+      ]
+    },
+    {
+      "id": "0e716cc8-cf23-4627-ab6f-777e748490dd",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 64.18510437011719,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "14159344-9cff-4b58-8801-cfa236a11e08",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 621.53271484375,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "174206bb-c4c8-4b5d-ac24-8da29628fd72",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 281.5277099609375,
+      "location": [
+        -1.0752933,
+        39.77100372
+      ]
+    },
+    {
+      "id": "218cdea5-a6b6-4978-a2ab-2ce335b306e2",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 19.811311721801758,
+      "location": [
+        -1.08720458,
+        39.75746155
+      ]
+    },
+    {
+      "id": "2e8975e3-d692-4af0-9cf3-8e7ff1e54785",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 179.85845947265625,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "36cd17d8-d5b5-4c6b-bb04-f94df4b5b8af",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 105.276611328125,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "5bd8a5ed-25ad-4399-86f8-e3be1ecb425e",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 447.40863037109375,
+      "location": [
+        -1.0631721,
+        39.77180862
+      ]
+    },
+    {
+      "id": "8adcc116-a045-449b-af03-1f0edaa4100b",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 460.00738525390625,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "cd8ed900-018c-43a6-a8aa-391d7847641f",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 86.80614471435547,
+      "location": [
+        -1.05101907,
+        39.77177429
+      ]
+    },
+    {
+      "id": "08d8d373-a0e8-442b-a8fa-c4758b801bbe",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:10:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 342.7,
+      "location": [
+        -1.09,
+        39.81
+      ]
+    },
+    {
+      "id": "323dbe47-c743-471e-b520-eaaf3bfe668b",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:10:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 487.3,
+      "location": [
+        -1.09,
+        39.77
+      ]
+    },
+    {
+      "id": "3a8eee4a-d207-46e0-af8a-3b09623b251a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:10:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 805.1,
+      "location": [
+        -1.06,
+        39.77
+      ]
+    },
+    {
+      "id": "442e8756-a7c8-4af1-98fe-12e2923fe10b",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:10:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 326.6,
+      "location": [
+        -1.06,
+        39.81
+      ]
+    },
+    {
+      "id": "02e73e33-dd94-4a7c-bb6c-591847af7f4b",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 25.281787872314453,
+      "location": [
+        -1.08720458,
+        39.75746155
+      ]
+    },
+    {
+      "id": "0dd4ab8e-0248-4f9a-adc7-e623a0cd42f5",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 52.691654205322266,
+      "location": [
+        -1.05101907,
+        39.77177429
+      ]
+    },
+    {
+      "id": "2d58c106-253f-48e4-b256-605aa2fdff2b",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 264.84320068359375,
+      "location": [
+        -1.0631721,
+        39.77180862
+      ]
+    },
+    {
+      "id": "6820b46e-7367-4770-b3e4-99e54ebb3bf2",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 28.0946102142334,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "a98ba594-1a51-415d-8936-4f0ef51159f4",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 306.14080810546875,
+      "location": [
+        -1.0752933,
+        39.77100372
+      ]
+    },
+    {
+      "id": "aa93aea2-ed13-40d9-a0b3-04d29877d916",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 238.48709106445312,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "b6f900b9-4a3a-4be2-8110-48796035c830",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 228.15847778320312,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "be9b12d3-14c2-4ea0-9a86-85a5b1afc9b8",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 92.43616485595703,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "c287a7ce-5dd6-4344-908b-249cd7c235ac",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 30.56954574584961,
+      "location": [
+        -1.08744621,
+        39.77103043
+      ]
+    },
+    {
+      "id": "f6b2d90e-2956-4930-80c3-d9532602ffcb",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 39.123069763183594,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "14fd8da6-7c61-473b-b4e2-14d9430cd7b0",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:25:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 441.8,
+      "location": [
+        -1.09,
+        39.77
+      ]
+    },
+    {
+      "id": "4ee67b4c-43ac-4664-aab1-ba053b432dd9",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:25:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 409.3,
+      "location": [
+        -1.06,
+        39.81
+      ]
+    },
+    {
+      "id": "698b02d8-41e4-43ed-8451-e2e1f345ae4a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:25:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 350.3,
+      "location": [
+        -1.09,
+        39.81
+      ]
+    },
+    {
+      "id": "7cca65fa-17a8-4b74-bdc3-62bbd0aad388",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:25:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 581.7,
+      "location": [
+        -1.06,
+        39.77
+      ]
+    },
+    {
+      "id": "06e7bcec-d6c9-4516-9bcc-d5278babd592",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 426.7178649902344,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "093c0ed7-501f-4ead-9b5e-3f606bc37dfc",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 91.38011169433594,
+      "location": [
+        -1.07550347,
+        39.78381348
+      ]
+    },
+    {
+      "id": "286f84ca-68d0-4c68-9fe9-6cdfdebd73c9",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 36.38161087036133,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "770db04a-fd0b-422d-8ab4-b27fa6b1c659",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 31.289352416992188,
+      "location": [
+        -1.08720458,
+        39.75746155
+      ]
+    },
+    {
+      "id": "b3ff2d1e-729b-4c41-856f-800b2f553443",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 19.75603485107422,
+      "location": [
+        -1.08765852,
+        39.78385162
+      ]
+    },
+    {
+      "id": "cd73655b-b045-4a2b-8c01-23b5a3d987c7",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 55.365936279296875,
+      "location": [
+        -1.08744621,
+        39.77103043
+      ]
+    },
+    {
+      "id": "d1dca4d5-3fd3-45d4-89f8-64f0ed9017ce",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 402.672607421875,
+      "location": [
+        -1.0752933,
+        39.77100372
+      ]
+    },
+    {
+      "id": "fc0eb2f8-9479-4c48-b864-1d5209190ab0",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 20.19432830810547,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "02defb4b-1dfb-4a9c-864b-7324b7bd3bf1",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 860.88037109375,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "3ad6cd96-8af7-4ac0-8acb-cfe5446bb698",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 159.14857482910156,
+      "location": [
+        -1.0631721,
+        39.77180862
+      ]
+    },
+    {
+      "id": "4b28c734-1615-414f-b00c-7755c39ac945",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 470.0004577636719,
+      "location": [
+        -1.0752933,
+        39.77100372
+      ]
+    },
+    {
+      "id": "7d491c94-0fdf-4f33-b22f-04593197d200",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 24.635129928588867,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "800d449b-7ca4-4045-a5ff-a1fcad738f89",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 232.8736114501953,
+      "location": [
+        -1.08720458,
+        39.75746155
+      ]
+    },
+    {
+      "id": "946397be-e29c-4213-9405-4ff4b5b38079",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 385.6734924316406,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "ac3c5af3-dc16-4366-afb1-5df38bc8f84a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 62.08818817138672,
+      "location": [
+        -1.07550347,
+        39.78381348
+      ]
+    },
+    {
+      "id": "ae789684-22ec-4439-a8ee-8aecd6d5120a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 23.458797454833984,
+      "location": [
+        -1.05101907,
+        39.77177429
+      ]
+    },
+    {
+      "id": "afdb8e28-e0da-4d45-a166-3fc4c7aa280b",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 241.16372680664062,
+      "location": [
+        -1.08744621,
+        39.77103043
+      ]
+    },
+    {
+      "id": "c32c9fae-ea0e-4421-ae07-a52f859da1d8",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 56.33131790161133,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "d5ea82b4-74f5-4ff5-b723-099513120a45",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 67.26615905761719,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "e99e90e8-89a6-4e02-bd7a-0494797ad9c8",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 21.194360733032227,
+      "location": [
+        -1.06333327,
+        39.78338623
+      ]
+    },
+    {
+      "id": "122823f7-5592-4b78-9f6e-61fe25072454",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:40:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 547.9,
+      "location": [
+        -1.09,
+        39.77
+      ]
+    },
+    {
+      "id": "19b83f68-a94e-4e29-b808-97fa015c104b",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:40:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 619.9,
+      "location": [
+        -1.06,
+        39.77
+      ]
+    },
+    {
+      "id": "3e39beff-f1d8-4cfa-ac84-e115aed15c93",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:40:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 483.1,
+      "location": [
+        -1.06,
+        39.81
+      ]
+    },
+    {
+      "id": "554c17a7-e682-4417-813e-ceaee7d08434",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:40:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 500.9,
+      "location": [
+        -1.09,
+        39.81
+      ]
+    },
+    {
+      "id": "0aa0eab9-781f-4972-a0f0-79df1531a611",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:48:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 62.811302185058594,
+      "location": [
+        -1.09936786,
+        39.75783157
+      ]
+    },
+    {
+      "id": "36da599c-1625-4468-9ed5-8d077eb985be",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:48:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 56.061683654785156,
+      "location": [
+        -1.09961224,
+        39.77139664
+      ]
+    },
+    {
+      "id": "9e92fb95-7658-4148-b6a9-c5b6e2162e04",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:48:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 42.21125793457031,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "bd7650fc-de8e-4f76-b4cd-c6c6cf91cdeb",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:48:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 146.55642700195312,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "030999a0-f573-425f-9a19-932a8ff798e9",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:55:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 403.1,
+      "location": [
+        -1.06,
+        39.81
+      ]
+    },
+    {
+      "id": "88cfc483-5876-4c03-a358-5d574d1dfa4a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:55:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 633,
+      "location": [
+        -1.06,
+        39.77
+      ]
+    },
+    {
+      "id": "96c0c621-30d2-4661-aecc-15fb3080ac67",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:55:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 849.1,
+      "location": [
+        -1.09,
+        39.77
+      ]
+    },
+    {
+      "id": "c9a57f47-c6d7-4787-9f29-a585535e9e79",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:55:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 534.6,
+      "location": [
+        -1.09,
+        39.81
+      ]
+    },
+    {
+      "id": "2440b881-1dff-487c-88a8-2d7d5c1faf34",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 147.96543884277344,
+      "location": [
+        -1.09961224,
+        39.77139664
+      ]
+    },
+    {
+      "id": "2abe9c91-4831-4918-b6ee-47d0b3028c43",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 1289.6212158203125,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "2d91a126-ad94-44d6-914e-742546f20932",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 619.1856079101562,
+      "location": [
+        -1.08744621,
+        39.77103043
+      ]
+    },
+    {
+      "id": "ebcc20b4-59a5-413a-86a8-7075a157b400",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 873.4091186523438,
+      "location": [
+        -1.08720458,
+        39.75746155
+      ]
+    },
+    {
+      "id": "ef09ab70-78df-44b3-9304-9de4b6e000d7",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 706.4637451171875,
+      "location": [
+        -1.0752933,
+        39.77100372
+      ]
+    },
+    {
+      "id": "f8f8678a-e4ba-4f0c-ac0b-702f6903d000",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T16:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 120.06318664550781,
+      "location": [
+        -1.09936786,
+        39.75783157
+      ]
+    },
+    {
+      "id": "a3dced2d-35e4-4777-8a53-3bfd914476a1",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 141.35763549804688,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "3301ef73-2069-4865-9abc-a2b69e8602f5",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:10:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 535.3,
+      "location": [
+        -1.09,
+        39.81
+      ]
+    },
+    {
+      "id": "a22f4a08-feda-4b32-ac2b-85af67c28b33",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:10:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 652.2,
+      "location": [
+        -1.06,
+        39.77
+      ]
+    },
+    {
+      "id": "b83095a7-599f-40cb-8c2f-136747f00316",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:10:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 860,
+      "location": [
+        -1.09,
+        39.77
+      ]
+    },
+    {
+      "id": "9472d15c-ee40-4824-9b2c-01de302e07e9",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 570.8373413085938,
+      "location": [
+        -1.08744621,
+        39.77103043
+      ]
+    },
+    {
+      "id": "b5951a02-6940-4288-9499-ce229f869974",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 436.2479553222656,
+      "location": [
+        -1.0752933,
+        39.77100372
+      ]
+    },
+    {
+      "id": "f343f43d-f7cd-4e5a-aa5d-fd01dded3d4e",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 637.6039428710938,
+      "location": [
+        -1.08720458,
+        39.75746155
+      ]
+    },
+    {
+      "id": "f8c4f9a3-5679-4615-b909-8bede1c24ec3",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 750.5413208007812,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "44fcda01-ee66-411f-b06a-bcb1dc89cecc",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:25:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 619.2,
+      "location": [
+        -1.06,
+        39.77
+      ]
+    },
+    {
+      "id": "b25e6771-a7e0-4083-b45c-27645c395a42",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:25:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 878.9,
+      "location": [
+        -1.09,
+        39.77
+      ]
+    },
+    {
+      "id": "f9461f55-7e43-44ed-80b8-f3ed9badb2cf",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:25:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 655,
+      "location": [
+        -1.09,
+        39.81
+      ]
+    },
+    {
+      "id": "12a95049-bdbb-4950-b8e2-6ac866b2dced",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 869.4024047851562,
+      "location": [
+        -1.09961224,
+        39.77139664
+      ]
+    },
+    {
+      "id": "2cbe9199-a9cb-4989-8d82-615ae93a3d1f",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 48.305110931396484,
+      "location": [
+        -1.11176527,
+        39.77143097
+      ]
+    },
+    {
+      "id": "5045648b-eef6-4dce-b456-3e25fcd3f533",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 29.54831886291504,
+      "location": [
+        -1.11151814,
+        39.75785828
+      ]
+    },
+    {
+      "id": "8a9d1e07-d43f-4bd9-b15c-96acc16a4e12",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 47.105682373046875,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "b01bd17a-611d-4bed-a015-de61cd793b3a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 386.3565979003906,
+      "location": [
+        -1.09936786,
+        39.75783157
+      ]
+    },
+    {
+      "id": "99ca7303-c958-4647-8371-dff1ca09bf31",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 40.69200134277344,
+      "location": [
+        -1.08765852,
+        39.78385162
+      ]
+    },
+    {
+      "id": "c4753fa6-be18-4b30-b300-339ed9c39688",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 84.29683685302734,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "f529cf38-917a-41b9-b86d-d184a020ceca",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 49.68904495239258,
+      "location": [
+        -1.09982097,
+        39.78406143
+      ]
+    },
+    {
+      "id": "8de250a8-cc48-4546-a046-2d9bcf55764d",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:40:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 709.7,
+      "location": [
+        -1.09,
+        39.77
+      ]
+    },
+    {
+      "id": "9b031b67-c3b4-4730-8cb4-e3159d79faf5",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:40:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 601.3,
+      "location": [
+        -1.06,
+        39.77
+      ]
+    },
+    {
+      "id": "fc86baf2-50c8-4ae7-9541-b41fd5e65c9f",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:40:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 380.4,
+      "location": [
+        -1.09,
+        39.81
+      ]
+    },
+    {
+      "id": "ce4282d2-3452-4ffb-a11d-9a98861f1d4a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.91983413696289,
+      "location": [
+        -1.09982097,
+        39.78406143
+      ]
+    },
+    {
+      "id": "b0efcb78-de91-4513-9572-74426c05f9bf",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:55:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 582.7,
+      "location": [
+        -1.06,
+        39.77
+      ]
+    },
+    {
+      "id": "d0a8352f-1599-47e3-8473-360b1dca87da",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T17:55:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 901.5,
+      "location": [
+        -1.09,
+        39.77
+      ]
+    },
+    {
+      "id": "08fcf2c4-ec25-4392-a682-7d8b663a0e71",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T18:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 53.37076950073242,
+      "location": [
+        -1.08765852,
+        39.78385162
+      ]
+    },
+    {
+      "id": "9085e3c3-ac51-4a67-a88d-2317e26bcde4",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T18:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 169.1902618408203,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "da93589b-ba1c-405a-9e48-955a09b0165e",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T18:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 74.03412628173828,
+      "location": [
+        -1.09982097,
+        39.78406143
+      ]
+    },
+    {
+      "id": "d0f4695a-08ae-4689-9acb-713018425317",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T18:10:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 904.3,
+      "location": [
+        -1.09,
+        39.77
+      ]
+    },
+    {
+      "id": "f6f2348e-80fc-4a5d-832e-c1a34153e10c",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T18:10:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 506.6,
+      "location": [
+        -1.06,
+        39.77
+      ]
+    },
+    {
+      "id": "462059e9-4a86-4574-85ed-b59ad3547d26",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T18:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 49.1356201171875,
+      "location": [
+        -1.1119765,
+        39.78409576
+      ]
+    },
+    {
+      "id": "354203e8-cd3d-4116-94f1-6ec589495fd8",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T18:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 63.91204833984375,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "ad49b0e1-fb90-448c-9864-e5936c272bc5",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T18:40:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 456.9,
+      "location": [
+        -1.09,
+        39.81
+      ]
+    },
+    {
+      "id": "d9b70a45-621f-4db0-b995-6f2780e6acba",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T18:40:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 634.7,
+      "location": [
+        -1.09,
+        39.77
+      ]
+    },
+    {
+      "id": "41c5d217-b774-47f7-b0a8-c8f4c07006db",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T18:55:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 448.1,
+      "location": [
+        -1.09,
+        39.77
+      ]
+    },
+    {
+      "id": "9e3f1636-6fb1-408d-942b-7313814b2f3b",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 8.144858360290527,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "5c1f089a-6aab-4baa-bc3d-95e6cc040420",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:10:00Z",
+      "source": "METEOSAT_10",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 441.8,
+      "location": [
+        -1.09,
+        39.77
+      ]
+    },
+    {
+      "id": "7fb00346-9b7e-4f02-8530-589e3fac9add",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 35.67488479614258,
+      "location": [
+        -1.11151814,
+        39.75785828
+      ]
+    },
+    {
+      "id": "8d5fac08-26c1-4048-b9b9-e4d9af28fff8",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 27.027629852294922,
+      "location": [
+        -1.11176527,
+        39.77143097
+      ]
+    },
+    {
+      "id": "3bc06222-efa9-4b69-b052-5bfaaa4894e4",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 5.537518501281738,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "7f3157a8-7946-4891-ac30-4b0ffbc8558d",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 33.809749603271484,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "c5815994-31ed-4946-bfbd-562ef4506884",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 8.580530166625977,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "fe4cd391-e1b5-4421-befb-6c992c8033a6",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 42.48583221435547,
+      "location": [
+        -1.09961224,
+        39.77139664
+      ]
+    },
+    {
+      "id": "31e15d08-ebc0-4643-83cb-8039230e45fe",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 12.301572799682617,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "c0324e6b-cf7b-41ad-a72c-e2cbed4219f1",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 76.94561004638672,
+      "location": [
+        -1.08720458,
+        39.75746155
+      ]
+    },
+    {
+      "id": "c5d4cf7d-5337-42c7-bc96-552fb929f78f",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 26.519115447998047,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "d245820a-24d2-4218-937a-3fcd5aa7c619",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 44.550289154052734,
+      "location": [
+        -1.11151814,
+        39.75785828
+      ]
+    },
+    {
+      "id": "d3bdc26c-b7b1-4e3f-b4be-6165f62b355f",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 35.7631721496582,
+      "location": [
+        -1.11176527,
+        39.77143097
+      ]
+    },
+    {
+      "id": "2cc273da-4a78-4285-a31c-66d58bb67d1f",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:40:00Z",
+      "source": "MODIS_NRT",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 64.03,
+      "location": [
+        -1.07705,
+        39.76488
+      ]
+    },
+    {
+      "id": "44e5ccbc-f045-496b-99fe-5a7d76e56a5e",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:40:00Z",
+      "source": "MODIS_NRT",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 68.81,
+      "location": [
+        -1.06907,
+        39.75795
+      ]
+    },
+    {
+      "id": "584dc2fd-4c45-4c8f-8c0e-83655b0160f9",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:40:00Z",
+      "source": "MODIS_NRT",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 94.97,
+      "location": [
+        -1.07071,
+        39.75202
+      ]
+    },
+    {
+      "id": "998a00b4-11ac-44e0-bd09-8a9cca745915",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:40:00Z",
+      "source": "MODIS_NRT",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 131.61,
+      "location": [
+        -1.10652,
+        39.75811
+      ]
+    },
+    {
+      "id": "ad2f7e04-89e1-4f7b-92bc-a3ae202e59c0",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:40:00Z",
+      "source": "MODIS_NRT",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 56.86,
+      "location": [
+        -1.10367,
+        39.76452
+      ]
+    },
+    {
+      "id": "df3f12b9-4070-40ce-bde7-7ba85a23f722",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:40:00Z",
+      "source": "MODIS_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 23.91,
+      "location": [
+        -1.06279,
+        39.74507
+      ]
+    },
+    {
+      "id": "c1f26f60-9d56-47a5-8894-f117dd9f7596",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:48:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 89.79170989990234,
+      "location": [
+        -1.09936786,
+        39.75783157
+      ]
+    },
+    {
+      "id": "c64f0a1f-70c5-4523-9293-4859c821d011",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 18.46988296508789,
+      "location": [
+        -1.09961224,
+        39.77139664
+      ]
+    },
+    {
+      "id": "fbdd935f-2bb8-40bb-8c5f-dbd5a9c75240",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T19:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 70.22270965576172,
+      "location": [
+        -1.08720458,
+        39.75746155
+      ]
+    },
+    {
+      "id": "6b10d2ac-be5d-4bb0-863a-bb15e287c619",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 5.9300312995910645,
+      "location": [
+        -1.0631721,
+        39.77180862
+      ]
+    },
+    {
+      "id": "7f05413f-f71c-4dca-af8d-f92edbebc8b4",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 9.93903923034668,
+      "location": [
+        -1.0752933,
+        39.77100372
+      ]
+    },
+    {
+      "id": "a3bcac45-02d4-4489-a474-5e5f123a675a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 30.00577735900879,
+      "location": [
+        -1.09961224,
+        39.77139664
+      ]
+    },
+    {
+      "id": "c1dd4e44-519a-45be-9f9a-1c6b76245ddc",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 43.36516189575195,
+      "location": [
+        -1.09936786,
+        39.75783157
+      ]
+    },
+    {
+      "id": "ba41b88e-7254-4c25-8a0a-9f492e306556",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 9.799715995788574,
+      "location": [
+        -1.09961224,
+        39.77139664
+      ]
+    },
+    {
+      "id": "f994d82c-4574-413d-a086-d56296b67a76",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 27.34588050842285,
+      "location": [
+        -1.11151814,
+        39.75785828
+      ]
+    },
+    {
+      "id": "03e81cd8-f9c7-4b1e-9640-41d3a60613e2",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 6.716790676116943,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "0c6f8b96-5180-4f8c-a8d6-dc05c22c403a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 16.45355987548828,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "2ca34813-1b3d-4af1-b51e-48aeefa0e3ed",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 29.169876098632812,
+      "location": [
+        -1.09961224,
+        39.77139664
+      ]
+    },
+    {
+      "id": "2d171b38-912e-461e-aef1-189f8500b5bc",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 13.612603187561035,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "aa858746-d61b-4dba-a59e-4d3320865e5f",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 16.87771224975586,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "b8dc1a5e-44ee-4426-bb35-66b2f6f283f8",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 70.53597259521484,
+      "location": [
+        -1.09936786,
+        39.75783157
+      ]
+    },
+    {
+      "id": "6652bcba-d6df-44f6-8035-05567fff0e85",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:38:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 21.887210845947266,
+      "location": [
+        -1.09961224,
+        39.77139664
+      ]
+    },
+    {
+      "id": "7c9dc660-13e5-435f-b9ce-854087845f9d",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:38:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 11.075454711914062,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "f6ee7b42-3a6a-44ff-8754-206459047bc4",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:38:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 58.848915100097656,
+      "location": [
+        -1.09936786,
+        39.75783157
+      ]
+    },
+    {
+      "id": "122087b4-366d-4b43-8907-f4ac20948b77",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:48:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 8.621594429016113,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "65d3bf15-8c8c-4945-ba20-8b197449fd1d",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 37.80364227294922,
+      "location": [
+        -1.08720458,
+        39.75746155
+      ]
+    },
+    {
+      "id": "70621e64-364a-4d87-ac1a-0536105e0c8f",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 5.330178260803223,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "c3488e0b-da59-4f3d-9e74-d46e74097681",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T20:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 16.63360023498535,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "4a8480c5-4f2d-49fe-b67a-95f3180a3450",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 14.294597625732422,
+      "location": [
+        -1.09961224,
+        39.77139664
+      ]
+    },
+    {
+      "id": "4af0f843-51c6-45af-aded-173a4c41bcf3",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 68.29283905029297,
+      "location": [
+        -1.09936786,
+        39.75783157
+      ]
+    },
+    {
+      "id": "79e889f4-b789-4ceb-882e-65a477751ddd",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 42.1013298034668,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "9c520d0f-df98-4da8-8f4f-d9008fc1a9a2",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 11.981033325195312,
+      "location": [
+        -1.08744621,
+        39.77103043
+      ]
+    },
+    {
+      "id": "a1443f16-7556-41c8-83a1-12e96e7c42e4",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 102.55337524414062,
+      "location": [
+        -1.08720458,
+        39.75746155
+      ]
+    },
+    {
+      "id": "ff59dbef-0389-4ae3-969f-a78fc242a742",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:20.938Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 24.77861213684082,
+      "location": [
+        -1.06451404,
+        39.74039078
+      ]
+    },
+    {
+      "id": "4ad6b49f-03e1-4b4c-8559-e3189986bd4a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.238Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.55801773071289,
+      "location": [
+        -1.07008505,
+        39.75800705
+      ]
+    },
+    {
+      "id": "4bbc10d7-3776-4199-bac3-7b418dde071f",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.238Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.55801773071289,
+      "location": [
+        -1.09350395,
+        39.75511169
+      ]
+    },
+    {
+      "id": "4c20025e-e537-4354-9ae2-b579544ac135",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.238Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.55801773071289,
+      "location": [
+        -1.05825603,
+        39.75959015
+      ]
+    },
+    {
+      "id": "8e664d90-acb6-4fd3-b40a-10bc9ba0cfc7",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.238Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 7.426505088806152,
+      "location": [
+        -1.07858801,
+        39.74721527
+      ]
+    },
+    {
+      "id": "c58c893b-6672-4f38-ae3d-41a04dde09b6",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.238Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 5.770407676696777,
+      "location": [
+        -1.08184505,
+        39.75649643
+      ]
+    },
+    {
+      "id": "cc1b343c-c98f-4ffa-bd6a-5955d04d634e",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.238Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.55801773071289,
+      "location": [
+        -1.06684494,
+        39.74869919
+      ]
+    },
+    {
+      "id": "ce0e07a0-3a9c-4fbb-b55d-e72155667e47",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.238Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 5.905057907104492,
+      "location": [
+        -1.04316103,
+        39.75186157
+      ]
+    },
+    {
+      "id": "dfe2ede6-9411-4e84-98f4-9047fb7b991d",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.238Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.55801773071289,
+      "location": [
+        -1.04647505,
+        39.76108551
+      ]
+    },
+    {
+      "id": "ec336662-52c9-42b5-85bc-b13311123644",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.238Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 4.765249252319336,
+      "location": [
+        -1.05498099,
+        39.75032043
+      ]
+    },
+    {
+      "id": "559911d4-b183-419d-afc5-fb63cd1afe91",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.538Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.55801773071289,
+      "location": [
+        -1.09893,
+        39.77268219
+      ]
+    },
+    {
+      "id": "71847d8a-b7ab-4220-a807-2b52dda96f10",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.538Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.55801773071289,
+      "location": [
+        -1.08718204,
+        39.774189
+      ]
+    },
+    {
+      "id": "7c007ed1-a863-4c2b-bacd-61dda3ffec45",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.538Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.55801773071289,
+      "location": [
+        -1.095644,
+        39.76343918
+      ]
+    },
+    {
+      "id": "96558574-f294-4154-93e3-e0b3b2e2a8eb",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.538Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.55801773071289,
+      "location": [
+        -1.08392096,
+        39.76490784
+      ]
+    },
+    {
+      "id": "b8a46bb0-d243-4c9a-9ef5-ac6c1becb44d",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.538Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 3.4700684547424316,
+      "location": [
+        -1.06037998,
+        39.76796341
+      ]
+    },
+    {
+      "id": "e57e7b5e-d7b8-4b18-b5a4-750a9bb48eee",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.538Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.55801773071289,
+      "location": [
+        -1.07546306,
+        39.77568817
+      ]
+    },
+    {
+      "id": "f34b1828-5c9a-47be-ab56-82aad0d18d9e",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.538Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 6.988569259643555,
+      "location": [
+        -1.07219303,
+        39.76641464
+      ]
+    },
+    {
+      "id": "bef97151-3f17-4e7f-92a1-040525471c13",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.539Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 9.402721405029297,
+      "location": [
+        -1.10721803,
+        39.76211166
+      ]
+    },
+    {
+      "id": "c4369a01-d5ed-4def-a5cd-803622f4cc74",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:39:21.539Z",
+      "source": "SENTINEL_3A",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 31.55801773071289,
+      "location": [
+        -1.110515,
+        39.7713356
+      ]
+    },
+    {
+      "id": "df352731-2318-46b2-b754-57c05c90f8df",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:48:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "LOW",
+      "fireRadiativePower": 4.120732307434082,
+      "location": [
+        -1.08744621,
+        39.77103043
+      ]
+    },
+    {
+      "id": "42e7e93d-0710-416d-9c35-92aecb443ff0",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 31.169963836669922,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "521dd0fc-93b5-4d00-a0a5-8b0caa9dd224",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 27.672626495361328,
+      "location": [
+        -1.09936786,
+        39.75783157
+      ]
+    },
+    {
+      "id": "7178796e-ef97-43a8-8316-9fd52f1e8855",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T21:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "LOW",
+      "fireRadiativePower": 48.08882141113281,
+      "location": [
+        -1.08720458,
+        39.75746155
+      ]
+    },
+    {
+      "id": "25811405-d2ae-4470-8068-7fa13f1a4f74",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T22:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 5.529481410980225,
+      "location": [
+        -1.08744621,
+        39.77103043
+      ]
+    },
+    {
+      "id": "640d2711-228d-4f08-9149-15b73469b85d",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T22:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 38.58852005004883,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "72681f28-ebc2-4a64-a357-c6b0573a0cd9",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T22:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 16.437034606933594,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "d5c44165-c939-45cf-a44b-cf6a2c384e53",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T22:08:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 9.073334693908691,
+      "location": [
+        -1.09961224,
+        39.77139664
+      ]
+    },
+    {
+      "id": "7467b8c2-3b9a-4861-8fbc-21153f412d8c",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T22:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 32.100196838378906,
+      "location": [
+        -1.07505429,
+        39.75742722
+      ]
+    },
+    {
+      "id": "c1301b61-33ea-42c7-a422-a9d60e65ae3b",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T22:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 6.375082015991211,
+      "location": [
+        -1.09961224,
+        39.77139664
+      ]
+    },
+    {
+      "id": "f4d06101-2b60-4288-893a-5f058d827936",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T22:18:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "HIGH",
+      "fireRadiativePower": 26.320777893066406,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "0a21c2f6-3c26-41e9-a537-b21b5497f87e",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T22:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 6.4192376136779785,
+      "location": [
+        -1.09961224,
+        39.77139664
+      ]
+    },
+    {
+      "id": "0efbc026-c161-4d50-bb5b-bc69dbf14aa1",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T22:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 4.842135429382324,
+      "location": [
+        -1.0752933,
+        39.77100372
+      ]
+    },
+    {
+      "id": "65b574ab-a160-4495-9a8f-c6b840234861",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T22:28:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 23.382413864135742,
+      "location": [
+        -1.06293583,
+        39.75823212
+      ]
+    },
+    {
+      "id": "1155d370-135e-4ba0-8286-18fd655321e0",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T22:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 3.8343496322631836,
+      "location": [
+        -1.0631721,
+        39.77180862
+      ]
+    },
+    {
+      "id": "831b6947-317e-4184-b9d3-fac59e0f26d7",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T22:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "LOW",
+      "fireRadiativePower": 4.310874938964844,
+      "location": [
+        -1.05052507,
+        39.74390411
+      ]
+    },
+    {
+      "id": "c53ac660-57f2-4b9e-b5fb-2a84631ce12e",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T22:38:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "LOW",
+      "fireRadiativePower": 4.89908504486084,
+      "location": [
+        -1.0752933,
+        39.77100372
+      ]
+    },
+    {
+      "id": "9698a9bc-cdce-4866-bdee-a5e562fdf58a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T22:58:17Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 7.647171974182129,
+      "location": [
+        -1.05078542,
+        39.7582016
+      ]
+    },
+    {
+      "id": "330932ed-a9b2-4859-8e1b-438ba4a91c5e",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T23:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 14.119659423828125,
+      "location": [
+        -1.06243658,
+        39.73037338
+      ]
+    },
+    {
+      "id": "c0c6cdde-f8b8-4b7a-ac43-993a4e32b81f",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-15T23:48:21Z",
+      "source": "MTG_I1",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 36.58565902709961,
+      "location": [
+        -1.06267238,
+        39.74393463
+      ]
+    },
+    {
+      "id": "a8336db6-af6d-447d-8ee6-aaf4b0fdeddb",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T01:22:00Z",
+      "source": "VIIRS_NOAA21_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 7.8,
+      "location": [
+        -1.06309,
+        39.74761
+      ]
+    },
+    {
+      "id": "bd0d89dc-b2a1-4e1c-b255-861dc9145054",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T01:22:00Z",
+      "source": "VIIRS_NOAA21_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 3.05,
+      "location": [
+        -1.06868,
+        39.74805
+      ]
+    },
+    {
+      "id": "ea7234d3-bfbd-4b25-86ea-a68df289a3e9",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T01:22:00Z",
+      "source": "VIIRS_NOAA21_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.91,
+      "location": [
+        -1.06862,
+        39.76667
+      ]
+    },
+    {
+      "id": "00517ed6-eca5-49d7-81c7-8328a2128e09",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:00:00Z",
+      "source": "VIIRS_SNPP_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.43,
+      "location": [
+        -1.10169,
+        39.75436
+      ]
+    },
+    {
+      "id": "20e93784-de43-4be3-ac92-11839a394fcd",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:00:00Z",
+      "source": "VIIRS_SNPP_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.69,
+      "location": [
+        -1.08196,
+        39.74815
+      ]
+    },
+    {
+      "id": "26efd748-3f5f-4fe2-a49d-2308d93117eb",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:00:00Z",
+      "source": "VIIRS_SNPP_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.21,
+      "location": [
+        -1.09826,
+        39.76814
+      ]
+    },
+    {
+      "id": "37d40728-1ee2-4838-8895-7ca0b89866ed",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:00:00Z",
+      "source": "VIIRS_SNPP_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.43,
+      "location": [
+        -1.09569,
+        39.75711
+      ]
+    },
+    {
+      "id": "3bf0fd8b-eb2f-4222-a230-7a74d9ae497c",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:00:00Z",
+      "source": "VIIRS_SNPP_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.43,
+      "location": [
+        -1.10083,
+        39.7578
+      ]
+    },
+    {
+      "id": "4a625794-b58a-4460-a456-758964f342b4",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:00:00Z",
+      "source": "VIIRS_SNPP_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 0.86,
+      "location": [
+        -1.10334,
+        39.76882
+      ]
+    },
+    {
+      "id": "7ac50c04-25da-49ec-8f6b-94bef24c87cc",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:00:00Z",
+      "source": "VIIRS_SNPP_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 3.11,
+      "location": [
+        -1.09994,
+        39.76124
+      ]
+    },
+    {
+      "id": "82bfe853-4b4c-47b3-a3e0-098563db177e",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:00:00Z",
+      "source": "VIIRS_SNPP_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 0.9,
+      "location": [
+        -1.10157,
+        39.76949
+      ]
+    },
+    {
+      "id": "dd09a2de-6d69-4f98-98bb-2dd965dd7684",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:00:00Z",
+      "source": "VIIRS_SNPP_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.91,
+      "location": [
+        -1.09135,
+        39.75296
+      ]
+    },
+    {
+      "id": "dfdbb359-0c53-4326-a89c-c5a87d81ec5d",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:00:00Z",
+      "source": "VIIRS_SNPP_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 2.93,
+      "location": [
+        -1.10508,
+        39.76193
+      ]
+    },
+    {
+      "id": "f0bede68-50b2-4cf7-9be7-61a7dfa2391b",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:00:00Z",
+      "source": "VIIRS_SNPP_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 2.93,
+      "location": [
+        -1.10421,
+        39.76537
+      ]
+    },
+    {
+      "id": "ff0f6f38-f88b-476e-81d8-21fc93bade07",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:00:00Z",
+      "source": "VIIRS_SNPP_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.43,
+      "location": [
+        -1.09654,
+        39.75367
+      ]
+    },
+    {
+      "id": "0584487a-d3ed-42cd-8644-ef94408090dd",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.39,
+      "location": [
+        -1.08176,
+        39.74851
+      ]
+    },
+    {
+      "id": "06de3cf3-37a1-4ad7-b00c-884c5bf53f03",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.52,
+      "location": [
+        -1.06919,
+        39.76823
+      ]
+    },
+    {
+      "id": "1910dbe1-7681-407a-a21a-01d457459529",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.65,
+      "location": [
+        -1.09159,
+        39.75037
+      ]
+    },
+    {
+      "id": "1f7ab135-c0d2-4064-8c1c-96eed6e3cf25",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 0.75,
+      "location": [
+        -1.10201,
+        39.76707
+      ]
+    },
+    {
+      "id": "37c00636-42f5-4c84-8497-c9fd1b3efbe4",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 5,
+      "location": [
+        -1.06659,
+        39.74563
+      ]
+    },
+    {
+      "id": "41d016e2-62d7-4bad-b531-de734bac8663",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.76,
+      "location": [
+        -1.09816,
+        39.76266
+      ]
+    },
+    {
+      "id": "44568dd9-8281-445e-b7da-575fedf535ee",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.49,
+      "location": [
+        -1.10117,
+        39.7522
+      ]
+    },
+    {
+      "id": "4863ef3e-86c9-4226-9e86-fb9bc95b103c",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 0.75,
+      "location": [
+        -1.10686,
+        39.76798
+      ]
+    },
+    {
+      "id": "51a1da4f-20de-43f2-996c-d546e491ae4f",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 3.26,
+      "location": [
+        -1.10299,
+        39.76358
+      ]
+    },
+    {
+      "id": "656f3a96-ceac-4ff6-8e92-b02980a4d135",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.49,
+      "location": [
+        -1.1001,
+        39.75567
+      ]
+    },
+    {
+      "id": "6d09e003-6289-4728-b2f5-82369acb90d2",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.76,
+      "location": [
+        -1.09913,
+        39.75916
+      ]
+    },
+    {
+      "id": "6efbeac8-fbfc-4176-aa8a-e4064332af8d",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.76,
+      "location": [
+        -1.09427,
+        39.75824
+      ]
+    },
+    {
+      "id": "8bea013b-6302-47b6-a8fe-7417afb39de3",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 5,
+      "location": [
+        -1.0653,
+        39.74907
+      ]
+    },
+    {
+      "id": "9b6f81b4-b071-49a1-b4d4-9526907b825b",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.49,
+      "location": [
+        -1.09639,
+        39.75129
+      ]
+    },
+    {
+      "id": "9ea2f6ed-5282-496d-9cc2-efb68b090711",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.49,
+      "location": [
+        -1.09526,
+        39.75475
+      ]
+    },
+    {
+      "id": "bafd76bc-9d26-47b7-92dd-331694e0ef74",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 3.26,
+      "location": [
+        -1.10785,
+        39.7645
+      ]
+    },
+    {
+      "id": "c8404976-906c-4e16-a236-4ccd6c197dc3",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 0.96,
+      "location": [
+        -1.06787,
+        39.76792
+      ]
+    },
+    {
+      "id": "e32c070b-c72b-4967-929a-1972359d9ce6",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 0.75,
+      "location": [
+        -1.10099,
+        39.77055
+      ]
+    },
+    {
+      "id": "e871e5e1-373d-4407-835e-e7ba60455084",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 1.39,
+      "location": [
+        -1.07553,
+        39.75101
+      ]
+    },
+    {
+      "id": "f0fda09a-0763-4bf8-892a-ab654ae56ca2",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T02:17:00Z",
+      "source": "VIIRS_NOAA20_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 3.26,
+      "location": [
+        -1.10398,
+        39.76009
+      ]
+    },
+    {
+      "id": "73b1170c-9346-4deb-aff2-62e60fe52d1a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T03:02:00Z",
+      "source": "VIIRS_NOAA21_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 3.98,
+      "location": [
+        -1.09208,
+        39.75069
+      ]
+    },
+    {
+      "id": "ba09f28a-9094-4d52-95fe-bdb6db9f103a",
+      "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+      "observedAt": "2026-09-16T03:02:00Z",
+      "source": "VIIRS_NOAA21_NRT",
+      "confidenceTier": "MEDIUM",
+      "fireRadiativePower": 7.56,
+      "location": [
+        -1.09997,
+        39.7602
+      ]
+    }
+  ],
+  "perimeters": [
+    [
+      [
+        [
+          -1.11207132,
+          39.77181843
+        ],
+        [
+          -1.1082981,
+          39.77132236
+        ],
+        [
+          -1.10628679,
+          39.7712902
+        ],
+        [
+          -1.10477966,
+          39.77155659
+        ],
+        [
+          -1.10335746,
+          39.77206642
+        ],
+        [
+          -1.1020202,
+          39.77281969
+        ],
+        [
+          -1.10059805,
+          39.77331168
+        ],
+        [
+          -1.09909104,
+          39.77354239
+        ],
+        [
+          -1.09749914,
+          39.77351183
+        ],
+        [
+          -1.09582238,
+          39.77321999
+        ],
+        [
+          -1.09420871,
+          39.77320211
+        ],
+        [
+          -1.09265814,
+          39.77345817
+        ],
+        [
+          -1.09117067,
+          39.77398818
+        ],
+        [
+          -1.0897463,
+          39.77479214
+        ],
+        [
+          -1.08855254,
+          39.77533986
+        ],
+        [
+          -1.0875894,
+          39.77563134
+        ],
+        [
+          -1.08685689,
+          39.77566657
+        ],
+        [
+          -1.08635499,
+          39.77544556
+        ],
+        [
+          -1.08611134,
+          39.77510832
+        ],
+        [
+          -1.08612595,
+          39.77465485
+        ],
+        [
+          -1.0863988,
+          39.77408516
+        ],
+        [
+          -1.08692991,
+          39.77339924
+        ],
+        [
+          -1.08733276,
+          39.77272142
+        ],
+        [
+          -1.08760736,
+          39.7720517
+        ],
+        [
+          -1.0877537,
+          39.77139008
+        ],
+        [
+          -1.08777179,
+          39.77073657
+        ],
+        [
+          -1.08772097,
+          39.77014849
+        ],
+        [
+          -1.08760123,
+          39.76962585
+        ],
+        [
+          -1.08741257,
+          39.76916865
+        ],
+        [
+          -1.087155,
+          39.76877689
+        ],
+        [
+          -1.08676793,
+          39.76837208
+        ],
+        [
+          -1.08625136,
+          39.76795423
+        ],
+        [
+          -1.08560528,
+          39.76752333
+        ],
+        [
+          -1.08482971,
+          39.7670794
+        ],
+        [
+          -1.08397086,
+          39.76672074
+        ],
+        [
+          -1.08302875,
+          39.76644737
+        ],
+        [
+          -1.08200337,
+          39.76625927
+        ],
+        [
+          -1.08089472,
+          39.76615646
+        ],
+        [
+          -1.07978388,
+          39.76618052
+        ],
+        [
+          -1.07867085,
+          39.76633145
+        ],
+        [
+          -1.07755563,
+          39.76660927
+        ],
+        [
+          -1.07643821,
+          39.76701396
+        ],
+        [
+          -1.07548534,
+          39.76743978
+        ],
+        [
+          -1.07469702,
+          39.76788673
+        ],
+        [
+          -1.07407325,
+          39.76835481
+        ],
+        [
+          -1.07361402,
+          39.76884402
+        ],
+        [
+          -1.07270777,
+          39.76910157
+        ],
+        [
+          -1.0713545,
+          39.76912745
+        ],
+        [
+          -1.0695542,
+          39.76892166
+        ],
+        [
+          -1.06730688,
+          39.76848421
+        ],
+        [
+          -1.06526931,
+          39.76820929
+        ],
+        [
+          -1.06344148,
+          39.7680969
+        ],
+        [
+          -1.06182341,
+          39.76814705
+        ],
+        [
+          -1.06041508,
+          39.76835972
+        ],
+        [
+          -1.05929616,
+          39.76845761
+        ],
+        [
+          -1.05846665,
+          39.76844073
+        ],
+        [
+          -1.05792655,
+          39.76830907
+        ],
+        [
+          -1.05767585,
+          39.76806262
+        ],
+        [
+          -1.05750863,
+          39.76764593
+        ],
+        [
+          -1.05742489,
+          39.76705898
+        ],
+        [
+          -1.05742462,
+          39.76630177
+        ],
+        [
+          -1.05750782,
+          39.76537432
+        ],
+        [
+          -1.05745643,
+          39.76454092
+        ],
+        [
+          -1.05727045,
+          39.76380157
+        ],
+        [
+          -1.05694988,
+          39.76315627
+        ],
+        [
+          -1.05649472,
+          39.76260502
+        ],
+        [
+          -1.05595954,
+          39.76212579
+        ],
+        [
+          -1.05534433,
+          39.76171856
+        ],
+        [
+          -1.05464911,
+          39.76138335
+        ],
+        [
+          -1.05387385,
+          39.76112015
+        ],
+        [
+          -1.05290612,
+          39.76097749
+        ],
+        [
+          -1.0517459,
+          39.76095539
+        ],
+        [
+          -1.05039319,
+          39.76105384
+        ],
+        [
+          -1.048848,
+          39.76127284
+        ],
+        [
+          -1.04756427,
+          39.76119253
+        ],
+        [
+          -1.04654201,
+          39.76081289
+        ],
+        [
+          -1.04578121,
+          39.76013394
+        ],
+        [
+          -1.04528187,
+          39.75915568
+        ],
+        [
+          -1.04472076,
+          39.75828708
+        ],
+        [
+          -1.04409788,
+          39.75752816
+        ],
+        [
+          -1.04341323,
+          39.75687891
+        ],
+        [
+          -1.04266681,
+          39.75633932
+        ],
+        [
+          -1.04188349,
+          39.75588277
+        ],
+        [
+          -1.04106327,
+          39.75550923
+        ],
+        [
+          -1.04020615,
+          39.75521873
+        ],
+        [
+          -1.03931213,
+          39.75501124
+        ],
+        [
+          -1.03859827,
+          39.75476959
+        ],
+        [
+          -1.03806459,
+          39.75449377
+        ],
+        [
+          -1.03771108,
+          39.75418378
+        ],
+        [
+          -1.03753773,
+          39.75383963
+        ],
+        [
+          -1.03766007,
+          39.75338444
+        ],
+        [
+          -1.03807809,
+          39.75281823
+        ],
+        [
+          -1.03879181,
+          39.75214099
+        ],
+        [
+          -1.03980121,
+          39.75135273
+        ],
+        [
+          -1.04099757,
+          39.75083028
+        ],
+        [
+          -1.04238089,
+          39.75057366
+        ],
+        [
+          -1.04395117,
+          39.75058286
+        ],
+        [
+          -1.04570842,
+          39.75085788
+        ],
+        [
+          -1.04732013,
+          39.75086696
+        ],
+        [
+          -1.04878629,
+          39.7506101
+        ],
+        [
+          -1.05010692,
+          39.75008729
+        ],
+        [
+          -1.051282,
+          39.74929854
+        ],
+        [
+          -1.05246192,
+          39.74867749
+        ],
+        [
+          -1.05364668,
+          39.74822413
+        ],
+        [
+          -1.05483629,
+          39.74793847
+        ],
+        [
+          -1.05603073,
+          39.7478205
+        ],
+        [
+          -1.05725654,
+          39.74741322
+        ],
+        [
+          -1.05851371,
+          39.74671661
+        ],
+        [
+          -1.05980223,
+          39.74573068
+        ],
+        [
+          -1.06112212,
+          39.74445543
+        ],
+        [
+          -1.06217917,
+          39.74332646
+        ],
+        [
+          -1.06297337,
+          39.74234378
+        ],
+        [
+          -1.06350473,
+          39.74150738
+        ],
+        [
+          -1.06377325,
+          39.74081727
+        ],
+        [
+          -1.06408607,
+          39.74026621
+        ],
+        [
+          -1.0644432,
+          39.7398542
+        ],
+        [
+          -1.06484463,
+          39.73958124
+        ],
+        [
+          -1.06529037,
+          39.73944733
+        ],
+        [
+          -1.06570738,
+          39.73941357
+        ],
+        [
+          -1.06609566,
+          39.73947995
+        ],
+        [
+          -1.06645522,
+          39.73964648
+        ],
+        [
+          -1.06678605,
+          39.73991316
+        ],
+        [
+          -1.06704599,
+          39.74038076
+        ],
+        [
+          -1.06723503,
+          39.74104928
+        ],
+        [
+          -1.06735318,
+          39.74191873
+        ],
+        [
+          -1.06740044,
+          39.74298911
+        ],
+        [
+          -1.06768078,
+          39.74398428
+        ],
+        [
+          -1.06819421,
+          39.74490427
+        ],
+        [
+          -1.06894072,
+          39.74574905
+        ],
+        [
+          -1.06992031,
+          39.74651864
+        ],
+        [
+          -1.07086171,
+          39.74713116
+        ],
+        [
+          -1.07176489,
+          39.74758659
+        ],
+        [
+          -1.07262987,
+          39.74788495
+        ],
+        [
+          -1.07345665,
+          39.74802624
+        ],
+        [
+          -1.07436787,
+          39.74801116
+        ],
+        [
+          -1.07536353,
+          39.74783973
+        ],
+        [
+          -1.07644365,
+          39.74751194
+        ],
+        [
+          -1.07760821,
+          39.74702779
+        ],
+        [
+          -1.0787262,
+          39.746664
+        ],
+        [
+          -1.07979762,
+          39.74642055
+        ],
+        [
+          -1.08082248,
+          39.74629746
+        ],
+        [
+          -1.08180078,
+          39.74629472
+        ],
+        [
+          -1.08279704,
+          39.746444
+        ],
+        [
+          -1.08381128,
+          39.74674529
+        ],
+        [
+          -1.08484349,
+          39.74719859
+        ],
+        [
+          -1.08589367,
+          39.74780391
+        ],
+        [
+          -1.0869617,
+          39.74825628
+        ],
+        [
+          -1.08804758,
+          39.74855572
+        ],
+        [
+          -1.08915131,
+          39.74870221
+        ],
+        [
+          -1.09027289,
+          39.74869577
+        ],
+        [
+          -1.09135512,
+          39.7488211
+        ],
+        [
+          -1.092398,
+          39.7490782
+        ],
+        [
+          -1.09340154,
+          39.74946708
+        ],
+        [
+          -1.09436574,
+          39.74998773
+        ],
+        [
+          -1.09544529,
+          39.75042137
+        ],
+        [
+          -1.09664019,
+          39.75076799
+        ],
+        [
+          -1.09795045,
+          39.7510276
+        ],
+        [
+          -1.09937606,
+          39.7512002
+        ],
+        [
+          -1.10055435,
+          39.75143415
+        ],
+        [
+          -1.10148531,
+          39.75172947
+        ],
+        [
+          -1.10216895,
+          39.75208614
+        ],
+        [
+          -1.10260527,
+          39.75250417
+        ],
+        [
+          -1.10283106,
+          39.75291248
+        ],
+        [
+          -1.10284632,
+          39.75331106
+        ],
+        [
+          -1.10265105,
+          39.75369991
+        ],
+        [
+          -1.10224525,
+          39.75407903
+        ],
+        [
+          -1.10190871,
+          39.75451
+        ],
+        [
+          -1.10164142,
+          39.75499283
+        ],
+        [
+          -1.10144338,
+          39.75552752
+        ],
+        [
+          -1.1013146,
+          39.75611406
+        ],
+        [
+          -1.10149657,
+          39.75682024
+        ],
+        [
+          -1.10198929,
+          39.75764608
+        ],
+        [
+          -1.10279277,
+          39.75859156
+        ],
+        [
+          -1.103907,
+          39.75965668
+        ],
+        [
+          -1.10489309,
+          39.7604501
+        ],
+        [
+          -1.10575105,
+          39.76097181
+        ],
+        [
+          -1.10648087,
+          39.76122181
+        ],
+        [
+          -1.10708256,
+          39.76120011
+        ],
+        [
+          -1.10759582,
+          39.76124635
+        ],
+        [
+          -1.10802065,
+          39.76136054
+        ],
+        [
+          -1.10835706,
+          39.76154267
+        ],
+        [
+          -1.10860503,
+          39.76179276
+        ],
+        [
+          -1.10878768,
+          39.76214769
+        ],
+        [
+          -1.10890499,
+          39.76260745
+        ],
+        [
+          -1.10895698,
+          39.76317207
+        ],
+        [
+          -1.10894363,
+          39.76384152
+        ],
+        [
+          -1.10903458,
+          39.76454466
+        ],
+        [
+          -1.10922983,
+          39.76528148
+        ],
+        [
+          -1.10952939,
+          39.76605198
+        ],
+        [
+          -1.10993323,
+          39.76685617
+        ],
+        [
+          -1.11039881,
+          39.76760217
+        ],
+        [
+          -1.11092611,
+          39.76828996
+        ],
+        [
+          -1.11151514,
+          39.76891956
+        ],
+        [
+          -1.11216589,
+          39.76949097
+        ],
+        [
+          -1.11258704,
+          39.77001142
+        ],
+        [
+          -1.11277858,
+          39.77048092
+        ],
+        [
+          -1.11267359,
+          39.77099136
+        ],
+        [
+          -1.11207132,
+          39.77181843
+        ]
+      ],
+      [
+        [
+          -1.05513653,
+          39.7605148
+        ],
+        [
+          -1.05862176,
+          39.75938985
+        ],
+        [
+          -1.06029216,
+          39.75875599
+        ],
+        [
+          -1.06130947,
+          39.75823824
+        ],
+        [
+          -1.06206094,
+          39.75771161
+        ],
+        [
+          -1.06254658,
+          39.7571761
+        ],
+        [
+          -1.06291135,
+          39.75657049
+        ],
+        [
+          -1.06315526,
+          39.75589479
+        ],
+        [
+          -1.06327829,
+          39.75514899
+        ],
+        [
+          -1.06328047,
+          39.7543331
+        ],
+        [
+          -1.06316831,
+          39.75358337
+        ],
+        [
+          -1.06294183,
+          39.75289981
+        ],
+        [
+          -1.06260102,
+          39.75228242
+        ],
+        [
+          -1.06214588,
+          39.7517312
+        ],
+        [
+          -1.06146888,
+          39.75126038
+        ],
+        [
+          -1.06057001,
+          39.75086997
+        ],
+        [
+          -1.05944927,
+          39.75055997
+        ],
+        [
+          -1.05810667,
+          39.75033038
+        ],
+        [
+          -1.05687174,
+          39.75022668
+        ],
+        [
+          -1.05574449,
+          39.7502489
+        ],
+        [
+          -1.05472492,
+          39.75039701
+        ],
+        [
+          -1.05381302,
+          39.75067103
+        ],
+        [
+          -1.05297617,
+          39.75098956
+        ],
+        [
+          -1.05221438,
+          39.75135258
+        ],
+        [
+          -1.05152764,
+          39.75176012
+        ],
+        [
+          -1.05091596,
+          39.75221216
+        ],
+        [
+          -1.05038685,
+          39.75276857
+        ],
+        [
+          -1.04994033,
+          39.75342934
+        ],
+        [
+          -1.04957639,
+          39.75419448
+        ],
+        [
+          -1.04929503,
+          39.75506399
+        ],
+        [
+          -1.0492102,
+          39.75590828
+        ],
+        [
+          -1.04932189,
+          39.75672735
+        ],
+        [
+          -1.04963011,
+          39.7575212
+        ],
+        [
+          -1.05013486,
+          39.75828982
+        ],
+        [
+          -1.0507787,
+          39.7589333
+        ],
+        [
+          -1.05156164,
+          39.75945162
+        ],
+        [
+          -1.05274896,
+          39.75991178
+        ],
+        [
+          -1.05513653,
+          39.7605148
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          -1.1046085,
+          39.75400476
+        ],
+        [
+          -1.10628329,
+          39.7554051
+        ],
+        [
+          -1.107007,
+          39.75620114
+        ],
+        [
+          -1.10733788,
+          39.75685966
+        ],
+        [
+          -1.10746203,
+          39.75753625
+        ],
+        [
+          -1.10737944,
+          39.75823091
+        ],
+        [
+          -1.10722223,
+          39.75876141
+        ],
+        [
+          -1.10699041,
+          39.75912776
+        ],
+        [
+          -1.10668397,
+          39.75932996
+        ],
+        [
+          -1.10630292,
+          39.75936801
+        ],
+        [
+          -1.10581581,
+          39.75918599
+        ],
+        [
+          -1.10522266,
+          39.7587839
+        ],
+        [
+          -1.10452345,
+          39.75816173
+        ],
+        [
+          -1.10371819,
+          39.7573195
+        ],
+        [
+          -1.10316786,
+          39.75669213
+        ],
+        [
+          -1.10287245,
+          39.75627962
+        ],
+        [
+          -1.10283196,
+          39.75608198
+        ],
+        [
+          -1.1030464,
+          39.75609921
+        ],
+        [
+          -1.10328476,
+          39.75597961
+        ],
+        [
+          -1.10354703,
+          39.75572319
+        ],
+        [
+          -1.10391075,
+          39.75519742
+        ],
+        [
+          -1.1046085,
+          39.75400476
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          -1.10987371,
+          39.7628037
+        ],
+        [
+          -1.11017498,
+          39.76322161
+        ],
+        [
+          -1.11030191,
+          39.76345413
+        ],
+        [
+          -1.11035492,
+          39.76364056
+        ],
+        [
+          -1.11036749,
+          39.76382733
+        ],
+        [
+          -1.11033963,
+          39.76401445
+        ],
+        [
+          -1.11029222,
+          39.76406158
+        ],
+        [
+          -1.11022527,
+          39.76396871
+        ],
+        [
+          -1.11011228,
+          39.76364263
+        ],
+        [
+          -1.10987371,
+          39.7628037
+        ]
+      ]
+    ]
+  ],
+  "spread": {
+    "clusterId": "94ec1325-3fe2-46c3-8f8f-48aec00a1a2c",
+    "durationHours": 12,
+    "ensembleMembers": 10,
+    "features": []
+  },
+  "valuesAtRisk": [
+    {
+      "id": "tuejar-school",
+      "name": "Tuéjar Public School",
+      "kind": "school",
+      "location": [
+        -1.038,
+        39.764
+      ],
+      "preparationLeadMinutes": 40
+    },
+    {
+      "id": "alto-turia",
+      "name": "Alto Turia Reserve Station",
+      "kind": "infrastructure",
+      "location": [
+        -1.08,
+        39.8
+      ],
+      "preparationLeadMinutes": 60
+    }
+  ]
+}

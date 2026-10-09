@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: #0e1019;
+  color: #e8e3d0;
+  font-family: 'Silkscreen', monospace;
+  image-rendering: pixelated;
+}
+
+* {
+  image-rendering: pixelated;
+}
+
+/* menu-box chrome: dark rounded rect, thin light border, blocky text */
+.gba-panel {
+  background: #1a1d2b;
+  border: 2px solid #5a5f74;
+  border-radius: 6px;
+  box-shadow:
+    inset 0 0 0 2px #0e1019,
+    0 4px 0 #00000066;
+  image-rendering: pixelated;
+}
+
+.gba-panel--accent {
+  border-color: #f4a92d;
+}
+
+.gba-btn {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  line-height: 1.4;
+  color: #e8e3d0;
+  background: #232839;
+  border: 2px solid #5a5f74;
+  border-radius: 4px;
+  padding: 6px 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition: background 60ms steps(1), transform 60ms steps(1);
+}
+.gba-btn:hover {
+  background: #2d3550;
+}
+.gba-btn:active {
+  transform: translateY(2px);
+}
+.gba-btn--accent {
+  border-color: #f4a92d;
+  color: #f4a92d;
+}
+.gba-btn--selected {
+  background: #3a2f14;
+  border-color: #f4a92d;
+  color: #f4a92d;
+}
+
+.gba-tab {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  text-transform: uppercase;
+  color: #8b8675;
+  padding: 6px 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+}
+.gba-tab:hover {
+  color: #e8e3d0;
+}
+.gba-tab--active {
+  color: #f4a92d;
+  border-color: #f4a92d;
+  border-radius: 4px;
+  background: #232839;
+}
+
+/* thin scrollbars for the terminal */
+.gba-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.gba-scroll::-webkit-scrollbar-track {
+  background: #0e1019;
+}
+.gba-scroll::-webkit-scrollbar-thumb {
+  background: #5a5f74;
+  border-radius: 0;
+}
+
+.pixel-font {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.type-caret {
+  border-right: 6px solid #f4a92d;
+  animation: blink 1s steps(1) infinite;
+}
+
+.feed-tab {
+  border: 1px solid #5a5f74;
+  padding: 4px 6px;
+  color: #8b8675;
+  font: 8px 'Press Start 2P', monospace;
+}
+.feed-tab--active { border-color: #f4a92d; background: #3a2f14; color: #f4a92d; }
+
+.decision-card {
+  display: flex;
+  width: min(340px, 84vw);
+  min-width: min(340px, 84vw);
+  overflow: hidden;
+  border: 1px solid #454b60;
+  background: #181c29;
+  box-shadow: 3px 3px 0 #080a10;
+  animation: card-in 220ms steps(3, end) both;
+}
+.decision-card--approved { border-color: #426d42; }
+.decision-card--veto { border-color: #874233; }
+.decision-card__rail {
+  display: grid;
+  width: 36px;
+  flex: 0 0 36px;
+  place-items: center;
+  border-right: 1px solid #454b60;
+  background: #232839;
+  color: #f4a92d;
+  font: 14px 'Press Start 2P', monospace;
+}
+.decision-card > div:last-child { padding: 10px; }
+.status-chip { margin-left: auto; padding: 2px 5px; font: 7px 'Press Start 2P', monospace; }
+.status-chip--approved { background: #20391f; color: #7bd568; }
+.status-chip--vetoed { background: #421f1b; color: #ff7863; }
+.status-chip--proposed { background: #332b17; color: #f4c45a; }
+
+@keyframes card-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+}
